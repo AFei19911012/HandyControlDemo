@@ -7,4 +7,5 @@ HandyControl各个控件使用案例；修改主题、颜色、语言。
 
 **项目结构**
 
-![](D:\MyPrograms\VisualStudio2019\WPFprograms\HandyControl\Demo.png)
+[](https://github.com/AFei19911012/HandyControl/blob/master/Demo.png)
+
