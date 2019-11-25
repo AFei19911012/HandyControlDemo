@@ -1,8 +1,7 @@
 # HandyControl
 HandyControl各个控件使用案例；修改主题、颜色、语言。
 
-**关注官方地址获取最新源码信息：**https://github.com/HandyOrg/HandyControl
+目前涵盖了所有的控件Demo，部分控件待NuGet更新。
 
-**项目结构**
+**关注官方地址获取最新源码信息**：https://github.com/HandyOrg/HandyControl
 
-![](C:\Users\Administrator\Desktop\HandyControl.png)
