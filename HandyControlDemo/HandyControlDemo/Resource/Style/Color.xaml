@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Color x:Key="DangerColor">#FFDB3340</Color>
+    <Color x:Key="DarkDangerColor">#FFDB3340</Color>
+
+    <Color x:Key="WarningColor">#FFE9AF20</Color>
+    <Color x:Key="DarkWarningColor">#FFE9AF20</Color>
+
+    <Color x:Key="InfoColor">#FF00BCD4</Color>
+    <Color x:Key="DarkInfoColor">#FF00BCD4</Color>
+
+    <Color x:Key="SuccessColor">#FF2DB84d</Color>
+    <Color x:Key="DarkSuccessColor">#FF2DB84d</Color>
+
+    <Color x:Key="MagentaColor">#FFD80073</Color>
+    <Color x:Key="DarkMagentaColor">#FF9F0055</Color>
+    <Color x:Key="VioletColor">#FFBB33FF</Color>
+    <Color x:Key="DarkVioletColor">#FF7D00BC</Color>
+
+</ResourceDictionary>

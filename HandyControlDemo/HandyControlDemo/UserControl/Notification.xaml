@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.Notification"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             xmlns:data="clr-namespace:HandyControl.Data;assembly=HandyControl"
+             xmlns:viewmodel="clr-namespace:HandyControlDemo.ViewModel"
+             mc:Ignorable="d">
+    <UserControl.DataContext>
+        <viewmodel:NotificationViewModel/>
+    </UserControl.DataContext>
+    <UserControl.Resources>
+        <ObjectDataProvider x:Key="DemoTypes" MethodName="GetValues" ObjectType="{x:Type sys:Enum}">
+            <ObjectDataProvider.MethodParameters>               
+                <x:Type Type="data:ShowAnimation"/>  
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </UserControl.Resources>
+    <hc:TransitioningContentControl>
+        <StackPanel Margin="10" VerticalAlignment="Center">
+            <TextBox Text="{Binding TextInfo}" Margin="10"/>
+            <ComboBox SelectedIndex="0" Margin="10" SelectedValue="{Binding AnimationType}" ItemsSource="{Binding AnimationTypes}"/>
+            <ComboBox SelectedIndex="0" Margin="10" SelectedValue="{Binding AnimationType}" ItemsSource="{Binding Source={StaticResource DemoTypes}}"/>
+            <hc:ButtonGroup Margin="10">
+                <ToggleButton x:Name="toggleButton" Content="Stays Open" IsChecked="{Binding StaysOpen}"/>
+                <Button Command="{Binding OpenCmd}" Content="Send Notification"/>
+            </hc:ButtonGroup>
+        </StackPanel>
+    </hc:TransitioningContentControl>
+</UserControl>

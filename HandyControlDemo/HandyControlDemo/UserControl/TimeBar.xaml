@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.TimeBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d">
+    <hc:TransitioningContentControl>
+        <StackPanel>
+            <hc:TimeBar Name="timeBar" BorderThickness="0" Margin="10" Width="400" VerticalAlignment="Center" ShowSpeStr="False"/>
+            <Button Content="ShowSpeStr" Margin="10" Click="Button_Click"/>
+        </StackPanel>
+    </hc:TransitioningContentControl>
+</UserControl>

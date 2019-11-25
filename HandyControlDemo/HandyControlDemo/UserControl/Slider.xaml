@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.Slider"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d">
+    <hc:TransitioningContentControl>
+        <StackPanel Orientation="Horizontal" Margin="10">
+            <StackPanel>
+                <Slider Width="150" Margin="10" IsSnapToTickEnabled="True" Value="8"/>
+                <Slider Width="150" Margin="10" IsSnapToTickEnabled="True" Value="3" IsEnabled="False"/>
+                <Slider Width="150" Margin="10" IsSnapToTickEnabled="True" TickFrequency="5" Maximum="100" TickPlacement="TopLeft" Value="10" 
+                        IsSelectionRangeEnabled="True" SelectionStart="20" SelectionEnd="80" />
+                <Slider Width="150" Margin="20" hc:TipElement.Visibility="Visible" IsSnapToTickEnabled="True" Maximum="100" Value="60" 
+                        TickFrequency="10" TickPlacement="BottomRight"/>
+                <Slider Width="150" Margin="20" hc:TipElement.Visibility="Visible" hc:TipElement.Placement="BottomRight" IsSnapToTickEnabled="True" 
+                        Value="5" TickPlacement="Both"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Slider Height="150" Margin="10" IsSnapToTickEnabled="True" Value="8" Orientation="Vertical"/>
+                <Slider Height="150" Margin="10" IsSnapToTickEnabled="True" Value="3" IsEnabled="False" Orientation="Vertical"/>
+                <Slider Height="150" Margin="20" IsSnapToTickEnabled="True" TickFrequency="5" Maximum="100" TickPlacement="TopLeft" Value="10" 
+                        IsSelectionRangeEnabled="True" SelectionStart="20" SelectionEnd="80" Orientation="Vertical"/>
+                <Slider Height="150" Margin="20" hc:TipElement.Visibility="Visible" IsSnapToTickEnabled="True" Maximum="100" Value="60" TickFrequency="10" 
+                        TickPlacement="BottomRight" Orientation="Vertical"/>
+                <Slider Height="150" Margin="20" hc:TipElement.Visibility="Visible" hc:TipElement.Placement="BottomRight" IsSnapToTickEnabled="True" 
+                        Value="5" TickPlacement="Both" Orientation="Vertical"/>
+            </StackPanel>
+        </StackPanel>
+    </hc:TransitioningContentControl>
+</UserControl>

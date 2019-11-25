@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.ImageBrowser"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d">
+    <hc:TransitioningContentControl>
+        <StackPanel Margin="32">
+            <hc:ImageViewer Name="imageViewer" Background="{DynamicResource SecondaryRegionBrush}" Width="600" Height="330" 
+                            ImageSource="{Binding ImgPath}"/>
+            <Button Margin="20" Content="Open ImageBrowser" Style="{StaticResource ButtonPrimary}" HorizontalAlignment="Center"
+                    Click="Button_Click"/>
+        </StackPanel>
+    </hc:TransitioningContentControl>
+</UserControl>

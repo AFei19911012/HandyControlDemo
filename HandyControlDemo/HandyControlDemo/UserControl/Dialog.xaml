@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.Dialog"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d">
+    <hc:TransitioningContentControl>
+        <UniformGrid Rows="4" Columns="1" Margin="10">
+            <Button Margin="10" Content="Text Dialog" Click="TextDialog_Click"/>
+            <Button Margin="10" Content="MessageBox" Click="MessageBox_Click"/>
+            <Button Margin="10" Content="Text Dialog With Timer" CommandParameter="True" Click="TextDialogWithTimer_Click"/>
+            <StackPanel>
+                <TextBox Margin="5" Name="textBox" Text="{Binding Content}" Style="{StaticResource TextBoxExtend}" 
+                         hc:InfoElement.Placeholder="Please Input"/>
+                <Button Margin="5" Content="Interactive Dialog" Click="InteractiveDialog_Click"/>
+            </StackPanel>
+        </UniformGrid>
+    </hc:TransitioningContentControl>
+</UserControl>

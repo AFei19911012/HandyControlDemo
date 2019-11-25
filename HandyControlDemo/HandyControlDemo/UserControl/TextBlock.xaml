@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.TextBlock"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d">
+    <hc:TransitioningContentControl>
+        <StackPanel Margin="10">
+            <TextBlock Margin="3" HorizontalAlignment="Left" Text="TextBlockLargeBold" Style="{StaticResource TextBlockLargeBold}"/>
+            <TextBlock Margin="3" HorizontalAlignment="Left" Text="TextBlockLarge" Style="{StaticResource TextBlockLarge}"/>
+            <TextBlock Margin="3" HorizontalAlignment="Left" Text="TextBlockHeaderBold" Style="{StaticResource TextBlockTitleBold}"/>
+            <TextBlock Margin="3" HorizontalAlignment="Left" Text="TextBlockHeader" Style="{StaticResource TextBlockTitle}"/>
+            <TextBlock Margin="3" HorizontalAlignment="Left" Text="TextBlockSubHeaderBold" Style="{StaticResource TextBlockSubTitleBold}"/>
+            <TextBlock Margin="3" HorizontalAlignment="Left" Text="TextBlockSubHeader" Style="{StaticResource TextBlockSubTitle}"/>
+            <TextBlock Margin="3" HorizontalAlignment="Left" Text="TextBlockDefaultBold" Style="{StaticResource TextBlockDefaultBold}"/>
+            <TextBlock Margin="3" HorizontalAlignment="Left" Text="TextBlockDefault" Style="{StaticResource TextBlockDefault}"/>
+            <TextBlock Margin="3" HorizontalAlignment="Left" Text="TextBlockDefaultAccent" Style="{StaticResource TextBlockDefaultAccent}"/>
+            <TextBlock Margin="3" HorizontalAlignment="Left" Text="TextBlockDefaultSecLight" Style="{StaticResource TextBlockDefaultSecLight}"/>
+            <TextBlock Margin="3" HorizontalAlignment="Left" Text="TextBlockDefaultThiLight" Style="{StaticResource TextBlockDefaultThiLight}"/>
+            <TextBlock Margin="3" HorizontalAlignment="Left" Text="TextBlockDefaultPrimary" Style="{StaticResource TextBlockDefaultPrimary}"/>
+            <TextBlock Margin="3" HorizontalAlignment="Left" Text="TextBlockDefaultDanger" Style="{StaticResource TextBlockDefaultDanger}"/>
+            <TextBlock Margin="3" HorizontalAlignment="Left" Text="TextBlockDefaultWarning" Style="{StaticResource TextBlockDefaultWarning}"/>
+            <TextBlock Margin="3" HorizontalAlignment="Left" Text="TextBlockDefaultInfo" Style="{StaticResource TextBlockDefaultInfo}"/>
+            <TextBlock Margin="3" HorizontalAlignment="Left" Text="TextBlockDefaultSuccess" Style="{StaticResource TextBlockDefaultSuccess}"/>
+        </StackPanel>
+    </hc:TransitioningContentControl>
+</UserControl>

@@ -1,0 +1,105 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.Brush"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d">
+    <hc:TransitioningContentControl>
+        <StackPanel>
+            <TextBlock Text="Special Brush" Style="{StaticResource TextBlockLarge}" HorizontalAlignment="Left" Margin="5" Foreground="{DynamicResource PrimaryBrush}"/>
+            <UniformGrid Rows="1" Columns="4">
+                <Border Background="{DynamicResource DangerBrush}" Margin="3" Height="30">
+                    <TextBlock Text="DangerBrush" Style="{StaticResource TextBlockSubTitle}"/>
+                </Border>
+                <Border Background="{DynamicResource WarningBrush}" Margin="3" Height="30">
+                    <TextBlock Text="WarningBrush" Style="{StaticResource TextBlockSubTitle}"/>
+                </Border>
+                <Border Background="{DynamicResource InfoBrush}" Margin="3" Height="30">
+                    <TextBlock Text="InfoBrush" Style="{StaticResource TextBlockSubTitle}"/>
+                </Border>
+                <Border Background="{DynamicResource SuccessBrush}" Margin="3" Height="30">
+                    <TextBlock Text="SuccessBrush" Style="{StaticResource TextBlockSubTitle}"/>
+                </Border>
+            </UniformGrid>
+            <TextBlock Text="Theme Brush" Style="{StaticResource TextBlockLarge}" HorizontalAlignment="Left" Margin="5" Foreground="{DynamicResource PrimaryBrush}"/>
+            <UniformGrid Rows="5" Columns="4">
+                <Border Background="{DynamicResource AccentBrush}" Margin="3" Height="30">
+                    <TextBlock Text="AccentBrush" Style="{StaticResource TextBlockSubTitle}" Foreground="{DynamicResource PrimaryBrush}"/>
+                </Border>
+                <Border Background="{DynamicResource MainBackgroundBrush}" Margin="3" Height="30">
+                    <TextBlock Text="MainBackgroundBrush" Style="{StaticResource TextBlockSubTitle}" Foreground="{DynamicResource PrimaryBrush}"/>
+                </Border>
+                <Border Background="{DynamicResource MainContentForegroundBrush}" Margin="3" Height="30">
+                    <TextBlock Text="MainContentForegroundBrush" Style="{StaticResource TextBlockSubTitle}" Foreground="{DynamicResource PrimaryBrush}"/>
+                </Border>
+                <Border Background="{DynamicResource MainContentBackgroundBrush}" Margin="3" Height="30">
+                    <TextBlock Text="MainContentBackgroundBrush" Style="{StaticResource TextBlockSubTitle}" Foreground="{DynamicResource PrimaryBrush}"/>
+                </Border>
+                <Border Background="{DynamicResource PrimaryTextBrush}" Margin="3" Height="30">
+                    <TextBlock Text="PrimaryTextBrush" Style="{StaticResource TextBlockSubTitle}" Foreground="{DynamicResource PrimaryBrush}"/>
+                </Border>
+                <Border Background="{DynamicResource SecondaryTextBrush}" Margin="3" Height="30">
+                    <TextBlock Text="SecondaryTextBrush" Style="{StaticResource TextBlockSubTitle}" Foreground="{DynamicResource PrimaryBrush}"/>
+                </Border>
+                <Border Background="{DynamicResource ThirdlyTextBrush}" Margin="3" Height="30">
+                    <TextBlock Text="ThirdlyTextBrush" Style="{StaticResource TextBlockSubTitle}" Foreground="{DynamicResource PrimaryBrush}"/>
+                </Border>
+                <Border Background="{DynamicResource ReverseTextBrush}" Margin="3" Height="30">
+                    <TextBlock Text="ReverseTextBrush" Style="{StaticResource TextBlockSubTitle}" Foreground="{DynamicResource PrimaryBrush}"/>
+                </Border>
+                <Border Background="{DynamicResource TextIconBrush}" Margin="3" Height="30">
+                    <TextBlock Text="TextIconBrush" Style="{StaticResource TextBlockSubTitle}" Foreground="{DynamicResource PrimaryBrush}"/>
+                </Border>
+                <Border Background="{DynamicResource BorderBrush}" Margin="3" Height="30">
+                    <TextBlock Text="BorderBrush" Style="{StaticResource TextBlockSubTitle}" Foreground="{DynamicResource PrimaryBrush}"/>
+                </Border>
+                <Border Background="{DynamicResource SecondaryBorderBrush}" Margin="3" Height="30">
+                    <TextBlock Text="SecondaryBorderBrush" Style="{StaticResource TextBlockSubTitle}" Foreground="{DynamicResource PrimaryBrush}"/>
+                </Border>
+                <Border Background="{DynamicResource BackgroundBrush}" Margin="3" Height="30">
+                    <TextBlock Text="BackgroundBrush" Style="{StaticResource TextBlockSubTitle}" Foreground="{DynamicResource PrimaryBrush}"/>
+                </Border>
+                <Border Background="{DynamicResource RegionBrush}" Margin="3" Height="30">
+                    <TextBlock Text="RegionBrush" Style="{StaticResource TextBlockSubTitle}" Foreground="{DynamicResource PrimaryBrush}"/>
+                </Border>
+                <Border Background="{DynamicResource SecondaryRegionBrush}" Margin="3" Height="30">
+                    <TextBlock Text="SecondaryRegionBrush" Style="{StaticResource TextBlockSubTitle}" Foreground="{DynamicResource PrimaryBrush}"/>
+                </Border>
+                <Border Background="{DynamicResource ThirdlyRegionBrush}" Margin="3" Height="30">
+                    <TextBlock Text="ThirdlyRegionBrush" Style="{StaticResource TextBlockSubTitle}" Foreground="{DynamicResource PrimaryBrush}"/>
+                </Border>
+                <Border Background="{DynamicResource DefaultBrush}" Margin="3" Height="30">
+                    <TextBlock Text="DefaultBrush" Style="{StaticResource TextBlockSubTitle}" Foreground="{DynamicResource PrimaryBrush}"/>
+                </Border>
+                <Border Background="{DynamicResource DarkDefaultBrush}" Margin="3" Height="30">
+                    <TextBlock Text="DarkDefaultBrush" Style="{StaticResource TextBlockSubTitle}" Foreground="{DynamicResource PrimaryBrush}"/>
+                </Border>
+                <Border Background="{DynamicResource DarkMaskBrush}" Margin="3" Height="30">
+                    <TextBlock Text="DarkMaskBrush" Style="{StaticResource TextBlockSubTitle}" Foreground="{DynamicResource PrimaryBrush}"/>
+                </Border>
+                <Border Background="{DynamicResource DarkOpacityBrush}" Margin="3" Height="30">
+                    <TextBlock Text="DarkOpacityBrush" Style="{StaticResource TextBlockSubTitle}" Foreground="{DynamicResource PrimaryBrush}"/>
+                </Border>
+            </UniformGrid>
+            <TextBlock Text="Primary Brush" Style="{StaticResource TextBlockLarge}" HorizontalAlignment="Left" Margin="5" Foreground="{DynamicResource PrimaryBrush}"/>
+            <UniformGrid Rows="1" Columns="5" Margin="3">
+                <Border Background="{DynamicResource PrimaryBrush}" Margin="3" Height="30">
+                    <TextBlock Text="PrimaryBrush" Style="{StaticResource TextBlockSubTitle}"/>
+                </Border>
+                <Border Background="{DynamicResource MagentaBrush}" Margin="3" Height="30">
+                    <TextBlock Text="MagentaBrush" Style="{StaticResource TextBlockSubTitle}"/>
+                </Border>
+                <Border Background="{DynamicResource DarkMagentaBrush}" Margin="3" Height="30">
+                    <TextBlock Text="DarkMagentaBrush" Style="{StaticResource TextBlockSubTitle}"/>
+                </Border>
+                <Border Background="{DynamicResource VioletBrush}" Margin="3" Height="30">
+                    <TextBlock Text="VioletBrush" Style="{StaticResource TextBlockSubTitle}"/>
+                </Border>
+                <Border Background="{DynamicResource DarkVioletBrush}" Margin="3" Height="30">
+                    <TextBlock Text="DarkVioletBrush" Style="{StaticResource TextBlockSubTitle}"/>
+                </Border>
+            </UniformGrid>
+        </StackPanel>
+    </hc:TransitioningContentControl>
+</UserControl>

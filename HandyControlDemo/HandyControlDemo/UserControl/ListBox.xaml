@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.ListBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             xmlns:viewmodel="clr-namespace:HandyControlDemo.ViewModel"
+             mc:Ignorable="d">
+    <UserControl.DataContext>
+        <viewmodel:ListBoxViewModel/>
+    </UserControl.DataContext>
+    <hc:TransitioningContentControl>
+        <UniformGrid Rows="1" Columns="2" Width="300" Margin="10">
+            <ListBox x:Name="listBox" SelectedIndex="0" Margin="10">
+                <ListBoxItem Content="Name1"/>
+                <ListBoxItem Content="Name2"/>
+                <ListBoxItem Content="Name3"/>
+                <ListBoxItem Content="Name4"/>
+                <ListBoxItem Content="Name5"/>
+                <ListBoxItem Content="Name6"/>
+                <ListBoxItem Content="Name7"/>
+                <ListBoxItem Content="Name8"/>
+                <ListBoxItem Content="Name9"/>
+            </ListBox>
+            <ListBox SelectedIndex="{Binding ElementName=listBox,Path=SelectedIndex}" Margin="10" ItemsSource="{Binding DataList}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </UniformGrid>
+    </hc:TransitioningContentControl>
+</UserControl>

@@ -1,0 +1,43 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <LinearGradientBrush x:Key="MenuButtonBorderBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FFFFFFFF" Offset="0"/>
+        <GradientStop Color="#FFF2F2F2" Offset="1"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ToolBarBackground" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FFF5F4F5" Offset="0"/>
+        <GradientStop Color="#FFD1CFD1" Offset="1"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="DangerBrush" EndPoint="1,0" StartPoint="0,0">
+        <GradientStop Color="{DynamicResource DangerColor}" Offset="0"/>
+        <GradientStop Color="{DynamicResource DarkDangerColor}" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="DarkDangerBrush" Color="{DynamicResource DarkDangerColor}"/>
+
+    <LinearGradientBrush x:Key="WarningBrush" EndPoint="1,0" StartPoint="0,0">
+        <GradientStop Color="{DynamicResource WarningColor}" Offset="0"/>
+        <GradientStop Color="{DynamicResource DarkWarningColor}" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="DarkWarningBrush" Color="{DynamicResource DarkWarningColor}"/>
+
+    <LinearGradientBrush x:Key="InfoBrush" EndPoint="1,0" StartPoint="0,0">
+        <GradientStop Color="{DynamicResource InfoColor}" Offset="0"/>
+        <GradientStop Color="{DynamicResource DarkInfoColor}" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="DarkInfoBrush" Color="{DynamicResource DarkInfoColor}"/>
+
+    <LinearGradientBrush x:Key="SuccessBrush" EndPoint="1,0" StartPoint="0,0">
+        <GradientStop Color="{DynamicResource SuccessColor}" Offset="0"/>
+        <GradientStop Color="{DynamicResource DarkSuccessColor}" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="DarkSuccessBrush" Color="{DynamicResource DarkSuccessColor}"/>
+
+    <SolidColorBrush x:Key="MagentaBrush" Color="{DynamicResource MagentaColor}"/>
+    <SolidColorBrush x:Key="DarkMagentaBrush" Color="{DynamicResource DarkMagentaColor}"/>
+    <SolidColorBrush x:Key="VioletBrush" Color="{DynamicResource VioletColor}"/>
+    <SolidColorBrush x:Key="DarkVioletBrush" Color="{DynamicResource DarkVioletColor}"/>
+
+</ResourceDictionary>
