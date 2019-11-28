@@ -1,4 +1,6 @@
-﻿using HandyControl.Tools;
+﻿using HandyControl.Controls;
+using HandyControl.Data;
+using HandyControl.Tools;
 using System;
 using System.Windows;
 using System.Windows.Controls;
@@ -132,6 +134,24 @@ namespace HandyControlDemo
             ContextMenu menu = (sender as StackPanel).ContextMenu;
             MenuItem item = menu.Items[0] as MenuItem;
             item.Header = Resources["Clear"];
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NotifyIcon notify = new NotifyIcon
+            {
+                Token = "TokenTest",
+                Visibility = Visibility.Visible,
+            };
+            panle.Children.Add(notify);
+            notify.Click += Notify_Click;
+
+            NotifyIcon.ShowBalloonTip("HandyControl", "Test", NotifyIconInfoType.Info, "TokenTest");
+        }
+
+        private void Notify_Click(object sender, RoutedEventArgs e)
+        {
+            HandyControl.Controls.MessageBox.Show("22");
         }
     }
 }

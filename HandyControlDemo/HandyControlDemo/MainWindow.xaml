@@ -39,7 +39,10 @@
         </StackPanel>
         <TabControl Grid.Row="1" Style="{StaticResource TabControlInLine}">
             <TabItem Header="ProgressBar">
-                <usercontrol:ProgressBar HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <StackPanel Name="panle">
+                    <usercontrol:ProgressBar HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Button Content="NotifyIconTest" Click="Button_Click"/>
+                </StackPanel>
             </TabItem>
             <TabItem Header="Part1">
                 <TabControl Style="{StaticResource TabControlInLine}">
@@ -272,7 +275,7 @@
         </TabControl>
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Right">
             <StackPanel hc:Growl.GrowlParent="True" VerticalAlignment="Top" Margin="0,10,10,10"/>
-            </ScrollViewer>
+        </ScrollViewer>
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Right" VerticalAlignment="Top">
             <StackPanel hc:Growl.Token="InfoMessage" VerticalAlignment="Top" Margin="0,10,10,10" SizeChanged="StackPanel_SizeChanged"/>
         </ScrollViewer>
