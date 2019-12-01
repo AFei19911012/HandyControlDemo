@@ -4,6 +4,7 @@ using HandyControl.Tools;
 using System;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media.Imaging;
 
 namespace HandyControlDemo
 {
@@ -140,13 +141,14 @@ namespace HandyControlDemo
         {
             NotifyIcon notify = new NotifyIcon
             {
-                Token = "TokenTest",
+                Icon = new BitmapImage(new Uri("pack://application:,,,/Resource/Image/Flag/cn.png")),
+                //Token = "TokenTest",
                 Visibility = Visibility.Visible,
             };
             panle.Children.Add(notify);
             notify.Click += Notify_Click;
 
-            NotifyIcon.ShowBalloonTip("HandyControl", "Test", NotifyIconInfoType.Info, "TokenTest");
+            NotifyIcon.ShowBalloonTip("HandyControl", "Test", NotifyIconInfoType.Info, "");
         }
 
         private void Notify_Click(object sender, RoutedEventArgs e)

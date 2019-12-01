@@ -13,6 +13,14 @@
     </UserControl.DataContext>
     <hc:TransitioningContentControl>
         <hc:SideMenu BorderThickness="1" Width="200" Margin="10">
+            <hc:SideMenu.Resources>
+                <Color x:Key="PrimaryColor">#FFD80073</Color>
+                <Color x:Key="DarkPrimaryColor">#FFD80073</Color>
+                <LinearGradientBrush x:Key="PrimaryBrush" EndPoint="1,0" StartPoint="0,0">
+                    <GradientStop Color="{DynamicResource PrimaryColor}" Offset="0"/>
+                    <GradientStop Color="{DynamicResource DarkPrimaryColor}" Offset="1"/>
+                </LinearGradientBrush>
+            </hc:SideMenu.Resources>
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="SelectionChanged">
                     <command:EventToCommand Command="{Binding SwitchItemCmd}" PassEventArgsToCommand="True" />

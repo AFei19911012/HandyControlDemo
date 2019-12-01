@@ -7,16 +7,16 @@
              mc:Ignorable="d">
     <hc:TransitioningContentControl>
         <UniformGrid Rows="2" Columns="5" Height="210" Width="550" Margin="10">
-            <hc:GifImage Margin="5" Uri="{Binding ImgPath1}"/>
-            <hc:GifImage Margin="5" Uri="{Binding ImgPath2}"/>
-            <hc:GifImage Margin="5" Uri="{Binding ImgPath3}"/>
-            <hc:GifImage Margin="5" Uri="{Binding ImgPath4}"/>
-            <hc:GifImage Margin="5" Uri="{Binding ImgPath5}"/>
-            <hc:GifImage Margin="5" Uri="{Binding ImgPath6}"/>
-            <hc:GifImage Margin="5" Uri="{Binding ImgPath7}"/>
-            <hc:GifImage Margin="5" Uri="{Binding ImgPath8}"/>
-            <hc:GifImage Margin="5" Uri="{Binding ImgPath9}"/>
-            <hc:GifImage Margin="5" Uri="{Binding ImgPath10}"/>
+            <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/1.gif"/>
+            <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/2.gif"/>
+            <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/3.gif"/>
+            <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/4.gif"/>
+            <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/5.gif"/>
+            <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/6.gif"/>
+            <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/7.gif"/>
+            <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/8.gif"/>
+            <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/9.gif"/>
+            <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/10.gif"/>
         </UniformGrid>
     </hc:TransitioningContentControl>
 </UserControl>

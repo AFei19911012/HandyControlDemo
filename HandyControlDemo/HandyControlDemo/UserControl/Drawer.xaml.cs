@@ -1,11 +1,11 @@
 ﻿namespace HandyControlDemo.UserControl
 {
     /// <summary>
-    /// GifImage.xaml 的交互逻辑
+    /// Drawer.xaml 的交互逻辑
     /// </summary>
-    public partial class GifImage
+    public partial class Drawer
     {
-        public GifImage()
+        public Drawer()
         {
             InitializeComponent();
         }

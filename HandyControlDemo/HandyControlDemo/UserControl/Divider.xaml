@@ -6,8 +6,7 @@
              xmlns:hc="https://handyorg.github.io/handycontrol"
              mc:Ignorable="d">
     <hc:TransitioningContentControl>
-        <!-- Updata to 2.3 -->
-        <!--<WrapPanel Margin="10">
+        <WrapPanel Margin="10">
             <StackPanel Margin="16" Width="200">
                 <hc:Divider/>
                 <hc:Divider Content="Title"/>
@@ -40,6 +39,6 @@
                     <Button Content="Button"/>
                 </StackPanel>
             </StackPanel>
-        </WrapPanel>-->
+        </WrapPanel>
     </hc:TransitioningContentControl>
 </UserControl>

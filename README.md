@@ -34,6 +34,7 @@
 <a href="https://github.com/yanchao891012" target="_blank"><img width="64px" src="https://avatars0.githubusercontent.com/u/16846702?s=400&v=4"></a>
 <a href="https://github.com/noctwolf" target="_blank"><img width="64px" src="https://avatars3.githubusercontent.com/u/21022467?s=400&v=4"></a>
 <a href="https://github.com/xianyun666" target="_blank"><img width="64px" src="https://avatars1.githubusercontent.com/u/22339210?s=400&v=4"></a>
+<a href="https://github.com/afunc233" target="_blank"><img width="64px" src="https://avatars1.githubusercontent.com/u/19919631?s=400&v=4"></a>
 
 ## Backers
 
@@ -42,13 +43,17 @@
 <a href="https://github.com/IUpdatable" target="_blank"><img width="64px" src="https://avatars2.githubusercontent.com/u/51181716?s=400&v=4"></a>
 <a href="https://github.com/maplewei" target="_blank"><img width="64px" src="https://avatars1.githubusercontent.com/u/13778095?s=400&v=4"></a>
 <a href="https://github.com/sunshang-hl" target="_blank"><img width="64px" src="https://avatars1.githubusercontent.com/u/34593206?s=400&v=4"></a>
-<a href="https://github.com/yangkang326" target="_blank"><img width="64px" src="https://avatars1.githubusercontent.com/u/51224259?s=400&v=4"></a>
-<a href="https://github.com/zmrbak" target="_blank"><img width="64px" src="https://avatars3.githubusercontent.com/u/7257543?s=400&v=4"></a>
+<a href="https://github.com/yangkang326" target="_blank"><img width="64px" src="https://avatars1.githubusercontent.com/u/51224259?s=400&v=4"></a>	
+<a href="https://github.com/zmrbak" target="_blank"><img width="64px" src="https://avatars3.githubusercontent.com/u/7257543?s=400&v=4"></a>	
 <a href="https://github.com/AFei19911012" target="_blank"><img width="64px" src="https://avatars0.githubusercontent.com/u/31465314?s=400&v=4"></a>
 
 ## Special thanks to
 
+[![Visual Studio Community 2019](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/vs2019_logo.png)](https://visualstudio.microsoft.com/free-developer-offers/)
 [![JetBrains](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/resharper_logo.png)](https://www.jetbrains.com/?from=HandyControl)
+[![Cake](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/cake_logo.png)](https://cakebuild.net/)
+[![AppVeyor](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/appveyor_logo.png)](https://www.appveyor.com/)
+[![Gitter](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/gitter_logo.png)](https://gitter.im/)
 
 ## Usage
 
@@ -86,6 +91,10 @@ Step 4：enjoy coding
 
 ## Latest examples
 
+### Drawer
+
+![Drawer](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Drawer.gif)
+
 ### Poptip
 
 ![Poptip](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Poptip.gif)
@@ -102,11 +111,11 @@ Step 4：enjoy coding
 
 ![SplitButton](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/SplitButton.png)
 
+## History publication
+
 ### FloatingBlock
 
 ![FloatingBlock](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/FloatingBlock.gif)
-
-## History publication
 
 ### HoneycombPanel
 

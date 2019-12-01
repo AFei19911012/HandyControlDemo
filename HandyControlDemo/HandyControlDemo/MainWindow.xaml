@@ -38,11 +38,8 @@
                     Click="ButtonClose_Click"/>
         </StackPanel>
         <TabControl Grid.Row="1" Style="{StaticResource TabControlInLine}">
-            <TabItem Header="ProgressBar">
-                <StackPanel Name="panle">
-                    <usercontrol:ProgressBar HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Button Content="NotifyIconTest" Click="Button_Click"/>
-                </StackPanel>
+            <TabItem Header="ColorPicker">
+                <usercontrol:ColorPicker HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </TabItem>
             <TabItem Header="Part1">
                 <TabControl Style="{StaticResource TabControlInLine}">
@@ -74,9 +71,6 @@
                     <TabItem Header="CirclePanel">
                         <usercontrol:CirclePanel HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </TabItem>
-                    <TabItem Header="ColorPicker">
-                        <usercontrol:ColorPicker HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
                     <TabItem Header="ComboBox">
                         <usercontrol:ComboBox HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </TabItem>
@@ -104,6 +98,9 @@
                     </TabItem>
                     <TabItem Header="Divider">
                         <usercontrol:Divider HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </TabItem>
+                    <TabItem Header="Drawer">
+                        <usercontrol:Drawer HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </TabItem>
                     <TabItem Header="Expander">
                         <usercontrol:Expander HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -189,6 +186,12 @@
                     <TabItem Header="PreviewSlider">
                         <usercontrol:PreviewSlider HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </TabItem>
+                    <TabItem Header="ProgressBar">
+                        <StackPanel Name="panle">
+                            <usercontrol:ProgressBar HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <Button Content="NotifyIconTest" Click="Button_Click"/>
+                        </StackPanel>
+                    </TabItem>
                     <TabItem Header="RangeSlider">
                         <usercontrol:RangeSlider HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </TabItem>
@@ -267,10 +270,10 @@
                     <TabItem Header="WaterfallPanel">
                         <usercontrol:WaterfallPanel HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </TabItem>
+                    <TabItem Header="Windows">
+                        <usercontrol:Windows HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </TabItem>
                 </TabControl>
-            </TabItem>
-            <TabItem Header="Windows">
-                <usercontrol:Windows HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </TabItem>
         </TabControl>
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Right">

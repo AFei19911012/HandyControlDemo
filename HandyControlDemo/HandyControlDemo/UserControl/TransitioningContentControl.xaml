@@ -12,11 +12,12 @@
     <StackPanel Margin="10">
         <ToggleButton Name="ButtonVisibilitySwitch" Height="48" Width="120" Content="Visibility" IsChecked="True"
                       HorizontalAlignment="Left" Style="{StaticResource ToggleButtonSwitch}"/>
-        <UniformGrid Grid.Row="1" Rows="4" Columns="3" Visibility="{Binding IsChecked,ElementName=ButtonVisibilitySwitch,Converter={StaticResource Boolean2VisibilityConverter}}">
+        <UniformGrid Grid.Row="1" Rows="4" Columns="3" 
+                     Visibility="{Binding IsChecked,ElementName=ButtonVisibilitySwitch,Converter={StaticResource Boolean2VisibilityConverter}}">
             <hc:TransitioningContentControl>
                 <Label HorizontalAlignment="Stretch" Content="Right2Left" Margin="32"/>
             </hc:TransitioningContentControl>
-            <!--<hc:TransitioningContentControl TransitionMode="Left2Right">
+            <hc:TransitioningContentControl TransitionMode="Left2Right">
                 <Label HorizontalAlignment="Stretch" Content="Left2Right" Margin="32"/>
             </hc:TransitioningContentControl>
             <hc:TransitioningContentControl TransitionMode="Bottom2Top">
@@ -48,7 +49,7 @@
             </hc:TransitioningContentControl>
             <hc:TransitioningContentControl TransitionStoryboard="{StaticResource Custom3Transition}">
                 <Label HorizontalAlignment="Stretch" Content="Custom3" Margin="32"/>
-            </hc:TransitioningContentControl>-->
+            </hc:TransitioningContentControl>
         </UniformGrid>
     </StackPanel>
 </UserControl>

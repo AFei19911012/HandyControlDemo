@@ -30,7 +30,7 @@ namespace HandyControlDemo.UserControl
                 Button = MessageBoxButton.YesNo,
                 IconBrushKey = ResourceToken.AccentBrush,
                 IconKey = ResourceToken.AskGeometry,
-                //StyleKey = "MessageBoxCustom"
+                StyleKey = "MessageBoxCustom"
             });
         }
 

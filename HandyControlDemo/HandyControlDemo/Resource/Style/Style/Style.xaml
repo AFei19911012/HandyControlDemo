@@ -1,6 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:controls="https://handyorg.github.io/handycontrol">
+                    xmlns:hc="https://handyorg.github.io/handycontrol">
 
     <Style x:Key="CirclePanelButton" BasedOn="{StaticResource ButtonCustom}" TargetType="Button">
         <Setter Property="UseLayoutRounding" Value="False"/>
@@ -85,4 +85,39 @@
         </Setter>
     </Style>
 
+    <Style x:Key="MessageBoxCustom" TargetType="hc:MessageBox" BasedOn="{StaticResource {x:Type hc:MessageBox}}">
+        <Setter Property="NonClientAreaBackground" Value="#262e2f"/>
+        <Setter Property="OtherButtonHoverBackground" Value="#888580"/>
+        <Setter Property="OtherButtonForeground" Value="White"/>
+        <Setter Property="OtherButtonHoverForeground" Value="White"/>
+        <Setter Property="NonClientAreaForeground" Value="White"/>
+        <Setter Property="CloseButtonForeground" Value="White"/>
+        <Setter Property="Icon" Value="pack://application:,,,/Resource/Image/icon.ico"/>
+    </Style>
+
+
+    <Storyboard x:Key="Custom1Transition" x:Shared="False">
+        <DoubleAnimation From="50" To="0" Duration="0:0:0.4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+            <DoubleAnimation.EasingFunction>
+                <ElasticEase Oscillations="1"/>
+            </DoubleAnimation.EasingFunction>
+        </DoubleAnimation>
+    </Storyboard>
+
+    <Storyboard x:Key="Custom2Transition" x:Shared="False">
+        <DoubleAnimation From="10" To="0" Duration="0:0:0.4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+            <DoubleAnimation.EasingFunction>
+                <ElasticEase Oscillations="1"/>
+            </DoubleAnimation.EasingFunction>
+        </DoubleAnimation>
+    </Storyboard>
+
+    <Storyboard x:Key="Custom3Transition" x:Shared="False">
+        <DoubleAnimation From=".8" To="1" Duration="0:0:0.4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+            <DoubleAnimation.EasingFunction>
+                <ElasticEase Oscillations="1"/>
+            </DoubleAnimation.EasingFunction>
+        </DoubleAnimation>
+    </Storyboard>
+    
 </ResourceDictionary>
