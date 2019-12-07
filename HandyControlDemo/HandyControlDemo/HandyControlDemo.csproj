@@ -322,6 +322,7 @@
     <Compile Include="ViewModel\InteractiveDialogViewModel.cs" />
     <Compile Include="ViewModel\ListBoxViewModel.cs" />
     <Compile Include="ViewModel\ListViewViewModel.cs" />
+    <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Compile Include="ViewModel\MenuViewModel.cs" />
     <Compile Include="ViewModel\NotificationViewModel.cs" />
     <Compile Include="ViewModel\NotifyIconViewModel.cs" />
@@ -837,7 +838,7 @@
     <Resource Include="Resource\Image\LeftMainContent\Search_16x.png" />
     <Resource Include="Resource\Image\LeftMainContent\Shield_16x.png" />
     <Resource Include="Resource\Image\LeftMainContent\Slider_16x.png" />
-    <Resource Include="Resource\Image\LeftMainContent\SortAscending_grey_16x.png" />
+    <Resource Include="Resource\Image\LeftMainContent\SortAscending_gray_16x.png" />
     <Resource Include="Resource\Image\LeftMainContent\SplitButton_16x.png" />
     <Resource Include="Resource\Image\LeftMainContent\SplitterControl_16x.png" />
     <Resource Include="Resource\Image\LeftMainContent\Star.png" />

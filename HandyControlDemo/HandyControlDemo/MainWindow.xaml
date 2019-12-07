@@ -5,6 +5,7 @@
            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
            xmlns:hc="https://handyorg.github.io/handycontrol"
            xmlns:usercontrol="clr-namespace:HandyControlDemo.UserControl"
+           xmlns:viewmodel="clr-namespace:HandyControlDemo.ViewModel"
            mc:Ignorable="d"
            Style="{StaticResource WindowWin10}"
            ShowNonClientArea="True"
@@ -36,246 +37,48 @@
                     Click="ButtonMinimize_Click"/>
             <Button Margin="3" Style="{StaticResource ButtonPrimary}" hc:IconElement.Geometry="{StaticResource CloseGeometry}" hc:BorderElement.CornerRadius="16" 
                     Click="ButtonClose_Click"/>
+            <StackPanel Name="panle" VerticalAlignment="Center">
+                <Button Content="NotifyIconTest" Style="{StaticResource ButtonPrimary}" Click="ButtonNotifyIconTest_Click"/>
+            </StackPanel>
         </StackPanel>
-        <TabControl Grid.Row="1" Style="{StaticResource TabControlInLine}">
-            <TabItem Header="ColorPicker">
-                <usercontrol:ColorPicker HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </TabItem>
-            <TabItem Header="Part1">
-                <TabControl Style="{StaticResource TabControlInLine}">
-                    <TabItem Header="AnimationPath">
-                        <usercontrol:AnimationPath HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Badge">
-                        <usercontrol:Badge HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Border">
-                        <usercontrol:Border HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Brush">
-                        <usercontrol:Brush HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Button">
-                        <usercontrol:Button HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Card">
-                        <usercontrol:Card HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Carousel">
-                        <usercontrol:Carousel HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                </TabControl>
-            </TabItem>
-            <TabItem Header="Part2">
-                <TabControl Style="{StaticResource TabControlInLine}">
-                    <TabItem Header="CirclePanel">
-                        <usercontrol:CirclePanel HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="ComboBox">
-                        <usercontrol:ComboBox HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="CompareSlider">
-                        <usercontrol:CompareSlider HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="CoverFlow">
-                        <usercontrol:CoverFlow HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="CoverView">
-                        <usercontrol:CoverView HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="DataGrid">
-                        <usercontrol:DataGrid HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                </TabControl>
-            </TabItem>
-            <TabItem Header="Part3">
-                <TabControl Style="{StaticResource TabControlInLine}">
-                    <TabItem Header="DateTimePicker">
-                        <usercontrol:DateTimePicker HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Dialog">
-                        <usercontrol:Dialog HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Divider">
-                        <usercontrol:Divider HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Drawer">
-                        <usercontrol:Drawer HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Expander">
-                        <usercontrol:Expander HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="FloatingBlock">
-                        <usercontrol:FloatingBlock HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="GifImage">
-                        <usercontrol:GifImage HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="GotoTop">
-                        <usercontrol:GotoTop HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                </TabControl>
-            </TabItem>
-            <TabItem Header="Part4">
-                <TabControl Style="{StaticResource TabControlInLine}">
-                    <TabItem Header="Gravatar">
-                        <usercontrol:Gravatar HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Grid">
-                        <usercontrol:Grid HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="GroupBox">
-                        <usercontrol:GroupBox HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Growl">
-                        <usercontrol:Growl HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="HatchBrushGenerator">
-                        <usercontrol:HatchBrushGenerator HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="ImageBlock">
-                        <usercontrol:ImageBlock HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="ImageBrowser">
-                        <usercontrol:ImageBrowser HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                </TabControl>
-            </TabItem>
-            <TabItem Header="Part5">
-                <TabControl Style="{StaticResource TabControlInLine}">
-                    <TabItem Header="ListBox">
-                        <usercontrol:ListBox HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="ListView">
-                        <usercontrol:ListView HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Loading">
-                        <usercontrol:Loading HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Magnifier">
-                        <usercontrol:Magnifier HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Menu">
-                        <usercontrol:Menu HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="MorphingAnimation">
-                        <usercontrol:MorphingAnimation HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="NiumericUpDown">
-                        <usercontrol:NiumericUpDown HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                </TabControl>
-            </TabItem>
-            <TabItem Header="Part6">
-                <TabControl Style="{StaticResource TabControlInLine}">
-                    <TabItem Header="Notification">
-                        <usercontrol:Notification HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="NotifyIcon">
-                        <usercontrol:NotifyIcon HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="OutlineText">
-                        <usercontrol:OutlineText HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="PasswordBox">
-                        <usercontrol:PasswordBox HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Poptip">
-                        <usercontrol:Poptip HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="PreviewSlider">
-                        <usercontrol:PreviewSlider HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="ProgressBar">
-                        <StackPanel Name="panle">
-                            <usercontrol:ProgressBar HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <Button Content="NotifyIconTest" Click="Button_Click"/>
-                        </StackPanel>
-                    </TabItem>
-                    <TabItem Header="RangeSlider">
-                        <usercontrol:RangeSlider HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                </TabControl>
-            </TabItem>
-            <TabItem Header="Part7">
-                <TabControl Style="{StaticResource TabControlInLine}">
-                    <TabItem Header="Rate">
-                        <usercontrol:Rate HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="RichTextBox">
-                        <usercontrol:RichTextBox HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="RunningBlock">
-                        <usercontrol:RunningBlock HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="SearchBar">
-                        <usercontrol:SearchBar HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Shield">
-                        <usercontrol:Shield HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="SideMenu">
-                        <usercontrol:SideMenu HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Slider">
-                        <usercontrol:Slider HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                </TabControl>
-            </TabItem>
-            <TabItem Header="Part8">
-                <TabControl Style="{StaticResource TabControlInLine}">
-                    <TabItem Header="SplitButton">
-                        <usercontrol:SplitButton HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Sprite">
-                        <usercontrol:Sprite HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="StepBar">
-                        <usercontrol:StepBar HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="TabControl">
-                        <usercontrol:TabControl HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Tag">
-                        <usercontrol:Tag HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="TextBlock">
-                        <usercontrol:TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="TextBox">
-                        <usercontrol:TextBox HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                </TabControl>
-            </TabItem>
-            <TabItem Header="Part9">
-                <TabControl Style="{StaticResource TabControlInLine}">
-                    <TabItem Header="TimeBar">
-                        <usercontrol:TimeBar HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="TimePicker">
-                        <usercontrol:TimePicker HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="ToolBar">
-                        <usercontrol:ToolBar HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Transfer">
-                        <usercontrol:Transfer HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="TransitioningContentControl">
-                        <usercontrol:TransitioningContentControl HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="TreeView">
-                        <usercontrol:TreeView HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="WaterfallPanel">
-                        <usercontrol:WaterfallPanel HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                    <TabItem Header="Windows">
-                        <usercontrol:Windows HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </TabItem>
-                </TabControl>
-            </TabItem>
-        </TabControl>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="225"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <hc:SearchBar Style="{StaticResource SearchBarPlus}" hc:InfoElement.Placeholder="Enter key word" Margin="4" 
+                                  SearchStarted="SearchBar_OnSearchStarted" Tag="{Binding ElementName=ListBoxDemo}"/>
+                    <ToggleButton Grid.Column="1" Margin="2" Name="ButtonStyleAscending" Style="{StaticResource DemoInfoSortButtonStyle}" 
+                                  Tag="{Binding ElementName=ListBoxDemo}" Click="ButtonAscending_OnClick"/>
+                </Grid>
+                <ListBox Grid.Row="1" Name="ListBoxDemo" Margin="5" BorderThickness="0" SelectionMode="Single" Style="{StaticResource ListBoxTransparent}"
+                         SelectedIndex="{Binding SelectedIndex}" ItemsSource="{Binding DataList}" SelectionChanged="ListBoxDemo_SelectionChanged">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Width="16" Height="16" Source="{Binding ImgPath}"/>
+                                <TextBlock Margin="6,0,0,0" Text="{Binding Name}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+            <Border Grid.Column="1" Background="{DynamicResource MainContentForegroundDrawingBrush}">
+                <Grid x:Name="mainContent" MinHeight="300" HorizontalAlignment="Center" VerticalAlignment="Center" Background="{DynamicResource RegionBrush}" Margin="16">
+                    <Image Source="pack://application:,,,/Resource/Image/Cover.png"/>
+                </Grid>
+            </Border>
+        </Grid>
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Hidden" HorizontalAlignment="Right">
             <StackPanel hc:Growl.GrowlParent="True" VerticalAlignment="Top" Margin="0,10,10,10"/>
         </ScrollViewer>
