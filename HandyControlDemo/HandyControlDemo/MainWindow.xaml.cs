@@ -20,6 +20,7 @@ namespace HandyControlDemo
     {
         private MainWindowViewModel vm;
         private int ThemeColorFlag = 0;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -67,6 +68,23 @@ namespace HandyControlDemo
             Resources.MergedDictionaries.RemoveAt(pos);
             Resources.MergedDictionaries.Insert(pos, resource);
         }  
+
+        // Language
+        private void UpdataLanguage()
+        {
+            int len = vm.DataList.Count;
+            for (int i = 0; i < len; i++)
+            {
+                if (vm.DataList[i].Name == "Button" || vm.DataList[i].Name == "按钮")
+                {
+                    vm.DataList[i].Name = (string)FindResource("Button");
+                }
+                else if (vm.DataList[i].Name == "Brush" || vm.DataList[i].Name == "画刷")
+                {
+                    vm.DataList[i].Name = (string)FindResource("Brush");
+                }
+            }
+        }
 
         // Theme
         private void ButtonTheme_Click(object sender, RoutedEventArgs e)
@@ -123,6 +141,7 @@ namespace HandyControlDemo
             {
                 ConfigHelper.Instance.SetLang("zh-cn");
             }
+            UpdataLanguage();
         }
 
         // Minimize

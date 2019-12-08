@@ -86,6 +86,11 @@
     <Compile Include="Helper\ExternDllHelper.cs" />
     <Compile Include="Model\ChatInfoModel.cs" />
     <Compile Include="Model\DemoAnimation.cs" />
+    <Compile Include="Properties\Lang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lang.resx</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\ChatBubble.xaml.cs">
       <DependentUpon>ChatBubble.xaml</DependentUpon>
     </Compile>
@@ -750,6 +755,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Properties\Lang.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Lang.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

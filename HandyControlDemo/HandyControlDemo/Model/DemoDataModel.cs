@@ -1,12 +1,20 @@
-﻿using System.Collections.ObjectModel;
+﻿using GalaSoft.MvvmLight;
+using System.Collections.ObjectModel;
 
 namespace HandyControlDemo.Model
 {
-    public class DemoDataModel
+    public class DemoDataModel : ViewModelBase
     {
         public int Index { get; set; }
 
-        public string Name { get; set; }
+        //public string Name { get; set; }
+        private string name;
+        public string Name
+        {
+            get => name;
+            set => Set(ref name, value);
+        }
+
 
         public bool IsSelected { get; set; }
 
