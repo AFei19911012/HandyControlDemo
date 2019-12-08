@@ -31,5 +31,6 @@ namespace HandyControlDemo.Model
         public string Link { get; set; }
 
         public string AvatarUri { get; set; }
+
     }
 }

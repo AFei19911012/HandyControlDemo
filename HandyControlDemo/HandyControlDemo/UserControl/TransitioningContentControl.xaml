@@ -13,7 +13,7 @@
         <ToggleButton Name="ButtonVisibilitySwitch" Height="48" Width="120" Content="Visibility" IsChecked="True"
                       HorizontalAlignment="Left" Style="{StaticResource ToggleButtonSwitch}"/>
         <UniformGrid Grid.Row="1" Rows="4" Columns="3" 
-                     Visibility="{Binding IsChecked,ElementName=ButtonVisibilitySwitch,Converter={StaticResource Boolean2VisibilityConverter}}">
+                     Visibility="{Binding IsChecked,ElementName=ButtonVisibilitySwitch,Converter={StaticResource Bool2VisibilityConverter}}">
             <hc:TransitioningContentControl>
                 <Label HorizontalAlignment="Stretch" Content="Right2Left" Margin="32"/>
             </hc:TransitioningContentControl>

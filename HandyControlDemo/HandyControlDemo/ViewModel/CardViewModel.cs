@@ -1,5 +1,7 @@
 ﻿using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.CommandWpf;
 using HandyControlDemo.Model;
+using System;
 using System.Collections.ObjectModel;
 
 namespace HandyControlDemo.ViewModel
@@ -34,5 +36,17 @@ namespace HandyControlDemo.ViewModel
                 new DemoDataModel{ Header = "Header10", Content = "pack://application:,,,/Resource/Image/Album/10.jpg", Footer = "information" },
             };
         }
+
+        public RelayCommand AddItemCmd => new Lazy<RelayCommand>(() =>
+            new RelayCommand(() => DataList.Insert(0, new DemoDataModel { Content = $"pack://application:,,,/Resource/Image/Album/{DateTime.Now.Second % 10 + 1}.jpg" }))).Value;
+
+        public RelayCommand RemoveItemCmd => new Lazy<RelayCommand>(() =>
+            new RelayCommand(() =>
+            {
+                if (DataList.Count > 0)
+                {
+                    DataList.RemoveAt(0);
+                }
+            })).Value;
     }
 }

@@ -493,7 +493,23 @@ namespace HandyControlDemo
             else if (name == "Windows")
             {
                 mainContent.Children.Add(new UserControl.Windows());
-            }          
+            }
+            else if (name == "ChatBubble")
+            {
+                mainContent.Children.Add(new UserControl.ChatBubble());
+            }
+            else if (name == "FlipClock")
+            {
+                mainContent.Children.Add(new UserControl.FlipClock());
+            }
+            else if (name == "HoneycombPanel")
+            {
+                mainContent.Children.Add(new UserControl.HoneycombPanel());
+            }
+            else if (name == "Pagination")
+            {
+                mainContent.Children.Add(new UserControl.Pagination());
+            }
         }
     }
 }

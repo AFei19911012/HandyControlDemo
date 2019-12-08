@@ -78,13 +78,28 @@
     </ApplicationDefinition>
     <Compile Include="Converter\BoolToBoolReConverter.cs" />
     <Compile Include="Converter\BoolToVisibilityConverter.cs" />
+    <Compile Include="Converter\BoolToVisibilityReConverter.cs" />
     <Compile Include="Converter\HatchBrushConverter.cs" />
     <Compile Include="Converter\IntToStringConverter.cs" />
     <Compile Include="Helper\AssemblyHelper.cs" />
     <Compile Include="Helper\DispatcherHelper.cs" />
+    <Compile Include="Helper\ExternDllHelper.cs" />
+    <Compile Include="Model\ChatInfoModel.cs" />
     <Compile Include="Model\DemoAnimation.cs" />
+    <Compile Include="UserControl\ChatBubble.xaml.cs">
+      <DependentUpon>ChatBubble.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\Drawer.xaml.cs">
       <DependentUpon>Drawer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\FlipClock.xaml.cs">
+      <DependentUpon>FlipClock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\HoneycombPanel.xaml.cs">
+      <DependentUpon>HoneycombPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Pagination.xaml.cs">
+      <DependentUpon>Pagination.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Transfer.xaml.cs">
       <DependentUpon>Transfer.xaml</DependentUpon>
@@ -296,6 +311,9 @@
     <Compile Include="UserControl\Window\BlurWindow.xaml.cs">
       <DependentUpon>BlurWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\Window\ChatBox.xaml.cs">
+      <DependentUpon>ChatBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\Window\CommonWindow.xaml.cs">
       <DependentUpon>CommonWindow.xaml</DependentUpon>
     </Compile>
@@ -315,6 +333,7 @@
       <DependentUpon>TextDialogWithTimer.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\CardViewModel.cs" />
+    <Compile Include="ViewModel\ChatBoxViewModel.cs" />
     <Compile Include="ViewModel\ComboBoxViewModel.cs" />
     <Compile Include="ViewModel\CoverViewViewModel.cs" />
     <Compile Include="ViewModel\DataGridViewModel.cs" />
@@ -326,6 +345,7 @@
     <Compile Include="ViewModel\MenuViewModel.cs" />
     <Compile Include="ViewModel\NotificationViewModel.cs" />
     <Compile Include="ViewModel\NotifyIconViewModel.cs" />
+    <Compile Include="ViewModel\PaginationViewModel.cs" />
     <Compile Include="ViewModel\SearchBarViewModel.cs" />
     <Compile Include="ViewModel\SideMenuViewModel.cs" />
     <Compile Include="ViewModel\SplitButtonViewModel.cs" />
@@ -335,7 +355,23 @@
     <Compile Include="ViewModel\TransferViewModel.cs" />
     <Compile Include="ViewModel\TreeViewViewModel.cs" />
     <Compile Include="ViewModel\WindowsViewModel.cs" />
+    <Page Include="UserControl\ChatBubble.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControl\Drawer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\FlipClock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\HoneycombPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\Pagination.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -671,6 +707,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControl\Window\ChatBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControl\Window\CommonWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -724,7 +764,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resource\Image\Chat\chat_back1.jpg" />
+    <Resource Include="Resource\Image\Chat\chat_back2.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Resource\Image\QQ\1.gif" />
     <Resource Include="Resource\Image\QQ\10.gif" />

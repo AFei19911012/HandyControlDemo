@@ -100,6 +100,10 @@ namespace HandyControlDemo.ViewModel
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/TreeView_16x.png", Name = "TreeView"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Panel_16x.png", Name = "WaterfallPanel"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/WindowsForm_16x.png", Name = "Windows"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Bubble_16xLG.png", Name = "ChatBubble"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/FlipVertical_16x.png", Name = "FlipClock"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/PolygonHexagon_16x.png", Name = "HoneycombPanel"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Paginator_16x.png", Name = "Pagination"},
             };
         }
     }

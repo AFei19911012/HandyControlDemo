@@ -4,8 +4,6 @@
            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
            xmlns:hc="https://handyorg.github.io/handycontrol"
-           xmlns:usercontrol="clr-namespace:HandyControlDemo.UserControl"
-           xmlns:viewmodel="clr-namespace:HandyControlDemo.ViewModel"
            mc:Ignorable="d"
            Style="{StaticResource WindowWin10}"
            ShowNonClientArea="True"
