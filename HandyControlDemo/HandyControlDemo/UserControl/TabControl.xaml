@@ -78,8 +78,7 @@
                     <hc:SimplePanel Background="{DynamicResource InfoBrush}"/>
                 </hc:TabItem>
             </hc:TabControl>
-            <!--ShowContextMenu="False"-->
-            <hc:TabControl Margin="10" ShowCloseButton="False">
+            <hc:TabControl Margin="10" ShowCloseButton="False" ShowContextMenu="False">
                 <hc:TabItem Header="TabItem1">
                     <hc:SimplePanel Background="{DynamicResource PrimaryBrush}"/>
                 </hc:TabItem>

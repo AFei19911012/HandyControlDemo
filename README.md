@@ -91,6 +91,14 @@ Step 4：enjoy coding
 
 ## Latest examples
 
+### Effects
+
+![Effects](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Effects.png)
+
+### RelativePanel
+
+![RelativePanel](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/RelativePanel.png)
+
 ### Drawer
 
 ![Drawer](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Drawer.gif)
@@ -103,6 +111,8 @@ Step 4：enjoy coding
 
 ![Divider](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Divider.png)
 
+## History publication
+
 ### GeometryAnimation
 
 ![GeometryAnimation](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/GeometryAnimation.gif)
@@ -110,8 +120,6 @@ Step 4：enjoy coding
 ### SplitButton
 
 ![SplitButton](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/SplitButton.png)
-
-## History publication
 
 ### FloatingBlock
 

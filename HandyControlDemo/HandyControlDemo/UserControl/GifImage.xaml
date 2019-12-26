@@ -7,7 +7,7 @@
              mc:Ignorable="d">
     <hc:TransitioningContentControl>
         <UniformGrid Rows="2" Columns="5" Height="210" Width="550" Margin="10">
-            <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/1.gif"/>
+            <hc:GifImage Name="gif" Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/1.gif"/>
             <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/2.gif"/>
             <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/3.gif"/>
             <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/4.gif"/>
@@ -17,6 +17,7 @@
             <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/8.gif"/>
             <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/9.gif"/>
             <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/10.gif"/>
+            <Button Content="New gif" Click="Button_Click"/>
         </UniformGrid>
     </hc:TransitioningContentControl>
 </UserControl>

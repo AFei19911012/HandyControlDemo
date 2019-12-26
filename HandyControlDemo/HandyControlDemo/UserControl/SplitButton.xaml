@@ -7,7 +7,7 @@
              xmlns:viewmodel="clr-namespace:HandyControlDemo.ViewModel"
              mc:Ignorable="d">
     <UserControl.DataContext>
-        <viewmodel:SplitButtonDemoViewModel/>
+        <viewmodel:SplitButtonViewModel/>
     </UserControl.DataContext>
     <hc:TransitioningContentControl>
         <UniformGrid Rows="1" Columns="4" Margin="10" Height="120" Width="600">

@@ -7,7 +7,7 @@ using System.Collections.ObjectModel;
 
 namespace HandyControlDemo.ViewModel
 {
-    public class SplitButtonDemoViewModel : ViewModelBase
+    public class SplitButtonViewModel : ViewModelBase
     {
         private ObservableCollection<DemoDataModel> dataList;
         public ObservableCollection<DemoDataModel> DataList
@@ -16,7 +16,7 @@ namespace HandyControlDemo.ViewModel
             set => Set(ref dataList, value);
         }
 
-        public SplitButtonDemoViewModel()
+        public SplitButtonViewModel()
         {
             DataList = GetDataList();
         }
