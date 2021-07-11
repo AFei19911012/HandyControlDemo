@@ -8,16 +8,16 @@
     <a href="https://github.com/HandyOrg/HandyControl/blob/master/README.md">English</a>
 </p>
 
-<p align="center">
+<p align="center"> 
     <img alt="dotnet-version" src="https://img.shields.io/badge/.net-%3E%3D4.0-blue.svg"></img>
     <img alt="csharp-version" src="https://img.shields.io/badge/C%23-8.0-blue.svg"></img>
     <img alt="IDE-version" src="https://img.shields.io/badge/IDE-vs2019-blue.svg"></img>
     <a href="https://www.nuget.org/packages/HandyControl">
         <img alt="nuget-version" src="https://img.shields.io/nuget/v/HandyControl.svg"></img>
-    </a> 
+    </a>
     <a href="https://www.myget.org/feed/handycontrol/package/nuget/HandyControl">
         <img alt="myget-version" src="https://img.shields.io/myget/handycontrol/v/handycontrol?color=orange&label=myget"></img>
-    </a> 
+    </a>  
     <a href="https://github.com/HandyOrg/HandyControl/actions?query=workflow%3Abuild">
         <img alt="Github-build-status" src="https://github.com/HandyOrg/HandyControl/workflows/build/badge.svg"></img>
     </a>
@@ -28,6 +28,12 @@
         <img alt="Nuget" src="https://img.shields.io/nuget/dt/handycontrol"></img>
     </a> 
 </p>
+
+## 特别声明
+
+HandyControl 项目已加入 [dotNET China](https://gitee.com/dotnetchina)  组织。<br/>
+
+![dotnetchina](https://images.gitee.com/uploads/images/2021/0324/120117_2da9922c_416720.png "132645_21007ea0_974299.png")
 
 ## 面向中国
 
@@ -53,7 +59,7 @@
 * 为我们购买防脱洗发水 （支付宝扫码）  
 ![qrcode](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/qrcode.png)
 
-## Contributors
+## 贡献者
 
 <a href="https://github.com/ghost1372" target="_blank"><img style="border-radius:50%!important" width="64px" alt="ghost1372" src="https://avatars.githubusercontent.com/u/9213496?s=64&v=4"></a>
 <a href="https://github.com/DingpingZhang" target="_blank"><img style="border-radius:50%!important" width="64px" alt="DingpingZhang" src="https://avatars.githubusercontent.com/u/8541016?s=64&v=4"></a>
@@ -84,7 +90,7 @@
 <a href="https://github.com/ChoKaPeek" target="_blank"><img style="border-radius:50%!important" width="64px" alt="ChoKaPeek" src="https://avatars.githubusercontent.com/u/16904907?s=64&v=4"></a>
 <a href="https://github.com/shaosu" target="_blank"><img style="border-radius:50%!important" width="64px" alt="shaosu" src="https://avatars.githubusercontent.com/u/12237247?s=64&v=4"></a>
 
-## Backers
+## 赞助者
 
 <a href="https://github.com/bigorange1900" target="_blank"><img style="border-radius:50%!important" width="64px" alt="bigorange1900" src="https://avatars.githubusercontent.com/u/49062011?s=64&v=4"></a>
 <a href="https://github.com/14632791" target="_blank"><img style="border-radius:50%!important" width="64px" alt="14632791" src="https://avatars.githubusercontent.com/u/27358331?s=64&v=4"></a>
@@ -129,28 +135,28 @@
 <a href="https://github.com/qiang9420d" target="_blank"><img style="border-radius:50%!important" width="64px" alt="qiang9420d" src="https://avatars.githubusercontent.com/u/22925262?s=64&v=4"></a>
 <a href="https://github.com/zhongwcool" target="_blank"><img style="border-radius:50%!important" width="64px" alt="zhongwcool" src="https://avatars.githubusercontent.com/u/5747392?s=64&v=4"></a>
 
-## Special thanks to
+## 鸣谢
 
 [![Visual Studio Community 2019](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/vs2019_logo.png)](https://visualstudio.microsoft.com/free-developer-offers/)
 [![JetBrains](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/resharper_logo.png)](https://www.jetbrains.com/?from=HandyControl)
 [![Cake](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/cake_logo.png)](https://cakebuild.net/)
 [![Gitter](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/gitter_logo.png)](https://gitter.im/)
 
-## Projects using HandyControl
+## 使用HandyControl的项目
 
-<a href="https://getquicker.net" target="_blank"><img width="70px" alt="quicker" src="https://i0.hdslb.com/bfs/face/3765a3d0ce5da37e1aaa830d2eec6d3e0806a2d8.jpg@96w_96h_1c.webp"></a>
+<a href="https://getquicker.net" target="_blank"><img width="70px" alt="quicker" src="https://files.getquicker.net/_sitefiles/quicker_round_128.png"></a>
 <a href="https://www.phpenv.cn" target="_blank"><img width="70px" alt="phpenv" src="https://www.phpenv.cn/usr/themes/phpenv/img/logo.png"></a>
 <a href="https://atmb.top" target="_blank"><img width="70px" alt="AutumnBox" src="https://atmb.top/images/icon.png"></a>
 
-if your project is not listed here, let us know! 😀
+如果你的项目没有被列出，请告知我们! 😀
 
-## Usage
+## 用法
 
-Step 1: Add a reference to HandyControl or search for HandyControl on the nuget; 
+Step 1: 添加 HandyControl 引用，或在 nuget 上搜索 HandyControl; 
 
 ```Install-Package HandyControl```
 
-Step 2: Add code in App.xaml as follows:
+Step 2: 在 App.xaml 中添加如下代码:
 ```XML
 <Application.Resources>
     <ResourceDictionary>
@@ -162,227 +168,227 @@ Step 2: Add code in App.xaml as follows:
 </Application.Resources>
 ```
 
-Step 3: Add NameSpace:
+Step 3: 添加命名空间:
 `xmlns:hc="https://handyorg.github.io/handycontrol"`
 
-Step 4: Enjoy coding
+Step 4: 开始编码
 
-## VSIX packages for Visual Studio
+## VS插件
 
 | [VS2019](https://marketplace.visualstudio.com/items?itemName=HandyOrg.HandyControl) |
 | ------------- |
 
-## Stargazers over time
+## Star趋势
 
 [![Stargazers over time](https://starchart.cc/HandyOrg/HandyControl.svg)](https://starchart.cc/HandyOrg/HandyControl)
 
-## Overview
+## 概览
 
-![Overview](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Overview.png)
+![Overview](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Overview.png)
 
-![Overview-dark](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Overview-dark.png)
+![Overview-dark](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Overview-dark.png)
 
-## Latest examples
+## 最新示例
 
 ### ElementGroup
 
-![ElementGroup](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ElementGroup.png)
+![ElementGroup](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/ElementGroup.png)
 
 ### UniformSpacingPanel
 
-![UniformSpacingPanel](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/UniformSpacingPanel.png)
+![UniformSpacingPanel](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/UniformSpacingPanel.png)
 
 ### FlexPanel
 
-![FlexPanel](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/FlexPanel.gif)
+![FlexPanel](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/FlexPanel.gif)
 
 ### CheckComboBox
 
-![CheckComboBox](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/CheckComboBox.png)
+![CheckComboBox](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/CheckComboBox.png)
 
 ### ImageSelector
 
-![ImageSelector](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ImageSelector.png)
+![ImageSelector](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/ImageSelector.png)
 
-## History publication
+## 历史发布
 
 ### PropertyGrid
 
-![PropertyGrid](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/PropertyGrid.png)
+![PropertyGrid](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/PropertyGrid.png)
 
 ### Screenshot
 
-![Screenshot](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Screenshot.png)
+![Screenshot](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Screenshot.png)
 
 ### GooeyEffect
 
-![GooeyEffect](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/GooeyEffect.gif)
+![GooeyEffect](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/GooeyEffect.gif)
 
 ### GlowWindow
 
-![GlowWindow](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/GlowWindow.png)
+![GlowWindow](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/GlowWindow.png)
 
 ### FlowDocumentScrollViewerStyle
 
-![FlowDocumentScrollViewerStyle](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/FlowDocumentScrollViewer.png)
+![FlowDocumentScrollViewerStyle](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/FlowDocumentScrollViewer.png)
 
 ### PinBox
 
-![PinBox](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/PinBox.png)
+![PinBox](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/PinBox.png)
 
 ### Effects
 
-![Effects](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Effects.png)
+![Effects](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Effects.png)
 
 ### RelativePanel
 
-![RelativePanel](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/RelativePanel.png)
+![RelativePanel](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/RelativePanel.png)
 
 ### Drawer
 
-![Drawer](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Drawer.gif)
+![Drawer](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Drawer.gif)
 
 ### Poptip
 
-![Poptip](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Poptip.gif)
+![Poptip](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Poptip.gif)
 
 ### Divider
 
-![Divider](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Divider.png)
+![Divider](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Divider.png)
 
 ### GeometryAnimation
 
-![GeometryAnimation](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/GeometryAnimation.gif)
+![GeometryAnimation](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/GeometryAnimation.gif)
 
 ### SplitButton
 
-![SplitButton](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/SplitButton.png)
+![SplitButton](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/SplitButton.png)
 
 ### FloatingBlock
 
-![FloatingBlock](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/FloatingBlock.gif)
+![FloatingBlock](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/FloatingBlock.gif)
 
 ### HoneycombPanel
 
-![HoneycombPanel](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/HoneycombPanel.png)
+![HoneycombPanel](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/HoneycombPanel.png)
 
 ### RunningBlock
 
-![RunningBlock](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/RunningBlock.gif)
+![RunningBlock](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/RunningBlock.gif)
 
 ### ImageBlock
 
-![ImageBlock](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ImageBlock.gif)  
+![ImageBlock](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/ImageBlock.gif)  
 
-![ImageBlock](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ImageBlock.png)
+![ImageBlock](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/ImageBlock.png)
 
 ### Magnifier
 
-![Magnifier](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Magnifier.png)
+![Magnifier](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Magnifier.png)
 
 ### Card
 
-![Card](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Card.png)
+![Card](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Card.png)
 
 ### ButtonGroup
 
-![ButtonGroup](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ButtonGroup.png)
+![ButtonGroup](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/ButtonGroup.png)
 
 ### Grid
 
-![Grid](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Grid.gif)
+![Grid](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Grid.gif)
 
 ### SideMenu
 
-![SideMenu](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/SideMenu.png)
+![SideMenu](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/SideMenu.png)
 
 ### NotifyIcon
 
-![NotifyIcon](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/NotifyIcon.png)
+![NotifyIcon](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/NotifyIcon.png)
 
 ### Dialog
 
-![Dialog](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Dialog.png)
+![Dialog](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Dialog.png)
 
 ### WaveProgressBar
 
-![WaveProgressBar](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/WaveProgressBar.gif)
+![WaveProgressBar](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/WaveProgressBar.gif)
 
 ### Badge
 
-![Badge](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Badge.png)
+![Badge](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Badge.png)
 
 ### Gravatar
 
-![Gravatar](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Gravatar.gif)
+![Gravatar](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Gravatar.gif)
 
 ### GoToTop
 
-![GoToTop](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/GoToTop.gif)
+![GoToTop](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/GoToTop.gif)
 
 ### ChatBubble
 
-![ChatBubble](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ChatBubble.png)
+![ChatBubble](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/ChatBubble.png)
 
 ### Label
 
-![Label](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Label.png)
+![Label](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Label.png)
 
 ### Transfer
 
-![Transfer](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Transfer.png)
+![Transfer](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Transfer.png)
 
 ### ProgressButton
 
-![ProgressButton](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ProgressButton.png)
+![ProgressButton](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/ProgressButton.png)
 
 ### CoverFlow
 
-![CoverFlow](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/CoverFlow.gif)
+![CoverFlow](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/CoverFlow.gif)
 
 ### CoverView
 
-![CoverView](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/CoverView.gif)
+![CoverView](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/CoverView.gif)
 
 ### MessageBox
 
-![MessageBox](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/MessageBox.png)
+![MessageBox](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/MessageBox.png)
 
 ### WaterfallPanel
 
-![WaterfallPanel](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/WaterfallPanel.png)
+![WaterfallPanel](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/WaterfallPanel.png)
 
 ### Rate
 
-![Rate](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Rate.png)
+![Rate](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Rate.png)
 
 ### BlurWindow
 
-![BlurWindow](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/BlurWindow.png)
+![BlurWindow](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/BlurWindow.png)
 
 ### FlipClock
 
-![FlipClock](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/FlipClock.gif)
+![FlipClock](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/FlipClock.gif)
 
 ### Shield
 
-![Shield](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Shield.png)
+![Shield](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Shield.png)
 
 ### OutlineText
 
-![OutlineText](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/OutlineText.png)
+![OutlineText](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/OutlineText.png)
 
 ### Tag
 
-![Tag](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Tag.png)
+![Tag](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Tag.png)
 
 ### ToolBar
 
-![ToolBar](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ToolBar.png)
+![ToolBar](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/ToolBar.png)
 
 ### Slider
 
-![Slider](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Slider.png)
+![Slider](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Slider.png)
 
 ### RangeSlider
 
@@ -390,186 +396,186 @@ Step 4: Enjoy coding
 
 ### CircleProgressBar
 
-![CircleProgressBar](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/CircleProgressBar.png)
+![CircleProgressBar](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/CircleProgressBar.png)
 
 ### ButtonStyle
 
-![ButtonStyle](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Button.png)
+![ButtonStyle](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Button.png)
 
 ### ToggleButtonStyle
 
-![ToggleButtonStyle](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ToggleButton.png)
+![ToggleButtonStyle](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/ToggleButton.png)
 
 ### RadioButtonStyle
 
-![RadioButtonStyle](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/RadioButton.png)
+![RadioButtonStyle](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/RadioButton.png)
 
 ### CheckBoxStyle
 
-![CheckBoxStyle](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/CheckBox.png)
+![CheckBoxStyle](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/CheckBox.png)
 
 ### ListBoxStyle
 
-![ListBoxStyle](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ListBox.png)
+![ListBoxStyle](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/ListBox.png)
 
 ### TreeViewStyle
 
-![TreeViewStyle](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/TreeView.png)
+![TreeViewStyle](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/TreeView.png)
 
 ### ListViewStyle
 
-![ListViewStyle](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ListView.png)
+![ListViewStyle](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/ListView.png)
 
 ### DataGrid
 
-![DataGrid](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/DataGrid.png)
+![DataGrid](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/DataGrid.png)
 
 ### Now you can switch to dark theme
 
-![dark theme](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/DarkTheme.png)
+![dark theme](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/DarkTheme.png)
 
 ### ColorPicker
 
-![ColorPicker](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ColorPicker.gif)
+![ColorPicker](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/ColorPicker.gif)
 
 ### Loading
 
-![Loading](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Loading.gif)
+![Loading](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Loading.gif)
 
 ### Carousel
 
-![Carousel](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Carousel.gif)
+![Carousel](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Carousel.gif)
 
 ### Pagination
 
-![Pagination](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Pagination.gif)
+![Pagination](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Pagination.gif)
 
 ### Expander
 
-![Expander](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Expander.gif)
+![Expander](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Expander.gif)
 
 ### TimeBar
 
-![TimeBar](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/TimeBar.gif)
+![TimeBar](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/TimeBar.gif)
 
 ### ImageBrowser
 
-![ImageBrowser](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ImageBrowser.gif)
+![ImageBrowser](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/ImageBrowser.gif)
 
 ### PreviewSlider
 
-![PreviewSlider](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/PreviewSlider.gif)
+![PreviewSlider](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/PreviewSlider.gif)
 
 ### CompareSlider
 
-![CompareSlider](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/CompareSlider-h.gif)
+![CompareSlider](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/CompareSlider-h.gif)
 
-![CompareSlider](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/CompareSlider-v.gif)
+![CompareSlider](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/CompareSlider-v.gif)
 
 ### Growl
 
-![Growl](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Growl.gif)
+![Growl](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Growl.gif)
 
 ### AnimationPath
 
-![AnimationPath](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/AnimationPath.gif)
+![AnimationPath](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/AnimationPath.gif)
 
 ### ProgressBar
 
-![ProgressBar](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ProgressBar.gif)
+![ProgressBar](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/ProgressBar.gif)
 
 ### TabControl
 
-![TabControl](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/TabControl.gif)
+![TabControl](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/TabControl.gif)
 
 ### TabControlStyle
 
-![TabControlStyle](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/TabControl.png)
+![TabControlStyle](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/TabControl.png)
 
 ### GroupBox
 
-![GroupBox](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/GroupBox.png)
+![GroupBox](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/GroupBox.png)
 
 ### StepBar
 
-![StepBar](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/StepBar.png)
+![StepBar](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/StepBar.png)
 
 ### GifImage
 
-![GifImage](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/GifImage.gif)
+![GifImage](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/GifImage.gif)
 
 ### ContextMenu
 
-![ContextMenu](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ContextMenu.png)
+![ContextMenu](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/ContextMenu.png)
 
 ### Calendar
 
-![Calendar](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Calendar.jpg)
+![Calendar](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Calendar.jpg)
 
 ### Clock
 
-![Clock](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Clock.jpg)
+![Clock](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Clock.jpg)
 
 ### CalendarWithClock
 
-![CalendarWithClock](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/CalendarWithClock.png)
+![CalendarWithClock](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/CalendarWithClock.png)
 
 ### TextBlock
 
-![TextBlock](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/TextBlock.jpg)
+![TextBlock](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/TextBlock.jpg)
 
 ### RichTextBoxStyle
 
-![RichTextBoxStyle](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/RichTextBox.png)
+![RichTextBoxStyle](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/RichTextBox.png)
 
 ### TextBox
 
-![TextBox](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/TextBox.jpg)
+![TextBox](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/TextBox.jpg)
 
 ### ComboBox
 
-![ComboBox](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ComboBox.jpg)
+![ComboBox](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/ComboBox.jpg)
 
 ### NumericUpDown
 
-![NumericUpDown](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/NumericUpDown.png)
+![NumericUpDown](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/NumericUpDown.png)
 
 ### SearchBar
 
-![SearchBar](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/SearchBar.png)
+![SearchBar](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/SearchBar.png)
 
 ### PasswordBox
 
-![PasswordBox](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/PasswordBox.jpg)
+![PasswordBox](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/PasswordBox.jpg)
 
 ### DatePicker
 
-![DatePicker](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/DatePicker.jpg)
+![DatePicker](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/DatePicker.jpg)
 
 ### TimePicker
 
-![TimePicker](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/TimePicker.jpg)
+![TimePicker](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/TimePicker.jpg)
 
 ### DateTimePicker
 
-![DateTimePicker](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/DateTimePicker.png)
+![DateTimePicker](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/DateTimePicker.png)
 
 ### ScrollViewer
 
-![ScrollViewer](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/ScrollViewer.png)
+![ScrollViewer](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/ScrollViewer.png)
 
 ### CirclePanel
 
-![CirclePanel](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/CirclePanel.jpg)
+![CirclePanel](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/CirclePanel.jpg)
 
 ### TransitioningContentControl
 
-![TransitioningContentControl](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/TransitioningContentControl.gif)
+![TransitioningContentControl](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/TransitioningContentControl.gif)
 
 ### BorderStyle
 
-![BorderStyle](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Border.png)
+![BorderStyle](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Border.png)
 
 ### Brush
 
-![Brush](https://raw.githubusercontent.com/HandyOrg/HandyOrgResource/master/HandyControl/Resources/Brush.png)
+![Brush](https://gitee.com/handyorg/HandyOrgResource/raw/master/HandyControl/Resources/Brush.png)
