@@ -14,7 +14,7 @@
                             <TextBlock Text="This is the content" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
                         </Border>
                     </GroupBox>
-                    <GroupBox Header="This is the title" Margin="10" hc:TitleElement.TitleAlignment="Left">
+                    <GroupBox Header="This is the title" Margin="10" hc:TitleElement.TitlePlacement="Left">
                         <Border Background="{DynamicResource PrimaryBrush}" CornerRadius="4">
                             <TextBlock Text="This is the content" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
                         </Border>
@@ -24,7 +24,7 @@
                             <TextBlock Text="This is the content" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
                         </Border>
                     </GroupBox>
-                    <GroupBox Header="This is the title" Margin="10" Style="{StaticResource GroupBoxTab}" hc:TitleElement.TitleAlignment="Left">
+                    <GroupBox Header="This is the title" Margin="10" Style="{StaticResource GroupBoxTab}" hc:TitleElement.TitlePlacement="Left">
                         <Border Background="{DynamicResource PrimaryBrush}" CornerRadius="4">
                             <TextBlock Text="This is the content" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
                         </Border>
@@ -36,7 +36,7 @@
                         <TextBox/>
                     </GroupBox>
                     <GroupBox Header="Left title" Margin="10" VerticalAlignment="Bottom"  hc:TitleElement.TitleWidth="60" HorizontalContentAlignment="Left" 
-                              Style="{StaticResource GroupBoxOriginal}" hc:TitleElement.TitleAlignment="Left">
+                              Style="{StaticResource GroupBoxOriginal}" hc:TitleElement.TitlePlacement="Left">
                         <ComboBox SelectedIndex="0">
                             <ComboBoxItem Content="Text1"/>
                             <ComboBoxItem Content="Text2"/>

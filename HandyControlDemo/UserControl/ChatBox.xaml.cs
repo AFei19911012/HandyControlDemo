@@ -1,4 +1,4 @@
-﻿namespace HandyControlDemo.UserControl.Window
+﻿namespace HandyControlDemo.UserControl
 {
     /// <summary>
     /// ChatBox.xaml 的交互逻辑

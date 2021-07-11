@@ -11,16 +11,5 @@ namespace HandyControlDemo.UserControl
         {
             InitializeComponent();
         }
-
-        private void TagPanel_OnAddTagButtonClick(object sender, System.EventArgs e)
-        {
-            if (sender is TagPanel panel)
-            {
-                panel.Children.Add(new HandyControl.Controls.Tag
-                {
-                    Content = "SubTitle"
-                });
-            }
-        }
     }
 }

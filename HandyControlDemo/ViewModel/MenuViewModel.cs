@@ -18,6 +18,13 @@ namespace HandyControlDemo.ViewModel
             DataList = GetDataList();
         }
 
+        private string _tagName;
+        public string TagName
+        {
+            get => _tagName;
+            set => Set(ref _tagName, value);
+        }
+
         private ObservableCollection<DemoDataModel> GetDataList()
         {
             return new ObservableCollection<DemoDataModel>

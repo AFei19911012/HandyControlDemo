@@ -12,8 +12,8 @@
                 <DatePicker IsEnabled="False" SelectedDate="2019-10-28"/>
                 <DatePicker SelectedDate="2019-10-28" Style="{StaticResource DatePickerExtend}" hc:InfoElement.Title="This is the title"/>
                 <DatePicker Margin="0,0,0,32" SelectedDate="2019-10-28" hc:InfoElement.Placeholder="EnterContent" hc:InfoElement.Title="Must be filled in" Style="{StaticResource DatePickerExtend}" hc:InfoElement.Necessary="True"/>
-                <DatePicker SelectedDate="2019-10-28" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitleAlignment="Left" Style="{StaticResource DatePickerExtend}" hc:InfoElement.Title="Left title"/>
-                <DatePicker Margin="0,0,0,32" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitleAlignment="Left" hc:InfoElement.Placeholder="2019-10-28" hc:InfoElement.Title="Left title" 
+                <DatePicker SelectedDate="2019-10-28" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitlePlacement="Left" Style="{StaticResource DatePickerExtend}" hc:InfoElement.Title="Left title"/>
+                <DatePicker Margin="0,0,0,32" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Placeholder="2019-10-28" hc:InfoElement.Title="Left title" 
                             Style="{StaticResource DatePickerExtend}" hc:InfoElement.Necessary="True"/>
             </StackPanel>
 
@@ -22,8 +22,8 @@
                 <hc:DatePicker IsEnabled="False" SelectedDate="2019-10-28"/>
                 <hc:DatePicker ShowClearButton="True" SelectedDate="2019-10-28" hc:InfoElement.Title="This is the title"/>
                 <hc:DatePicker Margin="0,0,0,32" SelectedDate="2019-10-28" hc:InfoElement.Placeholder="EnterContent" hc:InfoElement.Title="Must be filled in" hc:InfoElement.Necessary="True"/>
-                <hc:DatePicker ShowClearButton="True" SelectedDate="2019-10-28" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitleAlignment="Left" hc:InfoElement.Title="Left title"/>
-                <hc:DatePicker Margin="0,0,0,32" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitleAlignment="Left" hc:InfoElement.Placeholder="2019-10-28" hc:InfoElement.Title="Left title" 
+                <hc:DatePicker ShowClearButton="True" SelectedDate="2019-10-28" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title"/>
+                <hc:DatePicker Margin="0,0,0,32" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Placeholder="2019-10-28" hc:InfoElement.Title="Left title" 
                                hc:InfoElement.Necessary="True"/>
             </StackPanel>
 
@@ -33,8 +33,8 @@
                 <hc:DateTimePicker ShowClearButton="True" Style="{StaticResource DateTimePickerExtend}" hc:InfoElement.Title="This is the title"/>
                 <hc:DateTimePicker Margin="0,0,0,32" hc:InfoElement.Placeholder="2019-10-28 14:11:50" hc:InfoElement.Title="Must be filled in" Style="{StaticResource DateTimePickerExtend}" 
                                    hc:InfoElement.Necessary="True"/>
-                <hc:DateTimePicker ShowClearButton="True" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitleAlignment="Left" Style="{StaticResource DateTimePickerExtend}" hc:InfoElement.Title="Left title"/>
-                <hc:DateTimePicker Margin="0,0,0,32" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitleAlignment="Left" hc:InfoElement.Placeholder="2019-10-28 14:11:50" hc:InfoElement.Title="Left title" 
+                <hc:DateTimePicker ShowClearButton="True" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitlePlacement="Left" Style="{StaticResource DateTimePickerExtend}" hc:InfoElement.Title="Left title"/>
+                <hc:DateTimePicker Margin="0,0,0,32" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Placeholder="2019-10-28 14:11:50" hc:InfoElement.Title="Left title" 
                                    Style="{StaticResource DateTimePickerExtend}" hc:InfoElement.Necessary="True"/>
             </StackPanel>
 
@@ -44,8 +44,8 @@
                 <hc:DateTimePicker ShowClearButton="True" Style="{StaticResource DateTimePickerPlus}" hc:InfoElement.Title="This is the title"/>
                 <hc:DateTimePicker Margin="0,0,0,32" hc:InfoElement.Placeholder="2019-10-28 14:11:50" hc:InfoElement.Title="Must be filled in" Style="{StaticResource DateTimePickerPlus}" 
                                    hc:InfoElement.Necessary="True"/>
-                <hc:DateTimePicker ShowClearButton="True" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitleAlignment="Left" Style="{StaticResource DateTimePickerPlus}" hc:InfoElement.Title="Left title"/>
-                <hc:DateTimePicker Margin="0,0,0,32" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitleAlignment="Left" hc:InfoElement.Placeholder="2019-10-28 14:11:50" hc:InfoElement.Title="Left title" 
+                <hc:DateTimePicker ShowClearButton="True" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitlePlacement="Left" Style="{StaticResource DateTimePickerPlus}" hc:InfoElement.Title="Left title"/>
+                <hc:DateTimePicker Margin="0,0,0,32" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Placeholder="2019-10-28 14:11:50" hc:InfoElement.Title="Left title" 
                                    Style="{StaticResource DateTimePickerPlus}" hc:InfoElement.Necessary="True"/>
             </StackPanel>
         </UniformGrid>

@@ -54,7 +54,7 @@
                         Background="{DynamicResource PrimaryBrush}" Foreground="{DynamicResource TextIconBrush}"/>
                 <Button Height="32" Width="32" Padding="5" Style="{StaticResource ButtonPrimary}" hc:IconElement.Geometry="{StaticResource AskGeometry}" hc:BorderElement.CornerRadius="0"
                         Background="{DynamicResource PrimaryBrush}" Foreground="{DynamicResource TextIconBrush}"/>
-                <Button Height="32" Width="32" Padding="5" Style="{StaticResource ButtonPrimary}" hc:IconElement.Geometry="{StaticResource DragGeometry}" hc:BorderElement.CornerRadius="0"
+                <Button Height="32" Width="32" Padding="5" Style="{StaticResource ButtonPrimary}" hc:IconElement.Geometry="{StaticResource DeleteGeometry}" hc:BorderElement.CornerRadius="0"
                         Background="{DynamicResource PrimaryBrush}" Foreground="{DynamicResource TextIconBrush}"/>
                 <Button Height="32" Width="32" Padding="5" Style="{StaticResource ButtonPrimary}" hc:IconElement.Geometry="{StaticResource DropperGeometry}" hc:BorderElement.CornerRadius="0"
                         Background="{DynamicResource PrimaryBrush}" Foreground="{DynamicResource TextIconBrush}"/>

@@ -6,7 +6,7 @@
              xmlns:hc="https://handyorg.github.io/handycontrol"
              mc:Ignorable="d">
     <hc:SimplePanel Width="250" Height="200">
-        <hc:ScrollViewer Name="ScrollViewerDemo" IsEnableInertia="True">
+        <hc:ScrollViewer Name="ScrollViewerDemo" IsInertiaEnabled="True">
             <Border Height="300" Margin="8,0">
                 <Border.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

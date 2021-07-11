@@ -4,7 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:hc="https://handyorg.github.io/handycontrol"
-             mc:Ignorable="d">
+             mc:Ignorable="d"
+             Background="{DynamicResource RegionBrush}">
     <hc:TransitioningContentControl>
         <StackPanel Margin="10" VerticalAlignment="Center">
             <Button hc:IconElement.Geometry="{StaticResource ThumbsUpGeometry}" Width="180" Margin="10">
@@ -14,10 +15,9 @@
                     </DataTemplate>
                 </hc:FloatingBlock.ContentTemplate>
             </Button>
-            <Button Content="Good" hc:FloatingBlock.Content="Good" Width="180" Margin="10"/>
-            <Button hc:IconElement.Geometry="{StaticResource ThumbsUpGeometry}" Width="180" Margin="10" hc:FloatingBlock.Duration="0:0:1" 
-                    hc:FloatingBlock.VerticalOffset="-20" hc:FloatingBlock.ToX="50" hc:FloatingBlock.ToY="-80"
-                    Content="Click" Click="Button_Click">
+            <Button Content="Good" hc:FloatingBlock.Content="Good" Width="180" Margin="10" hc:FloatingBlock.Duration="0:0:1" 
+                    hc:FloatingBlock.VerticalOffset="-20" hc:FloatingBlock.ToX="50" hc:FloatingBlock.ToY="-80"/>
+            <Button hc:IconElement.Geometry="{StaticResource ThumbsUpGeometry}" Width="180" Margin="10" Content="Click" Click="Button_Click">
                 <hc:FloatingBlock.ContentTemplate>
                     <DataTemplate>
                         <Path Data="{StaticResource ThumbsUpGeometry}" Fill="{DynamicResource DangerBrush}" Width="16" Height="16"/>

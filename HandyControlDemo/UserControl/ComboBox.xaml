@@ -25,14 +25,14 @@
                               Text="Editable" ItemsSource="{Binding DataList}"/>
                     <ComboBox Margin="0,0,0,32" IsEditable="True" hc:InfoElement.Placeholder="Necessary" hc:InfoElement.Title="Must be filled in" 
                               Style="{StaticResource ComboBoxExtend}" hc:InfoElement.Necessary="True" ItemsSource="{Binding DataList}"/>
-                    <ComboBox hc:InfoElement.TitleWidth="70" hc:InfoElement.TitleAlignment="Left" hc:InfoElement.Title="Left title" 
+                    <ComboBox hc:InfoElement.TitleWidth="70" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title" 
                               Style="{StaticResource ComboBoxExtend}" Text="Test" ItemsSource="{Binding DataList}"/>
-                    <ComboBox Margin="0,0,0,32" hc:InfoElement.TitleWidth="70" hc:InfoElement.Placeholder="Necessary" hc:InfoElement.TitleAlignment="Left" 
+                    <ComboBox Margin="0,0,0,32" hc:InfoElement.TitleWidth="70" hc:InfoElement.Placeholder="Necessary" hc:InfoElement.TitlePlacement="Left" 
                               hc:InfoElement.Title="Left title" hc:InfoElement.Necessary="True" Style="{StaticResource ComboBoxExtend}" 
                               ItemsSource="{Binding DataList}"/>
-                    <ComboBox IsEditable="True" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitleAlignment="Left" hc:InfoElement.Title="Left title" 
+                    <ComboBox IsEditable="True" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title" 
                               Style="{StaticResource ComboBoxExtend}" Text="Test" ItemsSource="{Binding DataList}"/>
-                    <ComboBox IsEditable="True" hc:InfoElement.TitleWidth="70" hc:InfoElement.Placeholder="Necessary" hc:InfoElement.TitleAlignment="Left" 
+                    <ComboBox IsEditable="True" hc:InfoElement.TitleWidth="70" hc:InfoElement.Placeholder="Necessary" hc:InfoElement.TitlePlacement="Left" 
                               hc:InfoElement.Title="Left title" hc:InfoElement.Necessary="True" Style="{StaticResource ComboBoxExtend}" 
                               ItemsSource="{Binding DataList}"/>
                 </StackPanel>
@@ -48,15 +48,15 @@
                     <hc:ComboBox IsEditable="True" SelectedIndex="0" hc:InfoElement.Title="This is the title" Text="Editable" ItemsSource="{Binding DataList}"/>
                     <hc:ComboBox Margin="0,0,0,32" AutoComplete="True" ShowClearButton="True" IsEditable="True" hc:InfoElement.Placeholder="Necessary" 
                                  hc:InfoElement.Title="Must be filled in" hc:InfoElement.Necessary="True" ItemsSource="{Binding DataList}"/>
-                    <hc:ComboBox hc:InfoElement.TitleWidth="70" hc:InfoElement.TitleAlignment="Left" hc:InfoElement.Title="Left title" 
+                    <hc:ComboBox hc:InfoElement.TitleWidth="70" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title" 
                                  Text="Test" ItemsSource="{Binding DataList}"/>
                     <hc:ComboBox Margin="0,0,0,32" ShowClearButton="True" hc:InfoElement.TitleWidth="70" hc:InfoElement.Placeholder="Necessary" 
-                                 hc:InfoElement.TitleAlignment="Left" hc:InfoElement.Title="Left title" hc:InfoElement.Necessary="True" 
+                                 hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title" hc:InfoElement.Necessary="True" 
                                  ItemsSource="{Binding DataList}"/>
-                    <hc:ComboBox IsEditable="True" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitleAlignment="Left" hc:InfoElement.Title="Left title" 
+                    <hc:ComboBox IsEditable="True" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title" 
                                  Text="Test" ItemsSource="{Binding DataList}"/>
                     <hc:ComboBox AutoComplete="True" ShowClearButton="True" IsEditable="True" hc:InfoElement.TitleWidth="70" 
-                                 hc:InfoElement.Placeholder="Necessary" hc:InfoElement.TitleAlignment="Left" 
+                                 hc:InfoElement.Placeholder="Necessary" hc:InfoElement.TitlePlacement="Left" 
                                  hc:InfoElement.Title="Left title" hc:InfoElement.Necessary="True" ItemsSource="{Binding DataList}"/>
                 </StackPanel>
             </StackPanel>

@@ -4,19 +4,20 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:hc="https://handyorg.github.io/handycontrol"
-             xmlns:userControl="clr-namespace:HandyControlDemo.UserControl.Window"
-             mc:Ignorable="d">
+             xmlns:userControl="clr-namespace:HandyControlDemo.UserControl"
+             mc:Ignorable="d"
+             Background="{DynamicResource RegionBrush}">
     
     <hc:TransitioningContentControl>
         <UniformGrid Rows="1" Columns="2" Margin="16">
-            <userControl:ChatBox Margin="5" Width="300" Height="482">
+            <userControl:ChatBox Margin="5">
                 <userControl:ChatBox.Background>
-                    <ImageBrush ImageSource="pack://application:,,,/Resource/Image/Chat/chat_back1.jpg" Stretch="Uniform"/>
+                    <ImageBrush ImageSource="/HandyControlDemo;component/Resource/Image/Chat/chat_back1.jpg" Stretch="Uniform"/>
                 </userControl:ChatBox.Background>
             </userControl:ChatBox>
             <userControl:ChatBox Margin="5">
                 <userControl:ChatBox.Background>
-                    <ImageBrush ImageSource="pack://application:,,,/Resource/Image/Chat/chat_back2.jpg" Stretch="Uniform"/>
+                    <ImageBrush ImageSource="/HandyControlDemo;component/Resource/Image/Chat/chat_back2.jpg" Stretch="Uniform"/>
                 </userControl:ChatBox.Background>
             </userControl:ChatBox>
         </UniformGrid>

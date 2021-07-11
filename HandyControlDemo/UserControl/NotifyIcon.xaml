@@ -21,12 +21,12 @@
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                     <GroupBox Header="Content" Padding="10">
                         <StackPanel>
-                            <GroupBox hc:TitleElement.TitleAlignment="Left" Style="{StaticResource GroupBoxOriginal}" Header="Visibility">
+                            <GroupBox hc:TitleElement.TitlePlacement="Left" Style="{StaticResource GroupBoxOriginal}" Header="Visibility">
                                 <ToggleButton IsChecked="{Binding IsShowIcon}" Style="{StaticResource ToggleButtonSwitch}"/>
                             </GroupBox>
                             <TextBlock Foreground="{DynamicResource InfoBrush}" Visibility="{Binding IsShowIcon,Converter={StaticResource Bool2VisibilityConverter}}" 
                                        Text="Try to close app?" Margin="5"/>
-                            <GroupBox Margin="0,10,0,0" hc:TitleElement.TitleAlignment="Left" Style="{StaticResource GroupBoxOriginal}" Header="Blink">
+                            <GroupBox Margin="0,10,0,0" hc:TitleElement.TitlePlacement="Left" Style="{StaticResource GroupBoxOriginal}" Header="Blink">
                                 <ToggleButton IsChecked="{Binding IsBlink}" IsEnabled="{Binding ContextMenuIsShow}" 
                                               Style="{StaticResource ToggleButtonSwitch}"/>
                             </GroupBox>

@@ -1,11 +1,12 @@
-﻿<hc:Window x:Class="HandyControlDemo.MainWindow"
+﻿<hc:GlowWindow x:Class="HandyControlDemo.MainWindow"
            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
            xmlns:hc="https://handyorg.github.io/handycontrol"
            mc:Ignorable="d"
-           Style="{StaticResource WindowWin10}"
+           ActiveGlowColor="{DynamicResource PrimaryColor}"
+           ResizeMode="CanResizeWithGrip"
            ShowNonClientArea="True"
            WindowStartupLocation="CenterScreen"
            Background="{DynamicResource RegionBrush}"
@@ -87,4 +88,4 @@
             <StackPanel hc:Growl.Token="ErrorMessage" VerticalAlignment="Top" Margin="0,10,10,10" SizeChanged="StackPanel_SizeChanged"/>
         </ScrollViewer>
     </Grid>
-</hc:Window>
+</hc:GlowWindow>

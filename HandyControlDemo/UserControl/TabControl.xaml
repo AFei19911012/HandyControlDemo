@@ -49,8 +49,8 @@
                     <Border Background="{DynamicResource SuccessBrush}"/>
                 </TabItem>
             </TabControl>
-            <hc:TabControl Name="tabControl" Margin="10" IsEnableTabFill="True" ShowCloseButton="True" IsDraggable="True" IsEnableAnimation="True"
-                           ContextMenuOpening="TabControl_ContextMenuOpening">
+            <hc:TabControl Name="tabControl" Margin="10" IsTabFillEnabled="True" ShowCloseButton="True" IsDraggable="True" IsAnimationEnabled="True"
+                           ShowOverflowButton="False" ShowScrollButton="True" IsScrollable="True" ContextMenuOpening="TabControl_ContextMenuOpening">
                 <hc:TabItem Header="TabItem1" Closed="TabItem_Closed">
                     <hc:SimplePanel Background="{DynamicResource PrimaryBrush}"/>
                 </hc:TabItem>
