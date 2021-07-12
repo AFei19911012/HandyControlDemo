@@ -105,6 +105,7 @@ namespace HandyControlDemo.ViewModel
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/FlipVertical_16x.png", Name = "FlipClock"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/PolygonHexagon_16x.png", Name = "HoneycombPanel"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Paginator_16x.png", Name = "Pagination"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/ScrollBox_16x.png", Name = "ScrollViewer"},
             };
         }
     }

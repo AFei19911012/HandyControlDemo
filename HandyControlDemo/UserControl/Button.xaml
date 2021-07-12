@@ -9,6 +9,7 @@
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <UniformGrid Rows="3" Columns="6">
             <UniformGrid Rows="2" Columns="4">
@@ -292,6 +293,52 @@
                 <RadioButton Height="48" Content="RadioButton" Foreground="{DynamicResource PrimaryTextBrush}"/>
                 <RadioButton Height="48" Content="RadioButton" IsChecked="True" Foreground="{DynamicResource PrimaryTextBrush}"/>
             </hc:ButtonGroup>
+        </UniformGrid>
+        <UniformGrid Grid.Row="2" Rows="2" Columns="5">
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Default" Margin="5" Style="{StaticResource ButtonDashed}"/>
+                <Button IsEnabled="False" Content="Default" Margin="5" Style="{StaticResource ButtonDashed}"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Primary" Margin="5" Style="{StaticResource ButtonDashedPrimary}"/>
+                <Button IsEnabled="False" Content="Primary" Margin="5" Style="{StaticResource ButtonDashedPrimary}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Success" Margin="5" Style="{StaticResource ButtonDashedSuccess}"/>
+                <Button IsEnabled="False" Content="Success" Margin="5" Style="{StaticResource ButtonDashedSuccess}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Info" Margin="5" Style="{StaticResource ButtonDashedInfo}"/>
+                <Button IsEnabled="False" Content="Info" Margin="5" Style="{StaticResource ButtonDashedInfo}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Warning" Margin="5" Style="{StaticResource ButtonDashedWarning}"/>
+                <Button IsEnabled="False" Content="Warning" Margin="5" Style="{StaticResource ButtonDashedWarning}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Danger" Margin="5" Style="{StaticResource ButtonDashedDanger}"/>
+                <Button IsEnabled="False" Content="Danger" Margin="5" Style="{StaticResource ButtonDashedDanger}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Clock" Margin="5" Style="{StaticResource ButtonDashedPrimary}" hc:IconElement.Geometry="{StaticResource ClockGeometry}"/>
+                <Button Content="Clock" IsEnabled="False" Margin="5" Style="{StaticResource ButtonDashedPrimary}" hc:IconElement.Geometry="{StaticResource ClockGeometry}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Calendar" Margin="5" Style="{StaticResource ButtonDashedPrimary}" hc:IconElement.Geometry="{StaticResource CalendarGeometry}"/>
+                <Button Content="Calendar" IsEnabled="False" Margin="5" Style="{StaticResource ButtonDashedPrimary}" hc:IconElement.Geometry="{StaticResource CalendarGeometry}"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <RepeatButton Content="RepeatButton" Margin="5" Style="{StaticResource RepeatButtonDashedPrimary}"/>
+                <RepeatButton Content="RepeatButton" IsEnabled="False" Margin="5" Style="{StaticResource RepeatButtonDashedPrimary}"/>
+            </StackPanel>
         </UniformGrid>
     </Grid>
 </UserControl>

@@ -437,6 +437,10 @@ namespace HandyControlDemo
             {
                 mainContent.Children.Add(new UserControl.RunningBlock());
             }
+            else if (name == "ScrollViewer")
+            {
+                mainContent.Children.Add(new UserControl.ScrollViewer());
+            }
             else if (name == "SearchBar")
             {
                 mainContent.Children.Add(new UserControl.SearchBar());

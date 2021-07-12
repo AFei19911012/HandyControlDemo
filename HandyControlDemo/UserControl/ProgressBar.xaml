@@ -6,7 +6,7 @@
              xmlns:hc="https://handyorg.github.io/handycontrol"
              mc:Ignorable="d">
     <StackPanel Orientation="Horizontal" Margin="10">
-        <UniformGrid Rows="11" Columns="1" Margin="10" Width="150">
+        <UniformGrid Rows="12" Columns="1" Margin="10" Width="150">
             <ProgressBar Value="{Binding ElementName=SliderDemo, Path=Value}" Margin="5"/>
             <ProgressBar Style="{StaticResource ProgressBarSuccess}" Margin="5" Value="{Binding ElementName=SliderDemo, Path=Value}"/>
             <ProgressBar Style="{StaticResource ProgressBarInfo}" Margin="5" Value="{Binding ElementName=SliderDemo, Path=Value}"/>
@@ -44,6 +44,7 @@
             <ProgressBar Style="{StaticResource ProgressBarWarningStripe}" Margin="5" Value="{Binding ElementName=SliderDemo, Path=Value}" Maximum="200"/>
             <ProgressBar Style="{StaticResource ProgressBarDangerStripe}" Margin="5" Value="{Binding ElementName=SliderDemo, Path=Value}" Maximum="200"/>
             <ProgressBar Style="{StaticResource ProgressBarFlat}" Margin="5" Value="{Binding ElementName=SliderDemo, Path=Value}" Maximum="200"/>
+            <ProgressBar Style="{StaticResource ProgressBarFlat}" Margin="5" Maximum="200" IsIndeterminate="True"/>
         </UniformGrid>
         <UniformGrid Rows="11" Columns="1" Margin="10" Width="150">
             <TextBlock Margin="5" Text="ProgressbarPrimary"/>
@@ -71,6 +72,7 @@
                                       ArcThickness="10" Style="{StaticResource ProgressBarWarningCircle}"/>
                 <hc:CircleProgressBar Value="{Binding ElementName=SliderDemo, Path=Value}" Margin="5" Width="50" Height="50" 
                                       Style="{StaticResource ProgressBarDangerCircle}"/>
+                <hc:CircleProgressBar IsIndeterminate="True"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="5">
                 <hc:WaveProgressBar Value="{Binding ElementName=SliderDemo, Path=Value}" Margin="5"/>
@@ -84,6 +86,20 @@
                 </hc:WaveProgressBar>
                 <hc:WaveProgressBar Value="{Binding ElementName=SliderDemo, Path=Value}" Margin="5" ShowText="False" Width="50" Height="50" 
                                     Style="{StaticResource ProgressBarWarningWave}"/>
+                <StackPanel Orientation="Horizontal" Height="200">
+                    <ProgressBar Value="20" Margin="0,0,10,0" Orientation="Vertical" Width="20"/>
+                    <ProgressBar Style="{StaticResource ProgressBarSuccess}" Margin="0,0,10,0" Value="40" Orientation="Vertical" Width="15"/>
+                    <ProgressBar Style="{StaticResource ProgressBarInfo}" Margin="0,0,10,0" Value="60" Orientation="Vertical" Width="15"/>
+                    <ProgressBar Style="{StaticResource ProgressBarWarning}" Margin="0,0,10,0" Value="80" Orientation="Vertical" Width="15"/>
+                    <ProgressBar Style="{StaticResource ProgressBarDanger}" Margin="0,0,10,0" Value="100" Maximum="200" IsIndeterminate="True" Width="15" Orientation="Vertical"/>
+
+                    <ProgressBar Style="{StaticResource ProgressBarPrimaryStripe}" Margin="0,0,10,0" Value="120" Maximum="200" Orientation="Vertical" Width="15" />
+                    <ProgressBar Style="{StaticResource ProgressBarSuccessStripe}" Margin="0,0,10,0" Value="60" Maximum="200" Orientation="Vertical" Width="15" />
+                    <ProgressBar Style="{StaticResource ProgressBarInfoStripe}" Margin="0,0,10,0" Value="50" Maximum="200" Orientation="Vertical" Width="15" />
+                    <ProgressBar Style="{StaticResource ProgressBarWarningStripe}" Margin="0,0,10,0" Value="180" Maximum="200" Orientation="Vertical" Width="15" />
+                    <ProgressBar Style="{StaticResource ProgressBarDangerStripe}" Margin="0,0,10,0" IsIndeterminate="True" Maximum="200" Orientation="Vertical" Width="15"/>
+                    <ProgressBar Style="{StaticResource ProgressBarFlat}" Margin="0,0,10,0" Value="110" Maximum="200" IsIndeterminate="True" Orientation="Vertical" Width="4"/>
+                </StackPanel>
             </StackPanel>
         </StackPanel>
     </StackPanel>

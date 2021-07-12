@@ -6,16 +6,30 @@
              xmlns:hc="https://handyorg.github.io/handycontrol"
              mc:Ignorable="d">
     <hc:TransitioningContentControl>
-        <StackPanel Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Expander Header="Title" BorderThickness="1,1,1,0" BorderBrush="{DynamicResource BorderBrush}" Width="240">
-                <Border Height="100" Background="{DynamicResource SecondaryRegionBrush}"/>
-            </Expander>
-            <Expander Header="Title" BorderThickness="1,1,1,0" BorderBrush="{DynamicResource BorderBrush}" Width="240">
-                <Border Height="100" Background="{DynamicResource SecondaryRegionBrush}"/>
-            </Expander>
-            <Expander Header="Title" BorderThickness="1,1,1,0" BorderBrush="{DynamicResource BorderBrush}" Width="240">
-                <Border Height="100" Background="{DynamicResource SecondaryRegionBrush}"/>
-            </Expander>
-        </StackPanel>
+        <WrapPanel Margin="16" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Width="240" Margin="16">
+                <Expander Header="Title" BorderThickness="1,1,1,0" BorderBrush="{DynamicResource BorderBrush}" Width="240">
+                    <Border Height="100" Background="{DynamicResource SecondaryRegionBrush}"/>
+                </Expander>
+                <Expander Header="Title" BorderThickness="1,1,1,0" BorderBrush="{DynamicResource BorderBrush}" Width="240">
+                    <Border Height="100" Background="{DynamicResource SecondaryRegionBrush}"/>
+                </Expander>
+                <Expander Header="Title" BorderThickness="1,1,1,0" BorderBrush="{DynamicResource BorderBrush}" Width="240">
+                    <Border Height="100" Background="{DynamicResource SecondaryRegionBrush}"/>
+                </Expander>
+            </StackPanel>
+
+            <StackPanel Width="240" Margin="16">
+                <Expander Header="Title" ExpandDirection="Up">
+                    <Border Height="100" BorderThickness="1,1,1,0" BorderBrush="{DynamicResource BorderBrush}" Background="{DynamicResource RegionBrush}" CornerRadius="4,4,0,0"/>
+                </Expander>
+                <Expander Margin="0,4,0,0" Header="Title" ExpandDirection="Left">
+                    <Border Height="100" BorderThickness="1,1,1,0" BorderBrush="{DynamicResource BorderBrush}" Background="{DynamicResource RegionBrush}" CornerRadius="4,4,0,0"/>
+                </Expander>
+                <Expander Margin="0,4,0,0" Header="Title" ExpandDirection="Right">
+                    <Border Height="100" BorderThickness="1,1,1,0" BorderBrush="{DynamicResource BorderBrush}" Background="{DynamicResource RegionBrush}" CornerRadius="4,4,0,0"/>
+                </Expander>
+            </StackPanel>
+        </WrapPanel>
     </hc:TransitioningContentControl>
 </UserControl>
