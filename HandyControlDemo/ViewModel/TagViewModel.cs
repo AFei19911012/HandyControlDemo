@@ -11,14 +11,12 @@ namespace HandyControlDemo.ViewModel
 {
     public class TagViewModel : ViewModelBase
     {
-        //private ObservableCollection<DemoDataModel> dataList;
-        //public ObservableCollection<DemoDataModel> DataList
-        //{
-        //    get => dataList;
-        //    set => Set(ref dataList, value);
-        //}
-        public ObservableCollection<DemoDataModel> DataList { get; set; }
-
+        private ObservableCollection<DemoDataModel> dataList;
+        public ObservableCollection<DemoDataModel> DataList
+        {
+            get => dataList;
+            set => Set(ref dataList, value);
+        }
 
         private string _tagName;
         public string TagName
@@ -53,43 +51,12 @@ namespace HandyControlDemo.ViewModel
 
         private ObservableCollection<DemoDataModel> GetDataList()
         {
-            //return new ObservableCollection<DemoDataModel>
-            //{
-            //    new DemoDataModel{ Name = "Name1"},
-            //    new DemoDataModel{ Name = "Name2"},
-            //    new DemoDataModel{ Name = "Name3"},
-            //};
-            var list = new ObservableCollection<DemoDataModel>();
-            for (int i = 0; i < 3; i++)
+            return new ObservableCollection<DemoDataModel>
             {
-                var model = new DemoDataModel
-                {
-                    Name = $"Name{i}"
-                };
-                list.Add(model);
-            }
-            return list;
-        }
-
-        public ObservableCollection<DemoDataModel> GetDemoDataList(int count)
-        {
-            var list = new ObservableCollection<DemoDataModel>();
-            for (var i = 1; i <= count; i++)
-            {
-                var index = i % 6 + 1;
-                var model = new DemoDataModel
-                {
-                    Index = i,
-                    IsSelected = i % 2 == 0,
-                    Name = $"Name{i}",
-                    Type = (DemoType)index,
-                    ImgPath = $"/HandyControlDemo;component/Resource/Image/Avatar/avatar{index}.png",
-                    Remark = new string(i.ToString()[0], 10)
-                };
-                list.Add(model);
-            }
-
-            return list;
+                new DemoDataModel{ Name = "Name1", IsSelected = true},
+                new DemoDataModel{ Name = "Name2", IsSelected = false},
+                new DemoDataModel{ Name = "Name3", IsSelected = true},
+            };
         }
     }
 }
