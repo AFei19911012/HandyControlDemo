@@ -91,6 +91,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Lang.resx</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\Calendar.xaml.cs">
+      <DependentUpon>Calendar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\ChatBubble.xaml.cs">
       <DependentUpon>ChatBubble.xaml</DependentUpon>
     </Compile>
@@ -100,8 +103,14 @@
     <Compile Include="UserControl\FlipClock.xaml.cs">
       <DependentUpon>FlipClock.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\FlowDocument.xaml.cs">
+      <DependentUpon>FlowDocument.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\HoneycombPanel.xaml.cs">
       <DependentUpon>HoneycombPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Label.xaml.cs">
+      <DependentUpon>Label.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Pagination.xaml.cs">
       <DependentUpon>Pagination.xaml</DependentUpon>
@@ -163,8 +172,8 @@
     <Compile Include="UserControl\DataGrid.xaml.cs">
       <DependentUpon>DataGrid.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\DateTimePicker.xaml.cs">
-      <DependentUpon>DateTimePicker.xaml</DependentUpon>
+    <Compile Include="UserControl\DatePicker.xaml.cs">
+      <DependentUpon>DatePicker.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Dialog.xaml.cs">
       <DependentUpon>Dialog.xaml</DependentUpon>
@@ -364,6 +373,10 @@
     <Compile Include="ViewModel\TransferViewModel.cs" />
     <Compile Include="ViewModel\TreeViewViewModel.cs" />
     <Compile Include="ViewModel\WindowsViewModel.cs" />
+    <Page Include="UserControl\Calendar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControl\ChatBubble.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -376,7 +389,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControl\FlowDocument.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControl\HoneycombPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\Label.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -512,7 +533,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControl\DateTimePicker.xaml">
+    <Page Include="UserControl\DatePicker.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -919,6 +940,20 @@
     <Resource Include="Resource\Image\LeftMainContent\View_Portrait_16x.png" />
     <Resource Include="Resource\Image\LeftMainContent\VSO_Card_16x.png" />
     <Resource Include="Resource\Image\LeftMainContent\WindowsForm_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Image\LeftMainContent\CheckboxList_16x.png" />
+    <Resource Include="Resource\Image\LeftMainContent\Effects_16x.png" />
+    <Resource Include="Resource\Image\LeftMainContent\Ellipsis_16x.png" />
+    <Resource Include="Resource\Image\LeftMainContent\frame_16xLG.png" />
+    <Resource Include="Resource\Image\LeftMainContent\Image_16x.png" />
+    <Resource Include="Resource\Image\LeftMainContent\IncreaseHorizontalSpacing_16x.png" />
+    <Resource Include="Resource\Image\LeftMainContent\layout-FlexLayout-16.png" />
+    <Resource Include="Resource\Image\LeftMainContent\OutlinedRectangleTool_16x.png" />
+    <Resource Include="Resource\Image\LeftMainContent\PropertyGridEditorPart_16x.png" />
+    <Resource Include="Resource\Image\LeftMainContent\TransformRelative_16x.png" />
+    <Resource Include="Resource\Image\LeftMainContent\WindowScreenshot_16x.png" />
+    <Resource Include="Resource\Image\LeftMainContent\WPFFlowDocument_16x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

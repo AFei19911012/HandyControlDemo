@@ -269,6 +269,10 @@ namespace HandyControlDemo
             {
                 mainContent.Children.Add(new UserControl.Button());
             }
+            else if (name == "Calendar")
+            {
+                mainContent.Children.Add(new UserControl.Calendar());
+            }
             else if (name == "Card")
             {
                 mainContent.Children.Add(new UserControl.Card());
@@ -305,9 +309,9 @@ namespace HandyControlDemo
             {
                 mainContent.Children.Add(new UserControl.DataGrid());
             }
-            else if (name == "DateTimePicker")
+            else if (name == "DatePicker")
             {
-                mainContent.Children.Add(new UserControl.DateTimePicker());
+                mainContent.Children.Add(new UserControl.DatePicker());
             }
             else if (name == "Dialog")
             {
@@ -328,6 +332,10 @@ namespace HandyControlDemo
             else if (name == "FloatingBlock")
             {
                 mainContent.Children.Add(new UserControl.FloatingBlock());
+            }
+            else if (name == "FlowDocument")
+            {
+                mainContent.Children.Add(new UserControl.FlowDocument());
             }
             else if (name == "GifImage")
             {
@@ -364,6 +372,10 @@ namespace HandyControlDemo
             else if (name == "ImageBrowser")
             {
                 mainContent.Children.Add(new UserControl.ImageBrowser());
+            }
+            else if (name == "Label")
+            {
+                mainContent.Children.Add(new UserControl.Label());
             }
             else if (name == "ListBox")
             {

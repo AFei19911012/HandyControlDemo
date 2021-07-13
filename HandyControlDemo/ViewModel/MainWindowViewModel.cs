@@ -50,7 +50,7 @@ namespace HandyControlDemo.ViewModel
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/LinearCarousel_16x.png", Name = "CoverFlow"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/DetailDataView_16x.png", Name = "CoverView"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/DataGrid_16x.png", Name = "DataGrid"},
-                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/DatePicker_16x.png", Name = "DateTimePicker"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/DatePicker_16x.png", Name = "DatePicker"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Dialog_16x.png", Name = "Dialog"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/DottedSplitter_16x.png", Name = "Divider"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/View_Portrait_16x.png", Name = "Drawer"},
@@ -106,6 +106,9 @@ namespace HandyControlDemo.ViewModel
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/PolygonHexagon_16x.png", Name = "HoneycombPanel"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Paginator_16x.png", Name = "Pagination"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/ScrollBox_16x.png", Name = "ScrollViewer"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Calendar_16x.png", Name = "Calendar"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/WPFFlowDocument_16x.png", Name = "FlowDocument"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Label_16x.png", Name = "Label"},
             };
         }
     }

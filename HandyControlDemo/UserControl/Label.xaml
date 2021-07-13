@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.Label"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             Background="{DynamicResource RegionBrush}">
+    <hc:TransitioningContentControl>
+        <StackPanel Margin="32">
+            <Label HorizontalAlignment="Left" Margin="5" Content="Title Title Title Title Title"/>
+            <Label HorizontalAlignment="Left" Margin="5" Content="Title Title Title Title Title" Style="{StaticResource LabelDanger}"/>
+            <Label HorizontalAlignment="Left" Margin="5" Content="Title Title Title Title Title" Style="{StaticResource LabelInfo}"/>
+            <Label HorizontalAlignment="Left" Margin="5" Content="Title Title Title Title Title" Style="{StaticResource LabelPrimary}"/>
+            <Label HorizontalAlignment="Left" Margin="5" Content="Title Title Title Title Title" Style="{StaticResource LabelSuccess}"/>
+            <Label HorizontalAlignment="Left" Margin="5" Content="Title Title Title Title Title" Style="{StaticResource LabelWarning}"/>
+        </StackPanel>
+    </hc:TransitioningContentControl>
+</UserControl>
