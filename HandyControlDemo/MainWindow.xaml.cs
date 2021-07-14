@@ -337,6 +337,10 @@ namespace HandyControlDemo
             {
                 mainContent.Children.Add(new UserControl.FlowDocument());
             }
+            else if (name == "Frame")
+            {
+                mainContent.Children.Add(new UserControl.Frame());
+            }
             else if (name == "GifImage")
             {
                 mainContent.Children.Add(new UserControl.GifImage());
