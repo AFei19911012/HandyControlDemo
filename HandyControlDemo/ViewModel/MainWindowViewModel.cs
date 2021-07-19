@@ -110,6 +110,7 @@ namespace HandyControlDemo.ViewModel
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/WPFFlowDocument_16x.png", Name = "FlowDocument"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Label_16x.png", Name = "Label"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/frame_16xLG.png", Name = "Frame"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Path_16x.png", Name = "Geometry"},
             };
         }
     }

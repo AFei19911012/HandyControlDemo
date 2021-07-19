@@ -86,6 +86,7 @@
     <Compile Include="Helper\ExternDllHelper.cs" />
     <Compile Include="Model\ChatInfoModel.cs" />
     <Compile Include="Model\DemoAnimation.cs" />
+    <Compile Include="Model\GeometryItemModel.cs" />
     <Compile Include="Properties\Lang.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -108,6 +109,9 @@
     </Compile>
     <Compile Include="UserControl\Frame.xaml.cs">
       <DependentUpon>Frame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Geometry.xaml.cs">
+      <DependentUpon>Geometry.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControl\HoneycombPanel.xaml.cs">
       <DependentUpon>HoneycombPanel.xaml</DependentUpon>
@@ -397,6 +401,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControl\Frame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\Geometry.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -341,6 +341,10 @@ namespace HandyControlDemo
             {
                 mainContent.Children.Add(new UserControl.Frame());
             }
+            else if (name == "Geometry")
+            {
+                mainContent.Children.Add(new UserControl.Geometry());
+            }
             else if (name == "GifImage")
             {
                 mainContent.Children.Add(new UserControl.GifImage());
