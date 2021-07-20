@@ -536,7 +536,7 @@ namespace HandyControlDemo
             else if (name == "Windows")
             {
                 mainContent.Children.Add(new UserControl.Windows());
-            }
+            }          
             else if (name == "ChatBubble")
             {
                 mainContent.Children.Add(new UserControl.ChatBubble());
@@ -552,6 +552,10 @@ namespace HandyControlDemo
             else if (name == "Pagination")
             {
                 mainContent.Children.Add(new UserControl.Pagination());
+            }
+            else if (name == "Screenshot")
+            {
+                mainContent.Children.Add(new UserControl.Screenshot());
             }
         }
     }

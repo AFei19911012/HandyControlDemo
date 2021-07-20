@@ -23,7 +23,7 @@ namespace HandyControlDemo.ViewModel
             set => Set(ref isBlink, value);
         }
 
-        private string textInfo;
+        private string textInfo = "Hello~~";
         public string TextInfo
         {
             get => textInfo;

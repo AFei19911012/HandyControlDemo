@@ -42,6 +42,7 @@
             <hc:NotifyIcon Token="NotifyIconToken" Text="HandyControl" IsBlink="{Binding IsBlink}" Visibility="{Binding IsShowIcon,Converter={StaticResource Bool2VisibilityConverter}}">
                 <hc:NotifyIcon.ContextMenu>
                     <ContextMenu>
+                        <MenuItem Command="{Binding SendNotificationCmd}" Header="Send Notification"/>
                         <MenuItem Command="hc:ControlCommands.PushMainWindow2Top" Header="Open Panel"/>
                         <MenuItem Command="hc:ControlCommands.ShutdownApp" Header="Exit"/>
                     </ContextMenu>

@@ -10,7 +10,7 @@
         <viewmodel:WindowsViewModel/>
     </UserControl.DataContext>
     <hc:TransitioningContentControl>
-        <UniformGrid Margin="10" Columns="3" Rows="3" Height="150">
+        <UniformGrid Margin="10" Columns="3" Rows="4" Height="200">
             <Button Command="{Binding OpenWindowCmd}" CommandParameter="CommonWindow" Content="Open Common Window"/>
             <Button Command="{Binding OpenWindowCmd}" CommandParameter="BlurWindow" Content="Open Blur Window"/>
             <Button Command="{Binding OpenWindowCmd}" CommandParameter="CustomNonClientAreaWindow" Content="Open Custom NonClient Area Window"/>
@@ -19,6 +19,8 @@
             <Button Click="ButtonCustomContent_OnClick" Content="Open Custom Content Window"/>
             <Button Name="ButtonMouseFollow" Click="ButtonMouseFollow_OnClick" Content="Open Mouse Follow Window"/>
             <Button Command="{Binding OpenWindowCmd}" CommandParameter="NoNonClientAreaDragableWindow" Content="Open No NonClient Area Dragable Window"/>
+            <Button Command="{Binding OpenWindowCmd}" CommandParameter="NativeCommonWindow" Content="Open Native Common Window"/>
+            <Button Command="{Binding OpenWindowCmd}" CommandParameter="TouchDragMoveWindow" Content="Open Touch Drag MoveWindow"/>
         </UniformGrid>
     </hc:TransitioningContentControl>
 </UserControl>

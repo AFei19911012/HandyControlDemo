@@ -1,0 +1,9 @@
+﻿<Window x:Class="HandyControlDemo.UserControl.Window.TouchDragMoveWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStartupLocation="CenterScreen"
+        Title="Title" 
+        Height="450" 
+        Width="800" 
+        Icon="/HandyControlDemo;component/Resource/Image/icon.ico">
+</Window>

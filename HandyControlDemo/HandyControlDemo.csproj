@@ -122,6 +122,9 @@
     <Compile Include="UserControl\Pagination.xaml.cs">
       <DependentUpon>Pagination.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\Screenshot.xaml.cs">
+      <DependentUpon>Screenshot.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\ScrollViewer.xaml.cs">
       <DependentUpon>ScrollViewer.xaml</DependentUpon>
     </Compile>
@@ -320,9 +323,7 @@
     <Compile Include="UserControl\WaterfallPanel.xaml.cs">
       <DependentUpon>WaterfallPanel.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\Windows.xaml.cs">
-      <DependentUpon>Windows.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="UserControl\Windows.xaml.cs" />
     <Compile Include="UserControl\Window\AboutWindow.xaml.cs">
       <DependentUpon>AboutWindow.xaml</DependentUpon>
     </Compile>
@@ -347,6 +348,9 @@
     <Compile Include="UserControl\Window\InteractiveDialog.xaml.cs">
       <DependentUpon>InteractiveDialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\Window\NativeCommonWindow.xaml.cs">
+      <DependentUpon>NativeCommonWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\Window\NoNonClientAreaDragableWindow.xaml.cs">
       <DependentUpon>NoNonClientAreaDragableWindow.xaml</DependentUpon>
     </Compile>
@@ -355,6 +359,9 @@
     </Compile>
     <Compile Include="UserControl\Window\TextDialogWithTimer.xaml.cs">
       <DependentUpon>TextDialogWithTimer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Window\TouchDragMoveWindow.xaml.cs">
+      <DependentUpon>TouchDragMoveWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\CardViewModel.cs" />
     <Compile Include="ViewModel\ChatBoxViewModel.cs" />
@@ -417,6 +424,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControl\Pagination.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\Screenshot.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -737,8 +748,8 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControl\Windows.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="UserControl\Window\AboutWindow.xaml">
       <SubType>Designer</SubType>
@@ -772,6 +783,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControl\Window\NativeCommonWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControl\Window\NoNonClientAreaDragableWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -781,6 +796,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControl\Window\TextDialogWithTimer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\Window\TouchDragMoveWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
