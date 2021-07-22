@@ -14,7 +14,7 @@
             <Setter Property="Height" Value="50"/>
             <Setter Property="MinWidth" Value="100"/>
             <Setter Property="HorizontalAlignment" Value="Stretch"/>
-            <Setter Property="Content" Value="{Binding Tag,RelativeSource={RelativeSource Self},Converter={StaticResource Int2StringConverter},ConverterParameter=PoptipPositionStr}"/>
+            <Setter Property="Content" Value="{Binding Tag,RelativeSource={RelativeSource Self},Converter={StaticResource Int2StringConverter}}"/>
         </Style>
         <Style x:Key="ToggleButton4PoptipStyle" BasedOn="{StaticResource {x:Type ToggleButton}}" TargetType="ToggleButton">
             <Setter Property="Width" Value="{x:Static system:Double.NaN}"/>

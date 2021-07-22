@@ -92,7 +92,7 @@ namespace HandyControlDemo.ViewModel
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/TabPage_16x.png", Name = "TabControl"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Tag_16x.png", Name = "Tag"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/TextBlock_16x.png", Name = "TextBlock"},
-                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/TextBox_16x.png", Name = "TextBox"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/TextBox_16x.png", Name                                                                                    = "TextBox"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Timeline_16x.png", Name = "TimeBar"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/TimePicker_16x.png", Name = "TimePicker"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/ToolBar_16x.png", Name = "ToolBar"},
@@ -112,6 +112,7 @@ namespace HandyControlDemo.ViewModel
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/frame_16xLG.png", Name = "Frame"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Path_16x.png", Name = "Geometry"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/WindowScreenshot_16x.png", Name = "Screenshot"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Effects_16x.png", Name = "Effects"},
             };
         }
     }

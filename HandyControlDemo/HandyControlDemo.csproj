@@ -101,6 +101,9 @@
     <Compile Include="UserControl\Drawer.xaml.cs">
       <DependentUpon>Drawer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\Effects.xaml.cs">
+      <DependentUpon>Effects.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\FlipClock.xaml.cs">
       <DependentUpon>FlipClock.xaml</DependentUpon>
     </Compile>
@@ -396,6 +399,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControl\Drawer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\Effects.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

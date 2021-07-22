@@ -557,6 +557,10 @@ namespace HandyControlDemo
             {
                 mainContent.Children.Add(new UserControl.Screenshot());
             }
+            else if (name == "Effects")
+            {
+                mainContent.Children.Add(new UserControl.Effects());
+            }
         }
     }
 }
