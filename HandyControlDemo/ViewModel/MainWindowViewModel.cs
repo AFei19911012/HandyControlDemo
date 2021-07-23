@@ -113,6 +113,8 @@ namespace HandyControlDemo.ViewModel
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Path_16x.png", Name = "Geometry"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/WindowScreenshot_16x.png", Name = "Screenshot"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Effects_16x.png", Name = "Effects"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/PropertyGridEditorPart_16x.png", Name = "PropertyGrid"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Image_16x.png", Name = "ImageSelector"},
             };
         }
     }

@@ -561,6 +561,14 @@ namespace HandyControlDemo
             {
                 mainContent.Children.Add(new UserControl.Effects());
             }
+            else if (name == "PropertyGrid")
+            {
+                mainContent.Children.Add(new UserControl.PropertyGrid());
+            }
+            else if (name == "ImageSelector")
+            {
+                mainContent.Children.Add(new UserControl.ImageSelector());
+            }
         }
     }
 }
