@@ -34,6 +34,7 @@ namespace HandyControlDemo.UserControl
         {
             HandyControl.Controls.TabItem item = sender as HandyControl.Controls.TabItem;
             DeleteTabItems.Insert(0, item);
+            HandyControl.Controls.Growl.Info($"{(sender as TabItem)?.Header} Closed");
         }
 
         // Edit TabItem ContextMenu

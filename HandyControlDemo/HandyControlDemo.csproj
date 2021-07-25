@@ -96,14 +96,29 @@
     <Compile Include="UserControl\Calendar.xaml.cs">
       <DependentUpon>Calendar.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\CalendarWithClock.xaml.cs">
+      <DependentUpon>CalendarWithClock.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\ChatBubble.xaml.cs">
       <DependentUpon>ChatBubble.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\CheckComboBox.xaml.cs">
+      <DependentUpon>CheckComboBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Clock.xaml.cs">
+      <DependentUpon>Clock.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Drawer.xaml.cs">
       <DependentUpon>Drawer.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Effects.xaml.cs">
       <DependentUpon>Effects.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ElementGroup.xaml.cs">
+      <DependentUpon>ElementGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\FlexPanel.xaml.cs">
+      <DependentUpon>FlexPanel.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControl\FlipClock.xaml.cs">
       <DependentUpon>FlipClock.xaml</DependentUpon>
@@ -129,8 +144,14 @@
     <Compile Include="UserControl\Pagination.xaml.cs">
       <DependentUpon>Pagination.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\PinBox.xaml.cs">
+      <DependentUpon>PinBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\PropertyGrid.xaml.cs">
       <DependentUpon>PropertyGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\RelativePanel.xaml.cs">
+      <DependentUpon>RelativePanel.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Screenshot.xaml.cs">
       <DependentUpon>Screenshot.xaml</DependentUpon>
@@ -330,6 +351,9 @@
     <Compile Include="UserControl\TreeView.xaml.cs">
       <DependentUpon>TreeView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\UniformSpacingPanel.xaml.cs">
+      <DependentUpon>UniformSpacingPanel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\WaterfallPanel.xaml.cs">
       <DependentUpon>WaterfallPanel.xaml</DependentUpon>
     </Compile>
@@ -401,7 +425,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControl\CalendarWithClock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControl\ChatBubble.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\CheckComboBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\Clock.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -410,6 +446,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControl\Effects.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\ElementGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\FlexPanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -445,7 +489,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControl\PinBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControl\PropertyGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\RelativePanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -762,6 +814,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControl\TreeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\UniformSpacingPanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

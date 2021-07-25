@@ -569,6 +569,38 @@ namespace HandyControlDemo
             {
                 mainContent.Children.Add(new UserControl.ImageSelector());
             }
+            else if (name == "CheckComboBox")
+            {
+                mainContent.Children.Add(new UserControl.CheckComboBox());
+            }
+            else if (name == "PinBox")
+            {
+                mainContent.Children.Add(new UserControl.PinBox());
+            }
+            else if (name == "Clock")
+            {
+                mainContent.Children.Add(new UserControl.Clock());
+            }
+            else if (name == "CalendarWithClock")
+            {
+                mainContent.Children.Add(new UserControl.CalendarWithClock());
+            }
+            else if (name == "ElementGroup")
+            {
+                mainContent.Children.Add(new UserControl.ElementGroup());
+            }
+            else if (name == "FlexPanel")
+            {
+                mainContent.Children.Add(new UserControl.FlexPanel());
+            }
+            else if (name == "UniformSpacingPanel")
+            {
+                mainContent.Children.Add(new UserControl.UniformSpacingPanel());
+            }
+            else if (name == "RelativePanel")
+            {
+                mainContent.Children.Add(new UserControl.RelativePanel());
+            }
         }
     }
 }

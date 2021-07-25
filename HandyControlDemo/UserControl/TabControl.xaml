@@ -51,10 +51,10 @@
             </TabControl>
             <hc:TabControl Name="tabControl" Margin="10" IsTabFillEnabled="True" ShowCloseButton="True" IsDraggable="True" IsAnimationEnabled="True"
                            ShowOverflowButton="False" ShowScrollButton="True" IsScrollable="True" ContextMenuOpening="TabControl_ContextMenuOpening">
-                <hc:TabItem Header="TabItem1" Closed="TabItem_Closed">
+                <hc:TabItem Header="TabItem1" hc:IconElement.Geometry="{StaticResource ConfigGeometry}" Closed="TabItem_Closed">
                     <hc:SimplePanel Background="{DynamicResource PrimaryBrush}"/>
                 </hc:TabItem>
-                <hc:TabItem Header="TabItem2" Closed="TabItem_Closed">
+                <hc:TabItem Header="TabItem2" hc:IconElement.Geometry="{StaticResource WindowsGeometry}" Closed="TabItem_Closed">
                     <hc:SimplePanel Background="{DynamicResource DangerBrush}"/>
                 </hc:TabItem>
                 <hc:TabItem Header="TabItem3" Closed="TabItem_Closed">

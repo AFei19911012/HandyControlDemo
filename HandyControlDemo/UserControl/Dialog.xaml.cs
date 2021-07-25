@@ -58,6 +58,20 @@ namespace HandyControlDemo.UserControl
             }
         }
 
+        //private async Task ShowInteractiveDialog(bool withTimer)
+        //{
+        //    if (!withTimer)
+        //    {
+        //        DialogResult = await Dialog.Show<InteractiveDialog>()
+        //            .Initialize<InteractiveDialogViewModel>(vm => vm.Message = DialogResult)
+        //            .GetResultAsync<string>();
+        //    }
+        //    else
+        //    {
+        //        await Dialog.Show<TextDialogWithTimer>(MessageToken.MainWindow).GetResultAsync<string>();
+        //    }
+        //}
+
         private void InteractiveDialog_Click(object sender, RoutedEventArgs e)
         {
             HandyControl.Controls.Dialog.Show(new InteractiveDialog(vm.Content));

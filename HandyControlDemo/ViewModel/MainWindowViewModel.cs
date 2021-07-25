@@ -115,6 +115,14 @@ namespace HandyControlDemo.ViewModel
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Effects_16x.png", Name = "Effects"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/PropertyGridEditorPart_16x.png", Name = "PropertyGrid"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Image_16x.png", Name = "ImageSelector"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/CheckboxList_16x.png", Name = "CheckComboBox"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Ellipsis_16x.png", Name = "PinBox"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Time_color_16x.png", Name = "Clock"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Calendar_16x.png", Name = "CalendarWithClock"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/ButtonGroup_16x.png", Name = "ElementGroup"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/layout-FlexLayout-16.png", Name = "FlexPanel"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/IncreaseHorizontalSpacing_16x.png", Name = "UniformSpacingPanel"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/TransformRelative_16x.png", Name = "RelativePanel"},
             };
         }
     }
