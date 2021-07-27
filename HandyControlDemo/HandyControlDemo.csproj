@@ -270,8 +270,8 @@
     <Compile Include="UserControl\MorphingAnimation.xaml.cs">
       <DependentUpon>MorphingAnimation.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\NiumericUpDown.xaml.cs">
-      <DependentUpon>NiumericUpDown.xaml</DependentUpon>
+    <Compile Include="UserControl\NumericUpDown.xaml.cs">
+      <DependentUpon>NumericUpDown.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Notification.xaml.cs">
       <DependentUpon>Notification.xaml</DependentUpon>
@@ -709,7 +709,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControl\NiumericUpDown.xaml">
+    <Page Include="UserControl\NumericUpDown.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

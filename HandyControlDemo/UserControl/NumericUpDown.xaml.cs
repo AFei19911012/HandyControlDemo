@@ -5,9 +5,9 @@ namespace HandyControlDemo.UserControl
     /// <summary>
     /// NiumericUpDown.xaml 的交互逻辑
     /// </summary>
-    public partial class NiumericUpDown
+    public partial class NumericUpDown
     {
-        public NiumericUpDown()
+        public NumericUpDown()
         {
             InitializeComponent();
 

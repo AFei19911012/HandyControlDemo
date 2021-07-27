@@ -70,7 +70,7 @@ namespace HandyControlDemo.ViewModel
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Search_16x.png", Name = "Magnifier"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/ContextMenu_16x.png", Name = "Menu"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Animation_16x.png", Name = "MorphingAnimation"},
-                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/NumericListBox_16x.png", Name = "NiumericUpDown"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/NumericListBox_16x.png", Name = "NumericUpDown"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/Procedure_16x.png", Name = "Notification"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/NotificationHub_16x.png", Name = "NotifyIcon"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/TextBlock_16x.png", Name = "OutlineText"},

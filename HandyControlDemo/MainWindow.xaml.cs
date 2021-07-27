@@ -409,9 +409,9 @@ namespace HandyControlDemo
             {
                 mainContent.Children.Add(new UserControl.MorphingAnimation());
             }
-            else if (name == "NiumericUpDown")
+            else if (name == "NumericUpDown")
             {
-                mainContent.Children.Add(new UserControl.NiumericUpDown());
+                mainContent.Children.Add(new UserControl.NumericUpDown());
             }
             else if (name == "Notification")
             {
