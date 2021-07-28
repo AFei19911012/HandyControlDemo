@@ -126,9 +126,6 @@
     <Compile Include="UserControl\FlowDocument.xaml.cs">
       <DependentUpon>FlowDocument.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\Frame.xaml.cs">
-      <DependentUpon>Frame.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UserControl\Geometry.xaml.cs">
       <DependentUpon>Geometry.xaml</DependentUpon>
     </Compile>
@@ -357,7 +354,9 @@
     <Compile Include="UserControl\WaterfallPanel.xaml.cs">
       <DependentUpon>WaterfallPanel.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\Windows.xaml.cs" />
+    <Compile Include="UserControl\Windows.xaml.cs">
+      <DependentUpon>Windows.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\Window\AboutWindow.xaml.cs">
       <DependentUpon>AboutWindow.xaml</DependentUpon>
     </Compile>
@@ -462,10 +461,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControl\FlowDocument.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UserControl\Frame.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -826,8 +821,8 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControl\Windows.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControl\Window\AboutWindow.xaml">
       <SubType>Designer</SubType>
