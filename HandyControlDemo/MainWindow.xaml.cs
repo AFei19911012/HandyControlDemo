@@ -209,18 +209,38 @@ namespace HandyControlDemo
         // Search
         private void SearchBar_OnSearchStarted(object sender, FunctionEventArgs<string> e)
         {
-            if (e.Info == null)
-            {
-                return;
-            }
+            string key = e.Info;
             if (!(sender is FrameworkElement searchBar && searchBar.Tag is ListBox listBox))
             {
                 return;
             }
-            foreach (DemoDataModel item in listBox.Items)
+
+            if (string.IsNullOrEmpty(key))
             {
-                ListBoxItem listBoxItem = listBox.ItemContainerGenerator.ContainerFromItem(item) as ListBoxItem;
-                listBoxItem?.Show(item.Name.ToLower().Contains(e.Info.ToLower()));
+                foreach (DemoDataModel item in listBox.Items)
+                {
+                    string name = item.Name.ToLower();
+                    ListBoxItem listBoxItem = listBox.ItemContainerGenerator.ContainerFromItem(item) as ListBoxItem;
+                    listBoxItem?.Show(true);
+                }
+            }
+            else
+            {
+                key = key.ToLower();
+                foreach (DemoDataModel item in listBox.Items)
+                {
+                    string name = item.Name.ToLower();
+                    ListBoxItem listBoxItem = listBox.ItemContainerGenerator.ContainerFromItem(item) as ListBoxItem;
+                    if (name.Contains(key))
+                    {
+                        listBoxItem?.Show(true);
+                    }
+                    else
+                    {
+                        listBoxItem?.Show(false);
+                    }
+
+                }
             }
         }
 
