@@ -8,12 +8,28 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>HandyControlDemo</RootNamespace>
     <AssemblyName>HandyControlDemo</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -24,6 +40,9 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>
+    </CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -50,8 +69,8 @@
     <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.4.1.0, Culture=neutral, PublicKeyToken=5f873c45e98af8a1, processorArchitecture=MSIL">
       <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Platform.dll</HintPath>
     </Reference>
-    <Reference Include="HandyControl, Version=3.2.0.0, Culture=neutral, PublicKeyToken=45be8712787a1e5b, processorArchitecture=MSIL">
-      <HintPath>..\packages\HandyControl.3.2.0\lib\net47\HandyControl.dll</HintPath>
+    <Reference Include="HandyControl, Version=3.3.0.0, Culture=neutral, PublicKeyToken=45be8712787a1e5b, processorArchitecture=MSIL">
+      <HintPath>..\packages\HandyControl.3.3.0\lib\net472\HandyControl.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -92,6 +111,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Lang.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\AutoCompleteTextBoxDemo.xaml.cs">
+      <DependentUpon>AutoCompleteTextBoxDemo.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Calendar.xaml.cs">
       <DependentUpon>Calendar.xaml</DependentUpon>
@@ -354,6 +376,9 @@
     <Compile Include="UserControl\WaterfallPanel.xaml.cs">
       <DependentUpon>WaterfallPanel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\WatermarkDemo.xaml.cs">
+      <DependentUpon>WatermarkDemo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\Windows.xaml.cs">
       <DependentUpon>Windows.xaml</DependentUpon>
     </Compile>
@@ -396,6 +421,7 @@
     <Compile Include="UserControl\Window\TouchDragMoveWindow.xaml.cs">
       <DependentUpon>TouchDragMoveWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\AutoCompleteTextBoxDemoViewModel.cs" />
     <Compile Include="ViewModel\CardViewModel.cs" />
     <Compile Include="ViewModel\ChatBoxViewModel.cs" />
     <Compile Include="ViewModel\ComboBoxViewModel.cs" />
@@ -420,6 +446,10 @@
     <Compile Include="ViewModel\TransferViewModel.cs" />
     <Compile Include="ViewModel\TreeViewViewModel.cs" />
     <Compile Include="ViewModel\WindowsViewModel.cs" />
+    <Page Include="UserControl\AutoCompleteTextBoxDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControl\Calendar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -820,6 +850,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControl\WatermarkDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControl\Windows.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -1061,6 +1095,26 @@
     <Resource Include="Resource\Image\LeftMainContent\TransformRelative_16x.png" />
     <Resource Include="Resource\Image\LeftMainContent\WindowScreenshot_16x.png" />
     <Resource Include="Resource\Image\LeftMainContent\WPFFlowDocument_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Image\car_chase.gif" />
+    <Resource Include="Resource\Image\chrome_dragon.png" />
+    <Resource Include="Resource\Image\cloud.png" />
+    <Resource Include="Resource\Image\icon-white.ico" />
+    <Resource Include="Resource\Image\Slack.png" />
+    <Resource Include="Resource\Image\under_construction.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

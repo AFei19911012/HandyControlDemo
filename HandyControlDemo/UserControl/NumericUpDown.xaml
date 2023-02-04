@@ -17,12 +17,12 @@
                                   Style="{StaticResource NumericUpDownExtend}" hc:InfoElement.Necessary="True"/>
             </StackPanel>
             <StackPanel Margin="32,0,0,0" Width="200">
-                <hc:NumericUpDown Margin="0,0,0,32" Name="NumericUpDownCustomVerify" ShowClearButton="True" Style="{StaticResource NumericUpDownPlus}"/>
+                <hc:NumericUpDown Margin="0,0,0,32" Style="{StaticResource NumericUpDownPlus}"/>
                 <hc:NumericUpDown Margin="0,0,0,32" IsEnabled="False" Style="{StaticResource NumericUpDownPlus}"/>
-                <hc:NumericUpDown Margin="0,0,0,32" ShowClearButton="True" hc:InfoElement.Title="This is the title" Style="{StaticResource NumericUpDownPlus}"/>
+                <hc:NumericUpDown Margin="0,0,0,32" hc:InfoElement.Title="This is the title" Style="{StaticResource NumericUpDownPlus}"/>
                 <hc:NumericUpDown Margin="0,0,0,32" hc:InfoElement.Placeholder="0" hc:InfoElement.Title="This is the title" hc:InfoElement.Necessary="True" Style="{StaticResource NumericUpDownPlus}"/>
                 <hc:NumericUpDown Margin="0,0,0,32" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title" Style="{StaticResource NumericUpDownPlus}"/>
-                <hc:NumericUpDown Margin="0,0,0,32" DecimalPlaces="2" ShowClearButton="True" hc:InfoElement.TitleWidth="70" hc:InfoElement.Placeholder="0" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title" 
+                <hc:NumericUpDown Margin="0,0,0,32" DecimalPlaces="2" hc:InfoElement.TitleWidth="70" hc:InfoElement.Placeholder="0" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title" 
                                   Style="{StaticResource NumericUpDownPlus}" hc:InfoElement.Necessary="True"/>
             </StackPanel>
         </StackPanel>

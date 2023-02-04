@@ -33,7 +33,7 @@
                     </Border>
                 </hc:WaterfallPanel>
             </hc:ScrollViewer>
-            <hc:ScrollViewer Margin="10,0,0,0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Hidden" Orientation="Horizontal" MaxWidth="300">
+            <hc:ScrollViewer Margin="10,0,0,0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Hidden" MaxWidth="300">
                 <hc:WaterfallPanel VerticalAlignment="Center" Height="300" Orientation="Vertical" Groups="{Binding ElementName=UpDownGroups,Path=Value}" 
                                    hc:PanelElement.FluidMoveBehavior="{StaticResource BehaviorXY200}">
                     <Border Width="100" Background="{DynamicResource PrimaryBrush}" Effect="{StaticResource EffectShadow1}" Margin="5">

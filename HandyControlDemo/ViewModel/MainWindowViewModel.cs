@@ -122,6 +122,8 @@ namespace HandyControlDemo.ViewModel
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/layout-FlexLayout-16.png", Name = "FlexPanel"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/IncreaseHorizontalSpacing_16x.png", Name = "UniformSpacingPanel"},
                 new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/TransformRelative_16x.png", Name = "RelativePanel"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/TextBlock_16x.png", Name = "Watermark"},
+                new DemoDataModel{ ImgPath = "pack://application:,,,/Resource/Image/LeftMainContent/ComboBox_16x.png", Name = "AutoCompleteTextBox"},
             };
         }
     }

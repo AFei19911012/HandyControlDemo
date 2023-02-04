@@ -3,8 +3,9 @@
            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-           xmlns:hc="https://handyorg.github.io/handycontrol"
-           mc:Ignorable="d"
+           xmlns:hc="https://handyorg.github.io/handycontrol" 
+               xmlns:vm="clr-namespace:HandyControlDemo.ViewModel"
+               mc:Ignorable="d"
            ActiveGlowColor="{DynamicResource PrimaryColor}"
            ResizeMode="CanResizeWithGrip"
            ShowNonClientArea="True"
@@ -14,6 +15,9 @@
            Icon="Resource/Image/icon.ico"
            Height="800" 
            Width="1200">
+    <hc:GlowWindow.DataContext>
+        <vm:MainWindowViewModel/>
+    </hc:GlowWindow.DataContext>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -55,7 +59,7 @@
                         <ColumnDefinition/>
                         <ColumnDefinition Width="auto"/>
                     </Grid.ColumnDefinitions>
-                    <hc:SearchBar Style="{StaticResource SearchBarPlus}" hc:InfoElement.Placeholder="Enter key word" Margin="4" ShowClearButton="True"
+                    <hc:SearchBar Style="{StaticResource SearchBarPlus}" hc:InfoElement.Placeholder="Enter key word" Margin="4"
                                   IsRealTime="True" SearchStarted="SearchBar_OnSearchStarted" Tag="{Binding ElementName=ListBoxDemo}"/>
                     <ToggleButton Grid.Column="1" Margin="2" Name="ButtonStyleAscending" Style="{StaticResource DemoInfoSortButtonStyle}"
                                   Tag="{Binding ElementName=ListBoxDemo}" Click="ButtonAscending_OnClick"/>

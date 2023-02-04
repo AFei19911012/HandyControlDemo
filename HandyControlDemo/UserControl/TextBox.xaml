@@ -19,14 +19,14 @@
                          hc:InfoElement.Title="Left title" hc:InfoElement.Necessary="True" Style="{StaticResource TextBoxExtend}"/>
             </StackPanel>
             <StackPanel Margin="32" Width="300">
-                <hc:TextBox ShowClearButton="True" Text="This is the content"/>
+                <hc:TextBox Text="This is the content"/>
                 <hc:TextBox IsEnabled="False" Text="This is the content"/>
-                <hc:TextBox ShowClearButton="True" hc:InfoElement.Title="This is the title" Style="{StaticResource TextBoxExtend}" 
+                <hc:TextBox hc:InfoElement.Title="This is the title" Style="{StaticResource TextBoxExtend}" 
                             Text="This is the content"/>
-                <hc:TextBox Margin="0,0,0,32" TextType="Mail" hc:InfoElement.Placeholder="Email" hc:InfoElement.Title="Must be filled" 
+                <hc:TextBox Margin="0,0,0,32" hc:InfoElement.Placeholder="Email" hc:InfoElement.Title="Must be filled" 
                             hc:InfoElement.Necessary="True"/>
                 <hc:TextBox hc:InfoElement.TitleWidth="70" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title" Text="content"/>
-                <hc:TextBox Margin="0,0,0,32" ShowClearButton="True" hc:InfoElement.TitleWidth="70" hc:InfoElement.Placeholder="Necessary" 
+                <hc:TextBox Margin="0,0,0,32" hc:InfoElement.TitleWidth="70" hc:InfoElement.Placeholder="Necessary" 
                             hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title" hc:InfoElement.Necessary="True" 
                             Style="{StaticResource TextBoxExtend}"/>
             </StackPanel>

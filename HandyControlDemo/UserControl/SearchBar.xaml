@@ -23,15 +23,15 @@
                           hc:InfoElement.Title="Left title" Style="{StaticResource SearchBarExtend}" hc:InfoElement.Necessary="True" Margin="0,32,0,0"/>
         </StackPanel>
         <StackPanel Margin="32,0,0,0">
-            <hc:SearchBar Name="SearchBarCustomVerify" ShowClearButton="True" Style="{StaticResource SearchBarPlus}"/>
+            <hc:SearchBar Name="SearchBarCustomVerify" Style="{StaticResource SearchBarPlus}"/>
             <hc:SearchBar Margin="0,32,0,0" IsEnabled="False" Style="{StaticResource SearchBarPlus}"/>
 
-            <hc:SearchBar ShowClearButton="True" hc:InfoElement.Title="This is the title" Margin="0,32,0,0" Style="{StaticResource SearchBarPlus}"/>
-            <hc:SearchBar TextType="Mail" hc:InfoElement.Placeholder="Please enter email" hc:InfoElement.Title="This is the title" Margin="0,32,0,0" 
+            <hc:SearchBar hc:InfoElement.Title="This is the title" Margin="0,32,0,0" Style="{StaticResource SearchBarPlus}"/>
+            <hc:SearchBar hc:InfoElement.Placeholder="Please enter email" hc:InfoElement.Title="This is the title" Margin="0,32,0,0" 
                           hc:InfoElement.Necessary="True" Style="{StaticResource SearchBarPlus}"/>
             <hc:SearchBar Width="200" hc:InfoElement.TitleWidth="60" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title" 
                           Style="{StaticResource SearchBarPlus}" Margin="0,32,0,0"/>
-            <hc:SearchBar ShowClearButton="True" Width="200" hc:InfoElement.TitleWidth="60" hc:InfoElement.Placeholder="Please enter content" 
+            <hc:SearchBar Width="200" hc:InfoElement.TitleWidth="60" hc:InfoElement.Placeholder="Please enter content" 
                           hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title" Style="{StaticResource SearchBarPlus}" 
                           hc:InfoElement.Necessary="True" Margin="0,32,0,0"/>
         </StackPanel>

@@ -18,17 +18,16 @@ namespace HandyControlDemo
     /// </summary>
     public partial class MainWindow
     {
-        private MainWindowViewModel vm;
-        private int ThemeColorFlag = 0;
+        private MainWindowViewModel VM { get; set; }
+        private int ThemeColorFlag { get; set; } = 0;
 
         public MainWindow()
         {
             InitializeComponent();
 
             InitialResourceDictionary();
-            vm = new MainWindowViewModel();
 
-            DataContext = vm;
+            VM = DataContext as MainWindowViewModel;
         }
 
         // Ititial ResourceDictionary
@@ -67,21 +66,21 @@ namespace HandyControlDemo
             };
             Resources.MergedDictionaries.RemoveAt(pos);
             Resources.MergedDictionaries.Insert(pos, resource);
-        }  
+        }
 
         // Language
         private void UpdataLanguage()
         {
-            int len = vm.DataList.Count;
+            int len = VM.DataList.Count;
             for (int i = 0; i < len; i++)
             {
-                if (vm.DataList[i].Name == "Button" || vm.DataList[i].Name == "按钮")
+                if (VM.DataList[i].Name == "Button" || VM.DataList[i].Name == "按钮")
                 {
-                    vm.DataList[i].Name = (string)FindResource("Button");
+                    VM.DataList[i].Name = (string)FindResource("Button");
                 }
-                else if (vm.DataList[i].Name == "Brush" || vm.DataList[i].Name == "画刷")
+                else if (VM.DataList[i].Name == "Brush" || VM.DataList[i].Name == "画刷")
                 {
-                    vm.DataList[i].Name = (string)FindResource("Brush");
+                    VM.DataList[i].Name = (string)FindResource("Brush");
                 }
             }
         }
@@ -153,11 +152,11 @@ namespace HandyControlDemo
         // Close
         private void ButtonClose_Click(object sender, RoutedEventArgs e)
         {
-            if (vm.SelectedIndex >= 0)
+            if (VM.SelectedIndex >= 0)
             {
-                if (vm.DataList[vm.SelectedIndex].Name == "NotifyIcon")
+                if (VM.DataList[VM.SelectedIndex].Name == "NotifyIcon")
                 {
-                    HandyControl.Controls.MessageBox.Show(new MessageBoxInfo
+                    _ = HandyControl.Controls.MessageBox.Show(new MessageBoxInfo
                     {
                         Message = "Window will be hidden not closed.",
                         Caption = "Title",
@@ -196,14 +195,14 @@ namespace HandyControlDemo
                 //Token = "TokenTest",
                 Visibility = Visibility.Visible,
             };
-            panle.Children.Add(notify);
+            _ = panle.Children.Add(notify);
             notify.Click += Notify_Click;
             NotifyIcon.ShowBalloonTip("HandyControl", "Test", NotifyIconInfoType.Info, "");
         }
         // User Defined NotifyIcon: Do Something
         private void Notify_Click(object sender, RoutedEventArgs e)
         {
-            HandyControl.Controls.MessageBox.Show("22");
+            _ = HandyControl.Controls.MessageBox.Show("22");
         }
 
         // Search
@@ -263,7 +262,7 @@ namespace HandyControlDemo
         // UserControl Show
         private void ListBoxDemo_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (vm.SelectedIndex < 0)
+            if (VM.SelectedIndex < 0)
             {
                 return;
             };
@@ -271,351 +270,359 @@ namespace HandyControlDemo
             string name = (ListBoxDemo.SelectedItem as DemoDataModel).Name;
             if (name == "AnimationPath")
             {
-                mainContent.Children.Add(new UserControl.AnimationPath());
+                _ = mainContent.Children.Add(new UserControl.AnimationPath());
             }
             else if (name == "Badge")
             {
-                mainContent.Children.Add(new UserControl.Badge());
+                _ = mainContent.Children.Add(new UserControl.Badge());
             }
             else if (name == "Border")
             {
-                mainContent.Children.Add(new UserControl.Border());
+                _ = mainContent.Children.Add(new UserControl.Border());
             }
             else if (name == "Brush")
             {
-                mainContent.Children.Add(new UserControl.Brush());
+                _ = mainContent.Children.Add(new UserControl.Brush());
             }
             else if (name == "Button")
             {
-                mainContent.Children.Add(new UserControl.Button());
+                _ = mainContent.Children.Add(new UserControl.Button());
             }
             else if (name == "Calendar")
             {
-                mainContent.Children.Add(new UserControl.Calendar());
+                _ = mainContent.Children.Add(new UserControl.Calendar());
             }
             else if (name == "Card")
             {
-                mainContent.Children.Add(new UserControl.Card());
+                _ = mainContent.Children.Add(new UserControl.Card());
             }
             else if (name == "Carousel")
             {
-                mainContent.Children.Add(new UserControl.Carousel());
+                _ = mainContent.Children.Add(new UserControl.Carousel());
             }
             else if (name == "CirclePanel")
             {
-                mainContent.Children.Add(new UserControl.CirclePanel());
+                _ = mainContent.Children.Add(new UserControl.CirclePanel());
             }
             else if (name == "ColorPicker")
             {
-                mainContent.Children.Add(new UserControl.ColorPicker());
+                _ = mainContent.Children.Add(new UserControl.ColorPicker());
             }
             else if (name == "ComboBox")
             {
-                mainContent.Children.Add(new UserControl.ComboBox());
+                _ = mainContent.Children.Add(new UserControl.ComboBox());
             }
             else if (name == "CompareSlider")
             {
-                mainContent.Children.Add(new UserControl.CompareSlider());
+                _ = mainContent.Children.Add(new UserControl.CompareSlider());
             }
             else if (name == "CoverFlow")
             {
-                mainContent.Children.Add(new UserControl.CoverFlow());
+                _ = mainContent.Children.Add(new UserControl.CoverFlow());
             }
             else if (name == "CoverView")
             {
-                mainContent.Children.Add(new UserControl.CoverView());
+                _ = mainContent.Children.Add(new UserControl.CoverView());
             }
             else if (name == "DataGrid")
             {
-                mainContent.Children.Add(new UserControl.DataGrid());
+                _ = mainContent.Children.Add(new UserControl.DataGrid());
             }
             else if (name == "DatePicker")
             {
-                mainContent.Children.Add(new UserControl.DatePicker());
+                _ = mainContent.Children.Add(new UserControl.DatePicker());
             }
             else if (name == "Dialog")
             {
-                mainContent.Children.Add(new UserControl.Dialog());
+                _ = mainContent.Children.Add(new UserControl.Dialog());
             }
             else if (name == "Divider")
             {
-                mainContent.Children.Add(new UserControl.Divider());
+                _ = mainContent.Children.Add(new UserControl.Divider());
             }
             else if (name == "Drawer")
             {
-                mainContent.Children.Add(new UserControl.Drawer());
+                _ = mainContent.Children.Add(new UserControl.Drawer());
             }
             else if (name == "Expander")
             {
-                mainContent.Children.Add(new UserControl.Expander());
+                _ = mainContent.Children.Add(new UserControl.Expander());
             }
             else if (name == "FloatingBlock")
             {
-                mainContent.Children.Add(new UserControl.FloatingBlock());
+                _ = mainContent.Children.Add(new UserControl.FloatingBlock());
             }
             else if (name == "FlowDocument")
             {
-                mainContent.Children.Add(new UserControl.FlowDocument());
+                _ = mainContent.Children.Add(new UserControl.FlowDocument());
             }
             else if (name == "Geometry")
             {
-                mainContent.Children.Add(new UserControl.Geometry());
+                _ = mainContent.Children.Add(new UserControl.Geometry());
             }
             else if (name == "GifImage")
             {
-                mainContent.Children.Add(new UserControl.GifImage());
+                _ = mainContent.Children.Add(new UserControl.GifImage());
             }
             else if (name == "GotoTop")
             {
-                mainContent.Children.Add(new UserControl.GotoTop());
+                _ = mainContent.Children.Add(new UserControl.GotoTop());
             }
             else if (name == "Gravatar")
             {
-                mainContent.Children.Add(new UserControl.Gravatar());
+                _ = mainContent.Children.Add(new UserControl.Gravatar());
             }
             else if (name == "Grid")
             {
-                mainContent.Children.Add(new UserControl.Grid());
+                _ = mainContent.Children.Add(new UserControl.Grid());
             }
             else if (name == "GroupBox")
             {
-                mainContent.Children.Add(new UserControl.GroupBox());
+                _ = mainContent.Children.Add(new UserControl.GroupBox());
             }
             else if (name == "Growl")
             {
-                mainContent.Children.Add(new UserControl.Growl());
+                _ = mainContent.Children.Add(new UserControl.Growl());
             }
             else if (name == "HatchBrushGenerator")
             {
-                mainContent.Children.Add(new UserControl.HatchBrushGenerator());
+                _ = mainContent.Children.Add(new UserControl.HatchBrushGenerator());
             }
             else if (name == "ImageBlock")
             {
-                mainContent.Children.Add(new UserControl.ImageBlock());
+                _ = mainContent.Children.Add(new UserControl.ImageBlock());
             }
             else if (name == "ImageBrowser")
             {
-                mainContent.Children.Add(new UserControl.ImageBrowser());
+                _ = mainContent.Children.Add(new UserControl.ImageBrowser());
             }
             else if (name == "Label")
             {
-                mainContent.Children.Add(new UserControl.Label());
+                _ = mainContent.Children.Add(new UserControl.Label());
             }
             else if (name == "ListBox")
             {
-                mainContent.Children.Add(new UserControl.ListBox());
+                _ = mainContent.Children.Add(new UserControl.ListBox());
             }
             else if (name == "ListView")
             {
-                mainContent.Children.Add(new UserControl.ListView());
+                _ = mainContent.Children.Add(new UserControl.ListView());
             }
             else if (name == "Loading")
             {
-                mainContent.Children.Add(new UserControl.Loading());
+                _ = mainContent.Children.Add(new UserControl.Loading());
             }
             else if (name == "Magnifier")
             {
-                mainContent.Children.Add(new UserControl.Magnifier());
+                _ = mainContent.Children.Add(new UserControl.Magnifier());
             }
             else if (name == "Menu")
             {
-                mainContent.Children.Add(new UserControl.Menu());
+                _ = mainContent.Children.Add(new UserControl.Menu());
             }
             else if (name == "MorphingAnimation")
             {
-                mainContent.Children.Add(new UserControl.MorphingAnimation());
+                _ = mainContent.Children.Add(new UserControl.MorphingAnimation());
             }
             else if (name == "NumericUpDown")
             {
-                mainContent.Children.Add(new UserControl.NumericUpDown());
+                _ = mainContent.Children.Add(new UserControl.NumericUpDown());
             }
             else if (name == "Notification")
             {
-                mainContent.Children.Add(new UserControl.Notification());
+                _ = mainContent.Children.Add(new UserControl.Notification());
             }
             else if (name == "NotifyIcon")
             {
-                mainContent.Children.Add(new UserControl.NotifyIcon());
+                _ = mainContent.Children.Add(new UserControl.NotifyIcon());
             }
             else if (name == "OutlineText")
             {
-                mainContent.Children.Add(new UserControl.OutlineText());
+                _ = mainContent.Children.Add(new UserControl.OutlineText());
             }
             else if (name == "PasswordBox")
             {
-                mainContent.Children.Add(new UserControl.PasswordBox());
+                _ = mainContent.Children.Add(new UserControl.PasswordBox());
             }
             else if (name == "Poptip")
             {
-                mainContent.Children.Add(new UserControl.Poptip());
+                _ = mainContent.Children.Add(new UserControl.Poptip());
             }
             else if (name == "PreviewSlider")
             {
-                mainContent.Children.Add(new UserControl.PreviewSlider());
+                _ = mainContent.Children.Add(new UserControl.PreviewSlider());
             }
             else if (name == "ProgressBar")
             {
-                mainContent.Children.Add(new UserControl.ProgressBar());
+                _ = mainContent.Children.Add(new UserControl.ProgressBar());
             }
             else if (name == "RangeSlider")
             {
-                mainContent.Children.Add(new UserControl.RangeSlider());
+                _ = mainContent.Children.Add(new UserControl.RangeSlider());
             }
             else if (name == "Rate")
             {
-                mainContent.Children.Add(new UserControl.Rate());
+                _ = mainContent.Children.Add(new UserControl.Rate());
             }
             else if (name == "RichTextBox")
             {
-                mainContent.Children.Add(new UserControl.RichTextBox());
+                _ = mainContent.Children.Add(new UserControl.RichTextBox());
             }
             else if (name == "RunningBlock")
             {
-                mainContent.Children.Add(new UserControl.RunningBlock());
+                _ = mainContent.Children.Add(new UserControl.RunningBlock());
             }
             else if (name == "ScrollViewer")
             {
-                mainContent.Children.Add(new UserControl.ScrollViewer());
+                _ = mainContent.Children.Add(new UserControl.ScrollViewer());
             }
             else if (name == "SearchBar")
             {
-                mainContent.Children.Add(new UserControl.SearchBar());
+                _ = mainContent.Children.Add(new UserControl.SearchBar());
             }
             else if (name == "Shield")
             {
-                mainContent.Children.Add(new UserControl.Shield());
+                _ = mainContent.Children.Add(new UserControl.Shield());
             }
             else if (name == "SideMenu")
             {
-                mainContent.Children.Add(new UserControl.SideMenu());
+                _ = mainContent.Children.Add(new UserControl.SideMenu());
             }
             else if (name == "Slider")
             {
-                mainContent.Children.Add(new UserControl.Slider());
+                _ = mainContent.Children.Add(new UserControl.Slider());
             }
             else if (name == "SplitButton")
             {
-                mainContent.Children.Add(new UserControl.SplitButton());
+                _ = mainContent.Children.Add(new UserControl.SplitButton());
             }
             else if (name == "Sprite")
             {
-                mainContent.Children.Add(new UserControl.Sprite());
+                _ = mainContent.Children.Add(new UserControl.Sprite());
             }
             else if (name == "StepBar")
             {
-                mainContent.Children.Add(new UserControl.StepBar());
+                _ = mainContent.Children.Add(new UserControl.StepBar());
             }
             else if (name == "TabControl")
             {
-                mainContent.Children.Add(new UserControl.TabControl());
+                _ = mainContent.Children.Add(new UserControl.TabControl());
             }
             else if (name == "Tag")
             {
-                mainContent.Children.Add(new UserControl.Tag());
+                _ = mainContent.Children.Add(new UserControl.Tag());
             }
             else if (name == "TextBlock")
             {
-                mainContent.Children.Add(new UserControl.TextBlock());
+                _ = mainContent.Children.Add(new UserControl.TextBlock());
             }
             else if (name == "TextBox")
             {
-                mainContent.Children.Add(new UserControl.TextBox());
+                _ = mainContent.Children.Add(new UserControl.TextBox());
             }
             else if (name == "TimeBar")
             {
-                mainContent.Children.Add(new UserControl.TimeBar());
+                _ = mainContent.Children.Add(new UserControl.TimeBar());
             }
             else if (name == "TimePicker")
             {
-                mainContent.Children.Add(new UserControl.TimePicker());
+                _ = mainContent.Children.Add(new UserControl.TimePicker());
             }
             else if (name == "ToolBar")
             {
-                mainContent.Children.Add(new UserControl.ToolBar());
+                _ = mainContent.Children.Add(new UserControl.ToolBar());
             }
             else if (name == "Transfer")
             {
-                mainContent.Children.Add(new UserControl.Transfer());
+                _ = mainContent.Children.Add(new UserControl.Transfer());
             }
             else if (name == "TransitioningContentControl")
             {
-                mainContent.Children.Add(new UserControl.TransitioningContentControl());
+                _ = mainContent.Children.Add(new UserControl.TransitioningContentControl());
             }
             else if (name == "TreeView")
             {
-                mainContent.Children.Add(new UserControl.TreeView());
+                _ = mainContent.Children.Add(new UserControl.TreeView());
             }
             else if (name == "WaterfallPanel")
             {
-                mainContent.Children.Add(new UserControl.WaterfallPanel());
+                _ = mainContent.Children.Add(new UserControl.WaterfallPanel());
             }
             else if (name == "Windows")
             {
-                mainContent.Children.Add(new UserControl.Windows());
+                _ = mainContent.Children.Add(new UserControl.Windows());
             }          
             else if (name == "ChatBubble")
             {
-                mainContent.Children.Add(new UserControl.ChatBubble());
+                _ = mainContent.Children.Add(new UserControl.ChatBubble());
             }
             else if (name == "FlipClock")
             {
-                mainContent.Children.Add(new UserControl.FlipClock());
+                _ = mainContent.Children.Add(new UserControl.FlipClock());
             }
             else if (name == "HoneycombPanel")
             {
-                mainContent.Children.Add(new UserControl.HoneycombPanel());
+                _ = mainContent.Children.Add(new UserControl.HoneycombPanel());
             }
             else if (name == "Pagination")
             {
-                mainContent.Children.Add(new UserControl.Pagination());
+                _ = mainContent.Children.Add(new UserControl.Pagination());
             }
             else if (name == "Screenshot")
             {
-                mainContent.Children.Add(new UserControl.Screenshot());
+                _ = mainContent.Children.Add(new UserControl.Screenshot());
             }
             else if (name == "Effects")
             {
-                mainContent.Children.Add(new UserControl.Effects());
+                _ = mainContent.Children.Add(new UserControl.Effects());
             }
             else if (name == "PropertyGrid")
             {
-                mainContent.Children.Add(new UserControl.PropertyGrid());
+                _ = mainContent.Children.Add(new UserControl.PropertyGrid());
             }
             else if (name == "ImageSelector")
             {
-                mainContent.Children.Add(new UserControl.ImageSelector());
+                _ = mainContent.Children.Add(new UserControl.ImageSelector());
             }
             else if (name == "CheckComboBox")
             {
-                mainContent.Children.Add(new UserControl.CheckComboBox());
+                _ = mainContent.Children.Add(new UserControl.CheckComboBox());
             }
             else if (name == "PinBox")
             {
-                mainContent.Children.Add(new UserControl.PinBox());
+                _ = mainContent.Children.Add(new UserControl.PinBox());
             }
             else if (name == "Clock")
             {
-                mainContent.Children.Add(new UserControl.Clock());
+                _ = mainContent.Children.Add(new UserControl.Clock());
             }
             else if (name == "CalendarWithClock")
             {
-                mainContent.Children.Add(new UserControl.CalendarWithClock());
+                _ = mainContent.Children.Add(new UserControl.CalendarWithClock());
             }
             else if (name == "ElementGroup")
             {
-                mainContent.Children.Add(new UserControl.ElementGroup());
+                _ = mainContent.Children.Add(new UserControl.ElementGroup());
             }
             else if (name == "FlexPanel")
             {
-                mainContent.Children.Add(new UserControl.FlexPanel());
+                _ = mainContent.Children.Add(new UserControl.FlexPanel());
             }
             else if (name == "UniformSpacingPanel")
             {
-                mainContent.Children.Add(new UserControl.UniformSpacingPanel());
+                _ = mainContent.Children.Add(new UserControl.UniformSpacingPanel());
             }
             else if (name == "RelativePanel")
             {
-                mainContent.Children.Add(new UserControl.RelativePanel());
+                _ = mainContent.Children.Add(new UserControl.RelativePanel());
+            }
+            else if (name == "Watermark")
+            {
+                _ = mainContent.Children.Add(new UserControl.WatermarkDemo());
+            }
+            else if (name == "AutoCompleteTextBox")
+            {
+                _ = mainContent.Children.Add(new UserControl.AutoCompleteTextBoxDemo());
             }
         }
     }
