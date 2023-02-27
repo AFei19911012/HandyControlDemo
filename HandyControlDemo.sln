@@ -5,7 +5,13 @@ VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandyControlDemo", "HandyControlDemo\HandyControlDemo.csproj", "{D305AF09-67F1-46F1-A589-F0CEC7E84459}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GalaSoft.MvvmLight", "..\GalaSoft.MvvmLight\GalaSoft.MvvmLight.shproj", "{E0D724F3-A34B-4ADF-A582-139C4E4AB3CA}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\GalaSoft.MvvmLight\GalaSoft.MvvmLight.projitems*{d305af09-67f1-46f1-a589-f0cec7e84459}*SharedItemsImports = 4
+		..\GalaSoft.MvvmLight\GalaSoft.MvvmLight.projitems*{e0d724f3-a34b-4adf-a582-139c4e4ab3ca}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

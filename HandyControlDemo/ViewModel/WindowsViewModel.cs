@@ -1,4 +1,4 @@
-﻿using GalaSoft.MvvmLight.CommandWpf;
+﻿using GalaSoft.MvvmLight.Command;
 using HandyControlDemo.Helper;
 using System;
 using System.Windows;

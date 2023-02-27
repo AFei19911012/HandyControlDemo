@@ -4,8 +4,6 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:hc="https://handyorg.github.io/handycontrol"
-             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
-             xmlns:command="http://www.galasoft.ch/mvvmlight"
              xmlns:viewmodel="clr-namespace:HandyControlDemo.ViewModel"
              mc:Ignorable="d">
     <UserControl.DataContext>
@@ -21,11 +19,11 @@
                     <GradientStop Color="{DynamicResource DarkPrimaryColor}" Offset="1"/>
                 </LinearGradientBrush>
             </hc:SideMenu.Resources>
-            <i:Interaction.Triggers>
-                <i:EventTrigger EventName="SelectionChanged">
-                    <command:EventToCommand Command="{Binding SwitchItemCmd}" PassEventArgsToCommand="True" />
-                </i:EventTrigger>
-            </i:Interaction.Triggers>
+            <hc:Interaction.Triggers>
+                <hc:EventTrigger EventName="SelectionChanged">
+                    <hc:EventToCommand Command="{Binding SwitchItemCmd}" PassEventArgsToCommand="True" />
+                </hc:EventTrigger>
+            </hc:Interaction.Triggers>
             <hc:SideMenuItem Header="Overview">
                 <hc:SideMenuItem.Icon>
                     <Image Source="pack://application:,,,/Resource/Image/DevOps/DevOps-Boards.png" Width="24" Height="24"/>
