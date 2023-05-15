@@ -10,7 +10,7 @@
         <viewmodel:MenuViewModel/>
     </UserControl.DataContext>
     <hc:TransitioningContentControl>
-        <UniformGrid Rows="2" Columns="1" Margin="10">
+        <UniformGrid Rows="3" Columns="1" Margin="10">
             <hc:SimplePanel Margin="10">
                 <TextBlock Text="Right Click Here" Foreground="{DynamicResource BorderBrush}" Style="{StaticResource TextBlockTitle}"/>
                 <Rectangle Width="200" Height="112" RadiusX="4" RadiusY="4" Stroke="{DynamicResource BorderBrush}" StrokeDashArray="2,2"/>
@@ -49,6 +49,39 @@
                     </Border.ContextMenu>
                 </Border>
             </hc:SimplePanel>
+
+            <Menu>
+                <MenuItem Header="MenuItem 1">
+                    <MenuItem.Icon>
+                        <Path Data="{DynamicResource AddGeometry}" Fill="{DynamicResource PrimaryBrush}"
+                                          Stretch="Uniform" Height="20" Width="20"/>
+                    </MenuItem.Icon>
+                    <MenuItem Header="MenuItem 1.1">
+                        <MenuItem.Icon>
+                            <Path Data="{DynamicResource AddGeometry}" Fill="{DynamicResource PrimaryBrush}"
+                                          Stretch="Uniform" Height="20" Width="20"/>
+                        </MenuItem.Icon>
+                        <MenuItem Header="MenuItem 1.1.1">
+                            <MenuItem Header="MenuItem 1.1.1.1"/>
+                            <MenuItem Header="MenuItem 1.1.1.2">
+                                <MenuItem.Icon>
+                                    <Path Data="{DynamicResource AddGeometry}" Fill="{DynamicResource PrimaryBrush}"
+                                          Stretch="Uniform" Height="20" Width="20"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <MenuItem Header="MenuItem 1.1.2"/>
+                    </MenuItem>
+                    <Separator/>
+                    <MenuItem Header="MenuItem 1.2" IsCheckable="True" IsChecked="True"/>
+                    <MenuItem Header="MenuItem 1.3"/>
+                    <MenuItem Header="MenuItem 1.4"/>
+                    <MenuItem Header="MenuItem 1.5"/>
+                </MenuItem>
+                <MenuItem Header="MenuItem 2"/>
+                <MenuItem Header="MenuItem 3"/>
+                <MenuItem Header="MenuItem 4"/>
+            </Menu>
         </UniformGrid>
     </hc:TransitioningContentControl>
 </UserControl>
