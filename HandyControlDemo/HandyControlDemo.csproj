@@ -60,8 +60,12 @@
     <Reference Include="HandyControl, Version=3.3.0.0, Culture=neutral, PublicKeyToken=45be8712787a1e5b, processorArchitecture=MSIL">
       <HintPath>..\packages\HandyControl.3.3.0\lib\net472\HandyControl.dll</HintPath>
     </Reference>
+    <Reference Include="ICSharpCode.AvalonEdit, Version=6.3.0.90, Culture=neutral, PublicKeyToken=9cc39be672370310, processorArchitecture=MSIL">
+      <HintPath>..\packages\AvalonEdit.6.3.0.90\lib\net462\ICSharpCode.AvalonEdit.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -88,6 +92,9 @@
     <Compile Include="Helper\AssemblyHelper.cs" />
     <Compile Include="Helper\DispatcherHelper.cs" />
     <Compile Include="Helper\ExternDllHelper.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Model\ChatInfoModel.cs" />
     <Compile Include="Model\DemoAnimation.cs" />
     <Compile Include="Model\GeometryItemModel.cs" />
@@ -97,8 +104,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Lang.resx</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\AutoCompleteTextBoxDemo.xaml.cs">
-      <DependentUpon>AutoCompleteTextBoxDemo.xaml</DependentUpon>
+    <Compile Include="UserControl\AutoCompleteTextBox.xaml.cs">
+      <DependentUpon>AutoCompleteTextBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Calendar.xaml.cs">
       <DependentUpon>Calendar.xaml</DependentUpon>
@@ -361,8 +368,8 @@
     <Compile Include="UserControl\WaterfallPanel.xaml.cs">
       <DependentUpon>WaterfallPanel.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\WatermarkDemo.xaml.cs">
-      <DependentUpon>WatermarkDemo.xaml</DependentUpon>
+    <Compile Include="UserControl\Watermark.xaml.cs">
+      <DependentUpon>Watermark.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Windows.xaml.cs">
       <DependentUpon>Windows.xaml</DependentUpon>
@@ -406,7 +413,7 @@
     <Compile Include="UserControl\Window\TouchDragMoveWindow.xaml.cs">
       <DependentUpon>TouchDragMoveWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\AutoCompleteTextBoxDemoViewModel.cs" />
+    <Compile Include="ViewModel\AutoCompleteTextBoxViewModel.cs" />
     <Compile Include="ViewModel\CardViewModel.cs" />
     <Compile Include="ViewModel\ChatBoxViewModel.cs" />
     <Compile Include="ViewModel\ComboBoxViewModel.cs" />
@@ -431,7 +438,11 @@
     <Compile Include="ViewModel\TransferViewModel.cs" />
     <Compile Include="ViewModel\TreeViewViewModel.cs" />
     <Compile Include="ViewModel\WindowsViewModel.cs" />
-    <Page Include="UserControl\AutoCompleteTextBoxDemo.xaml">
+    <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\AutoCompleteTextBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -531,16 +542,8 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Resource\Lang\Lang.en-US.xaml">
@@ -835,7 +838,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControl\WatermarkDemo.xaml">
+    <Page Include="UserControl\Watermark.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

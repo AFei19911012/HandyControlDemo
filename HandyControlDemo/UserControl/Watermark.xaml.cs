@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace HandyControlDemo.UserControl
 {
     /// <summary>
-    /// WatermarkDemo.xaml 的交互逻辑
+    /// Watermark.xaml 的交互逻辑
     /// </summary>
-    public partial class WatermarkDemo
+    public partial class Watermark
     {
-        public WatermarkDemo()
+        public Watermark()
         {
             InitializeComponent();
         }

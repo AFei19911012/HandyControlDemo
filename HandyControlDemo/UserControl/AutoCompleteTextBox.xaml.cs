@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace HandyControlDemo.UserControl
 {
     /// <summary>
-    /// AutoCompleteTextBoxDemo.xaml 的交互逻辑
+    /// AutoCompleteTextBox.xaml 的交互逻辑
     /// </summary>
-    public partial class AutoCompleteTextBoxDemo
+    public partial class AutoCompleteTextBox
     {
-        public AutoCompleteTextBoxDemo()
+        public AutoCompleteTextBox()
         {
             InitializeComponent();
         }

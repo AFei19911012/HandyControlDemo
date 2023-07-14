@@ -15,7 +15,7 @@ namespace HandyControlDemo.ViewModel
     /// Version      Modified Time              Modified By                               Modified Content
     /// V1.0.0.0     2023/2/4 16:48:03    CoderMan/CoderMan1012                 
     ///
-    public class AutoCompleteTextBoxDemoViewModel : ViewModelBase
+    public class AutoCompleteTextBoxViewModel : ViewModelBase
     {
         private string _searchText;
 
@@ -36,7 +36,7 @@ namespace HandyControlDemo.ViewModel
 
         private List<DemoDataModel> SourceDataList { get; set; }
 
-        public AutoCompleteTextBoxDemoViewModel()
+        public AutoCompleteTextBoxViewModel()
         {
             // 初始化数据源
             SourceDataList = new List<DemoDataModel>();
