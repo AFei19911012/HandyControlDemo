@@ -1,3 +1,9 @@
+# 共享项目 MvvmLight
+
+https://github.com/AFei19911012/GalaSoft.MvvmLight
+
+
+
 ## Blogroll
 
 [SimpleFactoryGenerator](https://github.com/DingpingZhang/SimpleFactoryGenerator) - A simple factory source generator that enables the pattern to not violate the open-close principle.
