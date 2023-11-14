@@ -89,6 +89,34 @@
     <Compile Include="Converter\BoolToVisibilityReConverter.cs" />
     <Compile Include="Converter\HatchBrushConverter.cs" />
     <Compile Include="Converter\IntToStringConverter.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Command\RelayCommand.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Command\RelayCommandGeneric.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Helpers\1DesignerPlatformLibrary.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Helpers\DesignerPlatformLibrary.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Helpers\Empty.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Helpers\FeatureDetection.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Helpers\IExecuteWithObject.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Helpers\IExecuteWithObjectAndResult.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Helpers\WeakAction.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Helpers\WeakActionGeneric.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Helpers\WeakFunc.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Helpers\WeakFuncGeneric.cs" />
+    <Compile Include="GalaSoft.MvvmLight\ICleanup.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Messaging\GenericMessage.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Messaging\IMessenger.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Messaging\MessageBase.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Messaging\Messenger.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Messaging\NotificationMessage.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Messaging\NotificationMessageAction.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Messaging\NotificationMessageActionGeneric.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Messaging\NotificationMessageGeneric.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Messaging\NotificationMessageWithCallback.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Messaging\PropertyChangedMessage.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Messaging\PropertyChangedMessageBase.cs" />
+    <Compile Include="GalaSoft.MvvmLight\ObservableObject.cs" />
+    <Compile Include="GalaSoft.MvvmLight\ViewModelBase.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Views\IDialogService.cs" />
+    <Compile Include="GalaSoft.MvvmLight\Views\INavigationService.cs" />
     <Compile Include="Helper\AssemblyHelper.cs" />
     <Compile Include="Helper\DispatcherHelper.cs" />
     <Compile Include="Helper\ExternDllHelper.cs" />
@@ -921,6 +949,75 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="GalaSoft.MvvmLight\.git\COMMIT_EDITMSG" />
+    <None Include="GalaSoft.MvvmLight\.git\config" />
+    <None Include="GalaSoft.MvvmLight\.git\description" />
+    <None Include="GalaSoft.MvvmLight\.git\HEAD" />
+    <None Include="GalaSoft.MvvmLight\.git\hooks\applypatch-msg.sample" />
+    <None Include="GalaSoft.MvvmLight\.git\hooks\commit-msg.sample" />
+    <None Include="GalaSoft.MvvmLight\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="GalaSoft.MvvmLight\.git\hooks\post-update.sample" />
+    <None Include="GalaSoft.MvvmLight\.git\hooks\pre-applypatch.sample" />
+    <None Include="GalaSoft.MvvmLight\.git\hooks\pre-commit.sample" />
+    <None Include="GalaSoft.MvvmLight\.git\hooks\pre-merge-commit.sample" />
+    <None Include="GalaSoft.MvvmLight\.git\hooks\pre-push.sample" />
+    <None Include="GalaSoft.MvvmLight\.git\hooks\pre-rebase.sample" />
+    <None Include="GalaSoft.MvvmLight\.git\hooks\pre-receive.sample" />
+    <None Include="GalaSoft.MvvmLight\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="GalaSoft.MvvmLight\.git\hooks\push-to-checkout.sample" />
+    <None Include="GalaSoft.MvvmLight\.git\hooks\update.sample" />
+    <None Include="GalaSoft.MvvmLight\.git\index" />
+    <None Include="GalaSoft.MvvmLight\.git\info\exclude" />
+    <None Include="GalaSoft.MvvmLight\.git\logs\HEAD" />
+    <None Include="GalaSoft.MvvmLight\.git\logs\refs\heads\HVision20231006" />
+    <None Include="GalaSoft.MvvmLight\.git\logs\refs\heads\main" />
+    <None Include="GalaSoft.MvvmLight\.git\logs\refs\remotes\origin\HEAD" />
+    <None Include="GalaSoft.MvvmLight\.git\logs\refs\remotes\origin\HVision20231006" />
+    <None Include="GalaSoft.MvvmLight\.git\logs\refs\remotes\origin\main" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\02\bad0ece4cdde62d41691bf2585527694732a5e" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\04\799c03303cbd8d0d0e5883b8d090153fc0869d" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\0b\d21e9e35ef4b99ee3d5d49899675e33021c6ea" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\12\13d63252ac9d01ed49bdeafb9339bdce9253af" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\18\9627e94288c38035f472d48846fa7d344f3061" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\1a\124fbfa0800071e70cbbd9255b5ee2f17df26e" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\21\b6f701240561536a6901faa1a748b176c5bf15" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\22\45b7b0d4e8ae9ebac8890d9968c7e529dc91c6" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\27\76f41f00d73aa2ae53fa2c195e41312c4be4d6" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\2a\d4d32bf027a084bc97a2edbf52e65e99221147" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\54\c0140188fa7ac0de2a3b25661ed209d641faea" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\5d\77691d3feb4cd639f1c62fe1b1e17c473aa8cb" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\62\1677622d1f7760249475bd65e122b2bdc0a32e" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\66\55a00f8c174bd8ca5135d3dc96fbe976be146d" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\69\0c25f13afb1319bce5fcccedc9240b26d845cf" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\72\174b4447b8c4a3b79a8c11edc8ee325f2367a3" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\7d\b7cfabb70671fd54354590d4617acaf91a4b86" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\93\614f5a7382493fd5e6472ff0a70b26b3307a2d" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\9d\066d1d56666cd4dcca79f83301ba290e7c54da" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\a2\d6c2daebf948a5f01047077e568e2a9ea5bb16" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\a3\7413440a79b483517367289b5fd4848ba691d5" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\a5\534919d151730a8a4442945f8bfc61e7bbedb2" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\c5\8aaddccbe5d681a16b40e65e0873a4f83261c2" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\c9\c2ff5b49c96b042c59b408184ed1ef0c9aacc3" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\ce\092f3078b4a79bbd4d244c7e42f44f76f25d33" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\d4\a844a71002e8c6a6a0eed0c137fc004201f8c1" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\d5\6ac88d9c50bdf8aa873e896f785b787396aa62" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\d5\e6fe7a11a1223b3b284ce39bd7c9d094300d54" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\d6\05e5eb8f775a44621268370d348494c9745f21" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\de\216ea3bafdc1f29e5b883868862828179f15df" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\df\f8ddff7393ec34820e41eb813bcb83d953573e" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\e6\0300803fe0717876cc41b4f2e72fb7fd859392" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\ee\a9fd4b2a3f81460a069b0af76963f565f10f7c" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\f4\8bfbc64d8d2454782b6d2da691617b16765aa3" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\fa\4543226882e9b5ad96547c17510cb4bafb24cf" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\fe\2801de0d120f24bfd77802d5e4061582ed33c0" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\pack\pack-2b7746a079de416b4dd34452d438f0d05ba01123.idx" />
+    <None Include="GalaSoft.MvvmLight\.git\objects\pack\pack-2b7746a079de416b4dd34452d438f0d05ba01123.pack" />
+    <None Include="GalaSoft.MvvmLight\.git\packed-refs" />
+    <None Include="GalaSoft.MvvmLight\.git\refs\heads\HVision20231006" />
+    <None Include="GalaSoft.MvvmLight\.git\refs\heads\main" />
+    <None Include="GalaSoft.MvvmLight\.git\refs\remotes\origin\HEAD" />
+    <None Include="GalaSoft.MvvmLight\.git\refs\remotes\origin\HVision20231006" />
+    <None Include="GalaSoft.MvvmLight\.git\refs\remotes\origin\main" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -1104,6 +1201,12 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <Import Project="..\..\GalaSoft.MvvmLight\GalaSoft.MvvmLight.projitems" Label="Shared" />
+  <ItemGroup>
+    <Resource Include="GalaSoft.MvvmLight\.git\ms-persist.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GalaSoft.MvvmLight\.git\objects\info\" />
+    <Folder Include="GalaSoft.MvvmLight\.git\refs\tags\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
