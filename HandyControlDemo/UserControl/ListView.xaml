@@ -10,14 +10,26 @@
         <viewmodel:ListViewViewModel/>
     </UserControl.DataContext>
     <hc:TransitioningContentControl>
-        <ListView ItemsSource="{Binding DataList}">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Width="80" Header="索引" DisplayMemberBinding="{Binding Index}"/>
-                    <GridViewColumn Width="100" Header="名称" DisplayMemberBinding="{Binding Name}"/>
-                    <GridViewColumn Width="200" Header="备注" DisplayMemberBinding="{Binding Remark}"/>
-                </GridView>
-            </ListView.View>
-        </ListView>
+        <UniformGrid Columns="2">
+            <ListView ItemsSource="{Binding DataList}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="80" Header="索引" DisplayMemberBinding="{Binding Index}"/>
+                        <GridViewColumn Width="100" Header="名称" DisplayMemberBinding="{Binding Name}"/>
+                        <GridViewColumn Width="200" Header="备注" DisplayMemberBinding="{Binding Remark}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+            <ListView ItemsSource="{Binding DataList}" Style="{DynamicResource ListView.Small}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="80" Header="索引" DisplayMemberBinding="{Binding Index}"/>
+                        <GridViewColumn Width="100" Header="名称" DisplayMemberBinding="{Binding Name}"/>
+                        <GridViewColumn Width="200" Header="备注" DisplayMemberBinding="{Binding Remark}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </UniformGrid>
     </hc:TransitioningContentControl>
 </UserControl>

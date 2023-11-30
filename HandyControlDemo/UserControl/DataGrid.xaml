@@ -63,6 +63,25 @@
                     </DataGrid.Columns>
                 </DataGrid>
             </TabItem>
+            <TabItem Header="Small">
+                <DataGrid HeadersVisibility="All" RowHeaderWidth="60" AutoGenerateColumns="False" ItemsSource="{Binding DataList}" 
+              hc:DataGridAttach.ShowRowNumber="True" Style="{DynamicResource DataGrid.Small}">
+                    <DataGrid.Columns>
+                        <DataGridTemplateColumn Width="60" CanUserResize="False">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Image Source="{Binding ImgPath}" Width="32" Height="32" Stretch="Uniform"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn Width="1*" Binding="{Binding Name}" Header="Name"/>
+                        <DataGridCheckBoxColumn Width="100" CanUserResize="False" Binding="{Binding IsSelected}" Header="Selected"/>
+                        <DataGridComboBoxColumn ItemsSource="{Binding Source={StaticResource DemoTypes}}" Width="100" CanUserResize="False" 
+                                    SelectedValueBinding="{Binding Type}" Header="Type"/>
+                        <DataGridTextColumn Width="1*" Binding="{Binding Remark}" Header="Remark"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
         </TabControl>
     </hc:TransitioningContentControl>
 </UserControl>
