@@ -38,24 +38,24 @@
                 </StackPanel>
 
                 <StackPanel Margin="32" Width="300">
-                    <hc:ComboBox Margin="5" ShowClearButton="True" SelectedIndex="0" ItemsSource="{Binding DataList}"/>
+                    <hc:ComboBox Margin="5" hc:InfoElement.ShowClearButton="True" SelectedIndex="0" ItemsSource="{Binding DataList}"/>
                     <hc:ComboBox Margin="5" SelectedIndex="0" IsEnabled="False" ItemsSource="{Binding DataList}"/>
-                    <hc:ComboBox Margin="5" ShowClearButton="True" SelectedIndex="0" IsEditable="True" ItemsSource="{Binding DataList}"/>
-                    <hc:ComboBox Margin="5" ShowClearButton="True" SelectedIndex="0" hc:InfoElement.Title="This is the title" 
+                    <hc:ComboBox Margin="5" hc:InfoElement.ShowClearButton="True" SelectedIndex="0" IsEditable="True" ItemsSource="{Binding DataList}"/>
+                    <hc:ComboBox Margin="5" hc:InfoElement.ShowClearButton="True" SelectedIndex="0" hc:InfoElement.Title="This is the title" 
                                  Text="Test" ItemsSource="{Binding DataList}"/>
-                    <hc:ComboBox Margin="0,0,0,32" ShowClearButton="True" hc:InfoElement.Placeholder="Necessary" hc:InfoElement.Title="Must be filled in" 
+                    <hc:ComboBox Margin="0,0,0,32" hc:InfoElement.ShowClearButton="True" hc:InfoElement.Placeholder="Necessary" hc:InfoElement.Title="Must be filled in" 
                                  hc:InfoElement.Necessary="True" hc:InfoElement.Symbol="*" ItemsSource="{Binding DataList}"/>
                     <hc:ComboBox IsEditable="True" SelectedIndex="0" hc:InfoElement.Title="This is the title" Text="Editable" ItemsSource="{Binding DataList}"/>
-                    <hc:ComboBox Margin="0,0,0,32" AutoComplete="True" ShowClearButton="True" IsEditable="True" hc:InfoElement.Placeholder="Necessary" 
+                    <hc:ComboBox Margin="0,0,0,32" AutoComplete="True" hc:InfoElement.ShowClearButton="True" IsEditable="True" hc:InfoElement.Placeholder="Necessary" 
                                  hc:InfoElement.Title="Must be filled in" hc:InfoElement.Necessary="True" ItemsSource="{Binding DataList}"/>
                     <hc:ComboBox hc:InfoElement.TitleWidth="70" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title" 
                                  Text="Test" ItemsSource="{Binding DataList}"/>
-                    <hc:ComboBox Margin="0,0,0,32" ShowClearButton="True" hc:InfoElement.TitleWidth="70" hc:InfoElement.Placeholder="Necessary" 
+                    <hc:ComboBox Margin="0,0,0,32" hc:InfoElement.ShowClearButton="True" hc:InfoElement.TitleWidth="70" hc:InfoElement.Placeholder="Necessary" 
                                  hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title" hc:InfoElement.Necessary="True" 
                                  ItemsSource="{Binding DataList}"/>
                     <hc:ComboBox IsEditable="True" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title" 
                                  Text="Test" ItemsSource="{Binding DataList}"/>
-                    <hc:ComboBox AutoComplete="True" ShowClearButton="True" IsEditable="True" hc:InfoElement.TitleWidth="70" 
+                    <hc:ComboBox AutoComplete="True" hc:InfoElement.ShowClearButton="True" IsEditable="True" hc:InfoElement.TitleWidth="70" 
                                  hc:InfoElement.Placeholder="Necessary" hc:InfoElement.TitlePlacement="Left" 
                                  hc:InfoElement.Title="Left title" hc:InfoElement.Necessary="True" ItemsSource="{Binding DataList}"/>
                 </StackPanel>

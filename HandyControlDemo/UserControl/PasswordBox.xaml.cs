@@ -11,9 +11,9 @@ namespace HandyControlDemo.UserControl
         {
             InitializeComponent();
 
-            passwordBox.VerifyFunc = str => string.IsNullOrEmpty(str)
-                ? OperationResult.Failed((string)FindResource("IsNecessary"))
-                : OperationResult.Success();
+            //passwordBox.VerifyFunc = str => string.IsNullOrEmpty(str)
+            //    ? OperationResult.Failed((string)FindResource("IsNecessary"))
+            //    : OperationResult.Success();
         }
     }
 }
