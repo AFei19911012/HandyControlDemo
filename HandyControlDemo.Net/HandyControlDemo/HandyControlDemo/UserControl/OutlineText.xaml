@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.OutlineText"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d">
+    <hc:TransitioningContentControl Margin="32" Width="400">
+        <StackPanel>
+            <hc:OutlineText Margin="3" TextWrapping="Wrap" Text="TextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText"/>
+            <hc:OutlineText Margin="3" FontSize="30" Fill="{DynamicResource SuccessBrush}" Text="TextTextTextTextTextTextTextText"/>
+            <hc:OutlineText Margin="3" FontSize="30" FontStyle="Italic" Text="TextTextTextTextTextTextTextText"/>
+            <hc:OutlineText Margin="3" Text="TextTextTextTextTextText" TextWrapping="Wrap" TextTrimming="CharacterEllipsis" 
+                            FontSize="50" StrokeThickness="2" Fill="{DynamicResource DangerBrush}" Stroke="{DynamicResource PrimaryBrush}"/>
+            <hc:OutlineText FontSize="80" Text="TextText" FontWeight="Bold" StrokeThickness="4" Fill="{DynamicResource PrimaryBrush}" 
+                            Stroke="{DynamicResource DangerBrush}"/>
+        </StackPanel>
+    </hc:TransitioningContentControl>
+</UserControl>

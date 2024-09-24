@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.Growl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d">
+    <hc:TransitioningContentControl>
+        <StackPanel Margin="20">
+            <GroupBox Header="Window" Padding="10,5" Margin="5">
+                <WrapPanel VerticalAlignment="Center">
+                    <Button Click="ButtonWindow_Click" Content="Info" Margin="0,5,5,5" Style="{StaticResource ButtonInfo}"/>
+                    <Button Click="ButtonWindow_Click" Content="Success" Margin="5" Style="{StaticResource ButtonSuccess}"/>
+                    <Button Click="ButtonWindow_Click" Content="Warning" Margin="5" Style="{StaticResource ButtonWarning}"/>
+                    <Button Click="ButtonWindow_Click" Content="Error" Margin="5" Style="{StaticResource ButtonDanger}"/>
+                    <Button Click="ButtonWindow_Click" Content="Ask" Margin="5" Background="BlueViolet" Foreground="White" BorderThickness="0"/>
+                    <Button Click="ButtonWindow_Click" Content="Fatal" Margin="5,0"/>
+                    <Button Click="ButtonWindow_Click" Content="Clear" Margin="5,0,0,0" Style="{StaticResource ButtonPrimary}"/>
+                </WrapPanel>
+            </GroupBox>
+            <GroupBox Header="Desktop" Padding="10,5" Margin="5">
+                <WrapPanel VerticalAlignment="Center">
+                    <Button Click="ButtonDesktop_Click" Content="Info" Margin="0,5,5,5" Style="{StaticResource ButtonInfo}"/>
+                    <Button Click="ButtonDesktop_Click" Content="Success" Margin="5" Style="{StaticResource ButtonSuccess}"/>
+                    <Button Click="ButtonDesktop_Click" Content="Warning" Margin="5" Style="{StaticResource ButtonWarning}"/>
+                    <Button Click="ButtonDesktop_Click" Content="Error" Margin="5" Style="{StaticResource ButtonDanger}"/>
+                    <Button Click="ButtonDesktop_Click" Content="Ask" Margin="5" Background="BlueViolet" Foreground="White" BorderThickness="0"/>
+                    <Button Click="ButtonDesktop_Click" Content="Fatal" Margin="5,0"/>
+                    <Button Click="ButtonDesktop_Click" Content="Clear" Margin="5,0,0,0" Style="{StaticResource ButtonPrimary}"/>
+                </WrapPanel>
+            </GroupBox>
+        </StackPanel>
+    </hc:TransitioningContentControl>
+</UserControl>

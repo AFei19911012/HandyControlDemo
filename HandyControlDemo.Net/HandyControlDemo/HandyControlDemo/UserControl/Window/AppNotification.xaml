@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.Window.AppNotification"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d" 
+             Background="{DynamicResource RegionBrush}">
+    <hc:SimplePanel Width="320" Height="500">
+        <Path Margin="10" VerticalAlignment="Top" Width="70" Height="70" Data="{StaticResource LogoGeometry}" Fill="{DynamicResource AccentBrush}"/>
+        <!--<Image Source="pack://application:,,,/Resource/Image/icon.ico" VerticalAlignment="Top" Margin="10" Width="70" Height="70"/>-->
+        <TextBlock x:Name="textBlock" Text="HandyControl" FontSize="30" Foreground="{StaticResource PrimaryBrush}" HorizontalAlignment="Center" Margin="10,120,10,10" 
+                   VerticalAlignment="Top" TextWrapping="Wrap"/>
+        <Button Command="hc:ControlCommands.CloseWindow" CommandParameter="{Binding RelativeSource={RelativeSource Self}}" Content="Close" 
+                HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="10"/>
+    </hc:SimplePanel>
+</UserControl>

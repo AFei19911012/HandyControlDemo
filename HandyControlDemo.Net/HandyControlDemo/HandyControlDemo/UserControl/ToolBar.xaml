@@ -1,0 +1,88 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.ToolBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d">
+    <hc:TransitioningContentControl>
+        <StackPanel Margin="10">
+            <ToolBarTray Margin="10" VerticalAlignment="Center">
+                <ToolBar Padding="6" Header="Title">
+                    <CheckBox IsChecked="True" Margin="10,0,0,0"/>
+                    <Separator Margin="10,0,0,0"/>
+                    <RadioButton Margin="10,0,0,0"/>
+                    <StackPanel Orientation="Horizontal">
+                        <RadioButton IsChecked="True" Margin="10,0,0,0"/>
+                        <RadioButton Margin="10,0,0,0"/>
+                    </StackPanel>
+                    <Button Content="Button" Margin="10,0,0,0"/>
+                    <Button Content="Button" Margin="10,0,0,0" Style="{StaticResource ButtonPrimary}"/>
+                </ToolBar>
+                <ToolBar Band="1" Padding="6">
+                    <ComboBox ItemsSource="{Binding DataList}" SelectedIndex="0" Width="100"/>
+                    <TextBox Text="Text" Margin="10,0,0,0" Width="100"/>
+                </ToolBar>
+                <ToolBar Band="2" Padding="6">
+                    <Menu Background="Transparent" VerticalAlignment="Center">
+                        <MenuItem Header="Repository">
+                            <MenuItem Header="Window">
+                                <MenuItem.Icon>
+                                    <Path Data="{StaticResource WindowsGeometry}" Fill="{DynamicResource PrimaryTextBrush}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Header="Search">
+                                <MenuItem.Icon>
+                                    <Path Data="{StaticResource SearchGeometry}" Fill="#224880"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <MenuItem Header="About">
+                            <MenuItem Header="Eye Open">
+                                <MenuItem.Icon>
+                                    <Path Data="{StaticResource EyeOpenGeometry}" Fill="{DynamicResource PrimaryBrush}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Header="Eye Close">
+                                <MenuItem.Icon>
+                                    <Path Data="{StaticResource EyeCloseGeometry}" Fill="#e52e64"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <MenuItem Header="Close">
+                                <MenuItem.Icon>
+                                    <Path Data="{StaticResource CloseGeometry}" Fill="{DynamicResource PrimaryTextBrush}"/>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <MenuItem Header="Contributors"/>
+                    </Menu>
+                </ToolBar>
+            </ToolBarTray>
+
+            <ToolBarTray Orientation="Vertical" Margin="0,10,0,0">
+                <ToolBar Padding="6" Header="Title">
+                    <CheckBox IsChecked="True" Margin="0,10,0,0"/>
+                    <Separator Margin="0,10,0,0"/>
+                    <RadioButton Margin="0,10,0,0"/>
+                    <StackPanel>
+                        <RadioButton IsChecked="True" Margin="0,10,0,0"/>
+                        <RadioButton Margin="0,10,0,0"/>
+                    </StackPanel>
+                    <Button Content="Button" Margin="0,10,0,0"/>
+                    <Button Content="Button" Margin="0,10,0,0" Style="{StaticResource ButtonPrimary}"/>
+                </ToolBar>
+                <ToolBar Band="1" Padding="6" Header="Title">
+                    <CheckBox IsChecked="True" Margin="0,10,0,0"/>
+                    <Separator Margin="0,10,0,0"/>
+                    <RadioButton Margin="0,10,0,0"/>
+                    <StackPanel>
+                        <RadioButton IsChecked="True" Margin="0,10,0,0"/>
+                        <RadioButton Margin="0,10,0,0"/>
+                    </StackPanel>
+                    <Button Content="Button" Margin="0,10,0,0"/>
+                    <Button Content="Button" Margin="0,10,0,0" Style="{StaticResource ButtonPrimary}"/>
+                </ToolBar>
+            </ToolBarTray>
+        </StackPanel>
+    </hc:TransitioningContentControl>
+</UserControl>

@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.TextBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d">
+    <hc:TransitioningContentControl>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Margin="32" Width="300">
+                <TextBox Text="This is the content"/>
+                <TextBox Text="This is the content" IsEnabled="False"/>
+                <TextBox hc:InfoElement.Title="This is the title" Style="{StaticResource TextBoxExtend}" Text="This is the content"/>
+                <TextBox Margin="0,0,0,32" hc:InfoElement.Placeholder="Necessary" hc:InfoElement.Title="Must be filled" Style="{StaticResource TextBoxExtend}" 
+                         hc:InfoElement.Necessary="True"/>
+                <TextBox hc:InfoElement.TitleWidth="70" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title" 
+                         Style="{StaticResource TextBoxExtend}" Text="content"/>
+                <TextBox Margin="0,0,0,32" hc:InfoElement.TitleWidth="70" hc:InfoElement.Placeholder="Necessary" hc:InfoElement.TitlePlacement="Left" 
+                         hc:InfoElement.Title="Left title" hc:InfoElement.Necessary="True" Style="{StaticResource TextBoxExtend}"/>
+            </StackPanel>
+            <StackPanel Margin="32" Width="300">
+                <hc:TextBox Text="This is the content"/>
+                <hc:TextBox IsEnabled="False" Text="This is the content"/>
+                <hc:TextBox hc:InfoElement.Title="This is the title" Style="{StaticResource TextBoxExtend}" 
+                            Text="This is the content"/>
+                <hc:TextBox Margin="0,0,0,32" hc:InfoElement.Placeholder="Email" hc:InfoElement.Title="Must be filled" 
+                            hc:InfoElement.Necessary="True"/>
+                <hc:TextBox hc:InfoElement.TitleWidth="70" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title" Text="content"/>
+                <hc:TextBox Margin="0,0,0,32" hc:InfoElement.TitleWidth="70" hc:InfoElement.Placeholder="Necessary" 
+                            hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title" hc:InfoElement.Necessary="True" 
+                            Style="{StaticResource TextBoxExtend}"/>
+            </StackPanel>
+        </StackPanel>
+    </hc:TransitioningContentControl>
+</UserControl>

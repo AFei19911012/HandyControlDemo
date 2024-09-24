@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.Rate"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d">
+    <UniformGrid Rows="5" Columns="1" Margin="10" Height="180" Width="200">
+        <hc:Rate Value="2"/>
+        <hc:Rate Value="5" Count="6" Foreground="{DynamicResource SuccessBrush}"/>
+        <hc:Rate DefaultValue="3" IsReadOnly="True" AllowHalf="True" Foreground="{DynamicResource WarningBrush}"/>
+        <hc:Rate DefaultValue="1" AllowClear="False" AllowHalf="True" Foreground="{DynamicResource DangerBrush}" 
+                 Icon="{StaticResource LoveGeometry}"/>
+        <hc:Rate Value="4.5" AllowHalf="True" ShowText="True" Foreground="{DynamicResource DangerBrush}" 
+                 Icon="{StaticResource LoveGeometry}"/>
+    </UniformGrid>
+</UserControl>

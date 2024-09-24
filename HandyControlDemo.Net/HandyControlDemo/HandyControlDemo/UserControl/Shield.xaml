@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.Shield"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d">
+    <UniformGrid Rows="5" Columns="1" Margin="10">
+        <hc:Shield Margin="5" Subject=".net" Status=">=4.0" Color="#1182c3"/>
+        <hc:Shield Margin="5" Subject="c#" Status="7.0" Color="#1182c3"/>
+        <hc:Shield Margin="5" Subject="IDE" Status="2019" Color="#1182c3"/>
+        <hc:Shield Margin="5" Subject="chat" Status="on gitter" Color="#4eb899" Command="hc:ControlCommands.OpenLink" 
+                   CommandParameter="https://gitter.im/HandyControl/Lobby?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"/>
+        <hc:Shield Margin="5" Subject="qq" Status="714704041" Color="#d8624c" Command="hc:ControlCommands.OpenLink" 
+                   CommandParameter="http://shang.qq.com/wpa/qunwpa?idkey=a571e5553c9d41e49c4f22f3a8b2865451497a795ff281fedf3285def247efc1"/>
+    </UniformGrid>
+</UserControl>

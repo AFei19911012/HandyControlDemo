@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.CompareSlider"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d">
+    <Grid>
+        <hc:ScrollViewer VerticalAlignment="Center">
+            <WrapPanel ItemHeight="384" ItemWidth="632">
+                <hc:CompareSlider Value="5" Width="600" Height="352">
+                    <hc:CompareSlider.TargetContent>
+                        <Border>
+                            <Border.Background>
+                                <ImageBrush ImageSource="{Binding ImgTarget}"/>
+                            </Border.Background>
+                        </Border>
+                    </hc:CompareSlider.TargetContent>
+                    <hc:CompareSlider.SourceContent>
+                        <Border>
+                            <Border.Background>
+                                <ImageBrush ImageSource="{Binding ImgSource}"/>
+                            </Border.Background>
+                        </Border>
+                    </hc:CompareSlider.SourceContent>
+                </hc:CompareSlider>
+                <hc:CompareSlider Orientation="Vertical" Value="5" Width="600" Height="352">
+                    <hc:CompareSlider.TargetContent>
+                        <Border>
+                            <Border.Background>
+                                <ImageBrush ImageSource="{Binding ImgTarget}"/>
+                            </Border.Background>
+                        </Border>
+                    </hc:CompareSlider.TargetContent>
+                    <hc:CompareSlider.SourceContent>
+                        <Border>
+                            <Border.Background>
+                                <ImageBrush ImageSource="{Binding ImgSource}"/>
+                            </Border.Background>
+                        </Border>
+                    </hc:CompareSlider.SourceContent>
+                </hc:CompareSlider>
+            </WrapPanel>
+        </hc:ScrollViewer>
+    </Grid>
+</UserControl>

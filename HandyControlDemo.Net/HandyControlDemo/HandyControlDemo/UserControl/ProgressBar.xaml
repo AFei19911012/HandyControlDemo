@@ -1,0 +1,106 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.ProgressBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d">
+    <StackPanel Orientation="Horizontal" Margin="10">
+        <UniformGrid Rows="12" Columns="1" Margin="10" Width="150">
+            <ProgressBar Value="{Binding ElementName=SliderDemo, Path=Value}" Margin="5"/>
+            <ProgressBar Style="{StaticResource ProgressBarSuccess}" Margin="5" Value="{Binding ElementName=SliderDemo, Path=Value}"/>
+            <ProgressBar Style="{StaticResource ProgressBarInfo}" Margin="5" Value="{Binding ElementName=SliderDemo, Path=Value}"/>
+            <ProgressBar Style="{StaticResource ProgressBarWarning}" Margin="5" Value="{Binding ElementName=SliderDemo, Path=Value}"/>
+            <ProgressBar Style="{StaticResource ProgressBarDanger}" Margin="5" Value="{Binding ElementName=SliderDemo, Path=Value}" Maximum="200"/>
+            <ProgressBar Style="{StaticResource ProgressBarPrimaryStripe}" Margin="5" Value="{Binding ElementName=SliderDemo, Path=Value}" Maximum="200">
+                <ProgressBar.Foreground>
+                    <DrawingBrush Viewport="0,0,20,32" TileMode="Tile" ViewportUnits="Absolute" Stretch="None">
+                        <DrawingBrush.Transform>
+                            <TransformGroup>
+                                <RotateTransform Angle="20"/>
+                                <TranslateTransform x:Name="MyTransform" X="0"/>
+                            </TransformGroup>
+                        </DrawingBrush.Transform>
+                        <DrawingBrush.Drawing>
+                            <GeometryDrawing>
+                                <GeometryDrawing.Brush>
+                                    <LinearGradientBrush EndPoint="1,0" StartPoint="0,0">
+                                        <GradientStop Color="Violet" Offset="0"/>
+                                        <GradientStop Color="Violet" Offset="0.5"/>
+                                        <GradientStop Color="RoyalBlue" Offset="0.5"/>
+                                        <GradientStop Color="RoyalBlue" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </GeometryDrawing.Brush>
+                                <GeometryDrawing.Geometry>
+                                    <RectangleGeometry Rect="0,0,20,32"/>
+                                </GeometryDrawing.Geometry>
+                            </GeometryDrawing>
+                        </DrawingBrush.Drawing>
+                    </DrawingBrush>
+                </ProgressBar.Foreground>
+            </ProgressBar>
+            <ProgressBar Style="{StaticResource ProgressBarSuccessStripe}" Margin="5" Value="{Binding ElementName=SliderDemo, Path=Value}" Maximum="200"/>
+            <ProgressBar Style="{StaticResource ProgressBarInfoStripe}" Margin="5" Value="{Binding ElementName=SliderDemo, Path=Value}" Maximum="200"/>
+            <ProgressBar Style="{StaticResource ProgressBarWarningStripe}" Margin="5" Value="{Binding ElementName=SliderDemo, Path=Value}" Maximum="200"/>
+            <ProgressBar Style="{StaticResource ProgressBarDangerStripe}" Margin="5" Value="{Binding ElementName=SliderDemo, Path=Value}" Maximum="200"/>
+            <ProgressBar Style="{StaticResource ProgressBarFlat}" Margin="5" Value="{Binding ElementName=SliderDemo, Path=Value}" Maximum="200"/>
+            <ProgressBar Style="{StaticResource ProgressBarFlat}" Margin="5" Maximum="200" IsIndeterminate="True"/>
+        </UniformGrid>
+        <UniformGrid Rows="11" Columns="1" Margin="10" Width="150">
+            <TextBlock Margin="5" Text="ProgressbarPrimary"/>
+            <TextBlock Margin="5" Text="ProgressBarSuccess"/>
+            <TextBlock Margin="5" Text="ProgressBarInfo"/>
+            <TextBlock Margin="5" Text="ProgressBarWarning"/>
+            <TextBlock Margin="5" Text="ProgressBarDanger"/>
+            <TextBlock Margin="5" Text="ProgressBarPrimaryStripe"/>
+            <TextBlock Margin="5" Text="ProgressBarSuccessStripe"/>
+            <TextBlock Margin="5" Text="ProgressBarInfoStripe"/>
+            <TextBlock Margin="5" Text="ProgressBarWarningStripe"/>
+            <TextBlock Margin="5" Text="ProgressBarDangerStripe"/>
+            <TextBlock Margin="5" Text="ProgressBarPlayer"/>
+        </UniformGrid>
+        <StackPanel Margin="10">
+            <Slider Name="SliderDemo" Value="50.1" Maximum="100" Minimum="0" Margin="5"/>
+            <StackPanel Orientation="Horizontal">
+                <hc:CircleProgressBar Value="{Binding ElementName=SliderDemo, Path=Value}" Margin="5"/>
+                <hc:CircleProgressBar Value="{Binding ElementName=SliderDemo, Path=Value}" FontSize="30" Margin="5"/>
+                <hc:CircleProgressBar Value="{Binding ElementName=SliderDemo, Path=Value}" Margin="10" ShowText="False" Width="20" Height="20" 
+                                      ArcThickness="2" Style="{StaticResource ProgressBarSuccessCircle}"/>
+                <hc:CircleProgressBar Value="{Binding ElementName=SliderDemo, Path=Value}" Margin="5" ShowText="False" Width="30" Height="30" 
+                                      ArcThickness="6" Style="{StaticResource ProgressBarInfoCircle}"/>
+                <hc:CircleProgressBar Value="{Binding ElementName=SliderDemo, Path=Value}" Margin="5" ShowText="False" Width="40" Height="40" 
+                                      ArcThickness="10" Style="{StaticResource ProgressBarWarningCircle}"/>
+                <hc:CircleProgressBar Value="{Binding ElementName=SliderDemo, Path=Value}" Margin="5" Width="50" Height="50" 
+                                      Style="{StaticResource ProgressBarDangerCircle}"/>
+                <hc:CircleProgressBar IsIndeterminate="True"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <hc:WaveProgressBar Value="{Binding ElementName=SliderDemo, Path=Value}" Margin="5"/>
+                <hc:WaveProgressBar Value="{Binding ElementName=SliderDemo, Path=Value}" FontSize="20" Margin="5" WaveThickness="4" WaveStroke="#FFFF0080">
+                    <hc:WaveProgressBar.WaveFill>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#66FF0080" Offset="0"/>
+                            <GradientStop Color="#FFFF0080" Offset="1"/>
+                        </LinearGradientBrush>
+                    </hc:WaveProgressBar.WaveFill>
+                </hc:WaveProgressBar>
+                <hc:WaveProgressBar Value="{Binding ElementName=SliderDemo, Path=Value}" Margin="5" ShowText="False" Width="50" Height="50" 
+                                    Style="{StaticResource ProgressBarWarningWave}"/>
+                <StackPanel Orientation="Horizontal" Height="200">
+                    <ProgressBar Value="20" Margin="0,0,10,0" Orientation="Vertical" Width="20"/>
+                    <ProgressBar Style="{StaticResource ProgressBarSuccess}" Margin="0,0,10,0" Value="40" Orientation="Vertical" Width="15"/>
+                    <ProgressBar Style="{StaticResource ProgressBarInfo}" Margin="0,0,10,0" Value="60" Orientation="Vertical" Width="15"/>
+                    <ProgressBar Style="{StaticResource ProgressBarWarning}" Margin="0,0,10,0" Value="80" Orientation="Vertical" Width="15"/>
+                    <ProgressBar Style="{StaticResource ProgressBarDanger}" Margin="0,0,10,0" Value="100" Maximum="200" IsIndeterminate="True" Width="15" Orientation="Vertical"/>
+
+                    <ProgressBar Style="{StaticResource ProgressBarPrimaryStripe}" Margin="0,0,10,0" Value="120" Maximum="200" Orientation="Vertical" Width="15" />
+                    <ProgressBar Style="{StaticResource ProgressBarSuccessStripe}" Margin="0,0,10,0" Value="60" Maximum="200" Orientation="Vertical" Width="15" />
+                    <ProgressBar Style="{StaticResource ProgressBarInfoStripe}" Margin="0,0,10,0" Value="50" Maximum="200" Orientation="Vertical" Width="15" />
+                    <ProgressBar Style="{StaticResource ProgressBarWarningStripe}" Margin="0,0,10,0" Value="180" Maximum="200" Orientation="Vertical" Width="15" />
+                    <ProgressBar Style="{StaticResource ProgressBarDangerStripe}" Margin="0,0,10,0" IsIndeterminate="True" Maximum="200" Orientation="Vertical" Width="15"/>
+                    <ProgressBar Style="{StaticResource ProgressBarFlat}" Margin="0,0,10,0" Value="110" Maximum="200" IsIndeterminate="True" Orientation="Vertical" Width="4"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

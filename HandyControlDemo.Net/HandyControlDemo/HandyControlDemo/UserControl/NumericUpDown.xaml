@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.NumericUpDown"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d">
+    <hc:TransitioningContentControl>
+        <StackPanel Margin="32" Orientation="Horizontal">
+            <StackPanel Width="200">
+                <hc:NumericUpDown Margin="0,0,0,32"/>
+                <hc:NumericUpDown Margin="0,0,0,32" IsEnabled="False"/>
+                <hc:NumericUpDown Margin="0,0,0,32" hc:InfoElement.Title="This is the title" Style="{StaticResource NumericUpDownExtend}"/>
+                <hc:NumericUpDown Margin="0,0,0,32" hc:InfoElement.Placeholder="0" hc:InfoElement.Title="This is the title" hc:InfoElement.Necessary="True" Style="{StaticResource NumericUpDownExtend}"/>
+                <hc:NumericUpDown Margin="0,0,0,32" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title" Style="{StaticResource NumericUpDownExtend}"/>
+                <hc:NumericUpDown Margin="0,0,0,32" hc:InfoElement.TitleWidth="70" hc:InfoElement.Placeholder="Left title" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title"
+                                  Style="{StaticResource NumericUpDownExtend}" hc:InfoElement.Necessary="True"/>
+            </StackPanel>
+            <StackPanel Margin="32,0,0,0" Width="200">
+                <hc:NumericUpDown Margin="0,0,0,32" Style="{StaticResource NumericUpDownPlus}"/>
+                <hc:NumericUpDown Margin="0,0,0,32" IsEnabled="False" Style="{StaticResource NumericUpDownPlus}"/>
+                <hc:NumericUpDown Margin="0,0,0,32" hc:InfoElement.Title="This is the title" Style="{StaticResource NumericUpDownPlus}"/>
+                <hc:NumericUpDown Margin="0,0,0,32" hc:InfoElement.Placeholder="0" hc:InfoElement.Title="This is the title" hc:InfoElement.Necessary="True" Style="{StaticResource NumericUpDownPlus}"/>
+                <hc:NumericUpDown Margin="0,0,0,32" hc:InfoElement.TitleWidth="70" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title" Style="{StaticResource NumericUpDownPlus}"/>
+                <hc:NumericUpDown Margin="0,0,0,32" DecimalPlaces="2" hc:InfoElement.TitleWidth="70" hc:InfoElement.Placeholder="0" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Left title" 
+                                  Style="{StaticResource NumericUpDownPlus}" hc:InfoElement.Necessary="True"/>
+            </StackPanel>
+        </StackPanel>
+    </hc:TransitioningContentControl>
+</UserControl>

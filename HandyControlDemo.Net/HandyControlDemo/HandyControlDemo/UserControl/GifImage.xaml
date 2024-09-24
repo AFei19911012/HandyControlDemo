@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.GifImage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d">
+    <hc:TransitioningContentControl>
+        <UniformGrid Rows="2" Columns="5" Height="210" Width="550" Margin="10">
+            <hc:GifImage Name="gif" Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/1.gif"/>
+            <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/2.gif"/>
+            <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/3.gif"/>
+            <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/4.gif"/>
+            <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/5.gif"/>
+            <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/6.gif"/>
+            <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/7.gif"/>
+            <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/8.gif"/>
+            <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/9.gif"/>
+            <hc:GifImage Margin="5" Uri="pack://application:,,,/Resource/Image/QQ/10.gif"/>
+            <Button Content="New gif" Click="Button_Click"/>
+        </UniformGrid>
+    </hc:TransitioningContentControl>
+</UserControl>

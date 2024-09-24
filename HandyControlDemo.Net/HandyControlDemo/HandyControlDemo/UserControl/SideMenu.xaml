@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.SideMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             xmlns:viewmodel="clr-namespace:HandyControlDemo.ViewModel"
+             mc:Ignorable="d">
+    <UserControl.DataContext>
+        <viewmodel:SideMenuViewModel/>
+    </UserControl.DataContext>
+    <hc:TransitioningContentControl>
+        <hc:SideMenu BorderThickness="1" Width="200" Margin="10">
+            <hc:SideMenu.Resources>
+                <Color x:Key="PrimaryColor">#FFD80073</Color>
+                <Color x:Key="DarkPrimaryColor">#FFD80073</Color>
+                <LinearGradientBrush x:Key="PrimaryBrush" EndPoint="1,0" StartPoint="0,0">
+                    <GradientStop Color="{DynamicResource PrimaryColor}" Offset="0"/>
+                    <GradientStop Color="{DynamicResource DarkPrimaryColor}" Offset="1"/>
+                </LinearGradientBrush>
+            </hc:SideMenu.Resources>
+            <hc:Interaction.Triggers>
+                <hc:EventTrigger EventName="SelectionChanged">
+                    <hc:EventToCommand Command="{Binding SwitchItemCmd}" PassEventArgsToCommand="True" />
+                </hc:EventTrigger>
+            </hc:Interaction.Triggers>
+            <hc:SideMenuItem Header="Overview">
+                <hc:SideMenuItem.Icon>
+                    <Image Source="pack://application:,,,/Resource/Image/DevOps/DevOps-Boards.png" Width="24" Height="24"/>
+                </hc:SideMenuItem.Icon>
+                <hc:SideMenuItem Header="Summary" Command="{Binding SelectCmd}" CommandParameter="{Binding Header,RelativeSource={RelativeSource Self}}">
+                    <hc:SideMenuItem.Icon>
+                        <TextBlock Text="&#xe604;" FontFamily="{StaticResource IconFont}" Style="{StaticResource TextBlockSubTitle}"/>
+                    </hc:SideMenuItem.Icon>
+                </hc:SideMenuItem>
+                <hc:SideMenuItem Header="Dashboards" Command="{Binding SelectCmd}" CommandParameter="{Binding Header,RelativeSource={RelativeSource Self}}">
+                    <hc:SideMenuItem.Icon>
+                        <TextBlock Text="&#xe603;" FontFamily="{StaticResource IconFont}" Style="{StaticResource TextBlockSubTitle}"/>
+                    </hc:SideMenuItem.Icon>
+                </hc:SideMenuItem>
+                <hc:SideMenuItem Header="Wiki" Command="{Binding SelectCmd}" CommandParameter="{Binding Header,RelativeSource={RelativeSource Self}}">
+                    <hc:SideMenuItem.Icon>
+                        <TextBlock Text="&#xe602;" FontFamily="{StaticResource IconFont}" Style="{StaticResource TextBlockSubTitle}"/>
+                    </hc:SideMenuItem.Icon>
+                </hc:SideMenuItem>
+                <hc:SideMenuItem Header="Wiki" Command="{Binding SelectCmd}" CommandParameter="{Binding Header,RelativeSource={RelativeSource Self}}">
+                    <hc:SideMenuItem.Icon>
+                        <TextBlock Text="&#xe601;" FontFamily="{StaticResource IconFont}" Style="{StaticResource TextBlockSubTitle}"/>
+                    </hc:SideMenuItem.Icon>
+                </hc:SideMenuItem>
+            </hc:SideMenuItem>
+            <hc:SideMenuItem Header="Boards">
+                <hc:SideMenuItem.Icon>
+                    <Image Source="pack://application:,,,/Resource/Image/DevOps/DevOps-Pipelines.png" Width="24" Height="24"/>
+                </hc:SideMenuItem.Icon>
+                <hc:SideMenuItem Header="Sprints">
+                    <hc:SideMenuItem.Icon>
+                        <TextBlock Text="&#xe600;" FontFamily="{StaticResource IconFont}" Style="{StaticResource TextBlockSubTitle}"/>
+                    </hc:SideMenuItem.Icon>
+                </hc:SideMenuItem>
+                <hc:SideMenuItem Header="Queries">
+                    <hc:SideMenuItem.Icon>
+                        <TextBlock Text="&#xe67f;" FontFamily="{StaticResource IconFont}" Style="{StaticResource TextBlockSubTitle}"/>
+                    </hc:SideMenuItem.Icon>
+                </hc:SideMenuItem>
+            </hc:SideMenuItem>
+        </hc:SideMenu>
+    </hc:TransitioningContentControl>
+</UserControl>

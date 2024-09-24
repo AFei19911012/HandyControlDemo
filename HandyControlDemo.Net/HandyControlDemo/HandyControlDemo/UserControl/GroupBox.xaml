@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.GroupBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d">
+    <hc:TransitioningContentControl>
+        <ScrollViewer>
+            <StackPanel Margin="10">
+                <UniformGrid Rows="2" Columns="2" Margin="10">
+                    <GroupBox Header="This is the title" Margin="10">
+                        <Border Background="{DynamicResource PrimaryBrush}" CornerRadius="4">
+                            <TextBlock Text="This is the content" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+                        </Border>
+                    </GroupBox>
+                    <GroupBox Header="This is the title" Margin="10" hc:TitleElement.TitlePlacement="Left">
+                        <Border Background="{DynamicResource PrimaryBrush}" CornerRadius="4">
+                            <TextBlock Text="This is the content" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+                        </Border>
+                    </GroupBox>
+                    <GroupBox Header="This is the title" Margin="10" Style="{StaticResource GroupBoxTab}">
+                        <Border Background="{DynamicResource PrimaryBrush}" CornerRadius="4">
+                            <TextBlock Text="This is the content" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+                        </Border>
+                    </GroupBox>
+                    <GroupBox Header="This is the title" Margin="10" Style="{StaticResource GroupBoxTab}" hc:TitleElement.TitlePlacement="Left">
+                        <Border Background="{DynamicResource PrimaryBrush}" CornerRadius="4">
+                            <TextBlock Text="This is the content" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+                        </Border>
+                    </GroupBox>
+                </UniformGrid>
+
+                <UniformGrid Rows="1" Columns="2" Margin="10">
+                    <GroupBox Header="This is the title" Margin="10" Style="{StaticResource GroupBoxOriginal}" HorizontalContentAlignment="Left">
+                        <TextBox/>
+                    </GroupBox>
+                    <GroupBox Header="Left title" Margin="10" VerticalAlignment="Bottom"  hc:TitleElement.TitleWidth="60" HorizontalContentAlignment="Left" 
+                              Style="{StaticResource GroupBoxOriginal}" hc:TitleElement.TitlePlacement="Left">
+                        <ComboBox SelectedIndex="0">
+                            <ComboBoxItem Content="Text1"/>
+                            <ComboBoxItem Content="Text2"/>
+                        </ComboBox>
+                    </GroupBox>
+                </UniformGrid>
+            </StackPanel>
+        </ScrollViewer>
+    </hc:TransitioningContentControl>
+</UserControl>

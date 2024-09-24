@@ -1,0 +1,94 @@
+﻿<UserControl x:Class="HandyControlDemo.UserControl.Geometry"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             xmlns:userControl="clr-namespace:HandyControlDemo.UserControl"
+             DataContext="{Binding RelativeSource={RelativeSource Self}}"
+             Background="{DynamicResource RegionBrush}"
+             Width="500"
+             Height="500">
+    <hc:TransitioningContentControl>
+        <UniformGrid Rows="10" Columns="8">
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="NewGeometry" Data="{StaticResource NewGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="LogoGeometry" Data="{StaticResource LogoGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="CirclePanelDemoGeometry" Data="{StaticResource CirclePanelDemoGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="CirclePanelRightGeometry" Data="{StaticResource CirclePanelRightGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="GithubGeometry" Data="{StaticResource GithubGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="NugetGeometry" Data="{StaticResource NugetGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="EmailGeometry" Data="{StaticResource EmailGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="GitterGeometry" Data="{StaticResource GitterGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="WebsiteGeometry" Data="{StaticResource WebsiteGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="FaceBookGeometry" Data="{StaticResource FaceBookGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="TwitterGeometry" Data="{StaticResource TwitterGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="ThumbsUpGeometry" Data="{StaticResource ThumbsUpGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="ImageGeometry" Data="{StaticResource ImageGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="KeyboardGeometry" Data="{StaticResource KeyboardGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="LoveGeometry" Data="{StaticResource LoveGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="CnblogsGeometry" Data="{StaticResource CnblogsGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="ConfigGeometry" Data="{StaticResource ConfigGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="ContributorsGeometry" Data="{StaticResource ContributorsGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="GitHubStrGeometry" Data="{StaticResource GitHubStrGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="QqGeometry" Data="{StaticResource QqGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="ProjectGeometry" Data="{StaticResource ProjectGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="BlogGeometry" Data="{StaticResource BlogGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="VisualStudioGeometry" Data="{StaticResource VisualStudioGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="CodeGeometry" Data="{StaticResource CodeGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="WikiGeometry" Data="{StaticResource WikiGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="DocGeometry" Data="{StaticResource DocGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="DocumentGeometry" Data="{StaticResource DocumentGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="CalendarGeometry" Data="{StaticResource CalendarGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="DeleteGeometry" Data="{StaticResource DeleteGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="DeleteFillCircleGeometry" Data="{StaticResource DeleteFillCircleGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="CloseGeometry" Data="{StaticResource CloseGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="DownGeometry" Data="{StaticResource DownGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="UpGeometry" Data="{StaticResource UpGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="ClockGeometry" Data="{StaticResource ClockGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="LeftGeometry" Data="{StaticResource LeftGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="RightGeometry" Data="{StaticResource RightGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="RotateLeftGeometry" Data="{StaticResource RotateLeftGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="RotateRightGeometry" Data="{StaticResource RotateRightGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="EnlargeGeometry" Data="{StaticResource EnlargeGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="ReduceGeometry" Data="{StaticResource ReduceGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="DownloadGeometry" Data="{StaticResource DownloadGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="SaveGeometry" Data="{StaticResource SaveGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="WindowsGeometry" Data="{StaticResource WindowsGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="FullScreenGeometry" Data="{StaticResource FullScreenGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="FullScreenReturnGeometry" Data="{StaticResource FullScreenReturnGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="SearchGeometry" Data="{StaticResource SearchGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="UpDownGeometry" Data="{StaticResource UpDownGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="WindowMinGeometry" Data="{StaticResource WindowMinGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="WindowRestoreGeometry" Data="{StaticResource WindowRestoreGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="WindowMaxGeometry" Data="{StaticResource WindowMaxGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="CheckedGeometry" Data="{StaticResource CheckedGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="AlignLeftGeometry" Data="{StaticResource AlignLeftGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="AlignRightGeometry" Data="{StaticResource AlignRightGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="AlignHCenterGeometry" Data="{StaticResource AlignHCenterGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="AlignHStretchGeometry" Data="{StaticResource AlignHStretchGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="AlignTopGeometry" Data="{StaticResource AlignTopGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="AlignBottomGeometry" Data="{StaticResource AlignBottomGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="AlignVCenterGeometry" Data="{StaticResource AlignVCenterGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="AlignVStretchGeometry" Data="{StaticResource AlignVStretchGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="PageModeGeometry" Data="{StaticResource PageModeGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="TwoPageModeGeometry" Data="{StaticResource TwoPageModeGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="ScrollModeGeometry" Data="{StaticResource ScrollModeGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="EyeOpenGeometry" Data="{StaticResource EyeOpenGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="EyeCloseGeometry" Data="{StaticResource EyeCloseGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="AudioGeometry" Data="{StaticResource AudioGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="BubbleTailGeometry" Data="{StaticResource BubbleTailGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="StarGeometry" Data="{StaticResource StarGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="AddGeometry" Data="{StaticResource AddGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="RemoveGeometry" Data="{StaticResource RemoveGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="SubGeometry" Data="{StaticResource SubGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="WarningGeometry" Data="{StaticResource WarningGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="InfoGeometry" Data="{StaticResource InfoGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="ErrorGeometry" Data="{StaticResource ErrorGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="SuccessGeometry" Data="{StaticResource SuccessGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="FatalGeometry" Data="{StaticResource FatalGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="AskGeometry" Data="{StaticResource AskGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="AllGeometry" Data="{StaticResource AllGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="DragVerticalGeometry" Data="{StaticResource DragVerticalGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="DragHorizontalGeometry" Data="{StaticResource DragHorizontalGeometry}"/>
+            <Path Margin="5" Fill="{DynamicResource PrimaryBrush}" Stretch="Uniform" ToolTip="DropperGeometry" Data="{StaticResource DropperGeometry}"/>
+        </UniformGrid>
+    </hc:TransitioningContentControl>
+</UserControl>

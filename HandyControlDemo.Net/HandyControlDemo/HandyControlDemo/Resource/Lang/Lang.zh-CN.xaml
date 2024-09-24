@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <system:String x:Key="Cancel">取消</system:String>
+    <system:String x:Key="Clear">清空</system:String>
+    <system:String x:Key="Close">关闭</system:String>
+    <system:String x:Key="CloseAll">关闭所有</system:String>
+    <system:String x:Key="CloseOther">关闭其他</system:String>
+    <system:String x:Key="Confirm">确定</system:String>
+    <system:String x:Key="Delete">删除</system:String>
+    <system:String x:Key="Error">错误</system:String>
+    <system:String x:Key="FormatError">格式错误</system:String>
+    <system:String x:Key="IsNecessary">不能为空</system:String>
+    <system:String x:Key="No">否</system:String>
+    <system:String x:Key="OutOfRange">不在范围内</system:String>
+    <system:String x:Key="Yes">是</system:String>
+
+    <system:String x:Key="Button">按钮</system:String>
+    <system:String x:Key="Brush">画刷</system:String>
+
+</ResourceDictionary>
